@@ -1,21 +1,33 @@
-# Personal Financial Ledger
+# Personal Financial Ledger (PFL)
 
-A Personal Financial Ledger designed using enterprise software architecture principles.
+> A Personal Financial Ledger built with Google Apps Script, Google Sheets, Telegram, and AI, following enterprise architecture principles.
 
-## Goals
+## Why This Project Exists
 
-- Learn Solution Architecture
-- Learn Software Engineering
-- Build Production-quality software
-- Keep financial truth as the highest priority
+This project is not only about building a finance application.
 
-## Technology
+It is also a learning journey to become a Solution Architect by applying enterprise software engineering practices to a real-world personal project.
 
-- Google Apps Script
-- Google Sheets
-- Telegram Bot
-- Gemini AI
+## Core Principles
+
+- Protect Financial Truth
+- Business Before Technology
+- Store Facts, Derive Knowledge
+- AI Assists, Never Owns Business Logic
+- Strict Inside, Simple Outside
+
+## Current Status
+
+🚧 Architecture Phase
 
 ## Documentation
 
 See `/docs`.
+
+## Roadmap
+
+- Architecture
+- Engineering Design
+- Implementation
+- Testing
+- Production
