@@ -11,7 +11,8 @@
   "start-day": "node scripts/start-day.js",
   "doctor": "node scripts/doctor.js",
   "task": "node scripts/task.js",
-  "review": "node scripts/review.js"
+  "review": "node scripts/review.js",
+  "sync": "node scripts/sync.js"
 },
   "repository": {
     "type": "git",
