@@ -9,4 +9,29 @@ if (!fs.existsSync("START_HERE.md")) {
   process.exit(1);
 }
 
-console.log(fs.readFileSync("START_HERE.md", "utf8"));
+const text = fs.readFileSync("START_HERE.md", "utf8");
+
+const sections = [
+  "## Current Phase",
+  "## Current Sprint",
+  "## Current Task",
+  "## Next Task",
+  "## Weekend Queue"
+];
+
+for (const section of sections) {
+  const start = text.indexOf(section);
+
+  if (start === -1) continue;
+
+  const next = text.indexOf("\n## ", start + 1);
+
+  console.log(
+    text.substring(
+      start,
+      next === -1 ? text.length : next
+    ).trim()
+  );
+
+  console.log("");
+}
