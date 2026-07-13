@@ -23,13 +23,30 @@ files.forEach(file => {
 console.log("\n🌿 Git");
 
 try {
-  console.log(execSync("git branch --show-current", { encoding: "utf8" }).trim());
+  console.log(execSync("git branch --show-current", {
+    encoding: "utf8"
+  }).trim());
 } catch {
   console.log("❌ Git not available");
 }
 
-console.log("\n📦 Node");
+function check(command, name) {
+  try {
+    execSync(command, {
+      stdio: "ignore"
+    });
+    console.log(`✅ ${name}`);
+  } catch {
+    console.log(`❌ ${name}`);
+  }
+}
 
-console.log(process.version);
+console.log("\n🧰 Engineering Tools");
+
+check("git --version", "Git");
+check("node --version", "Node.js");
+check("npm.cmd -v", "npm");
+check("gemini --version", "Gemini CLI");
+check("codex.cmd --version", "Codex CLI");
 
 console.log("\n✅ Doctor completed.");
