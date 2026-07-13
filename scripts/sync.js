@@ -27,14 +27,22 @@ if (!status) {
   console.log(status);
 }
 
-console.log("\n⬇ Pulling latest...");
+console.log("\n📊 Repository Status");
 
-const pull = run("git pull");
+if (!status) {
+  console.log("✅ Working tree clean");
 
-if (pull) {
-  console.log(pull);
+  console.log("\n💡 Recommendation");
+  console.log("Repository is synchronized.");
 } else {
-  console.log("❌ Pull failed");
+
+  console.log(`⚠ ${status.split("\n").length} pending change(s)`);
+
+  console.log("\n📝 Local Changes");
+  console.log(status);
+
+  console.log("\n💡 Recommendation");
+  console.log("Commit or stash local changes before pulling.");
 }
 
 console.log("\n✅ Sync completed.");
