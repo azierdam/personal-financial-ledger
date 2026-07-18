@@ -2,7 +2,7 @@
 name: Epic
 about: Epic
 title: 'EPIC: '
-labels: ''
+labels: size/xl, type/epic
 assignees: azierdam
 
 ---
@@ -13,16 +13,16 @@ assignees: azierdam
 
 ## Business Value:
 
-##Scope:
+## Scope:
 
 ### Dependencies:
 
-## Acceptance Criteria:
+### Acceptance Criteria:
 
 ### Labels:
 
 ### Priority:
 
-## Milestone:
+### Milestone:
 
 ### Estimated Size:

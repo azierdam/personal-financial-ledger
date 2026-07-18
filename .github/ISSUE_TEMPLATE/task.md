@@ -2,7 +2,7 @@
 name: Task
 about: Task
 title: 'TASK: '
-labels: ''
+labels: type/task
 assignees: ''
 
 ---
@@ -13,16 +13,16 @@ assignees: ''
 
 ## Business Value:
 
-##Scope:
+## Scope:
 
 ### Dependencies:
 
-## Acceptance Criteria:
+### Acceptance Criteria:
 
 ### Labels:
 
 ### Priority:
 
-## Milestone:
+### Milestone:
 
 ### Estimated Size:

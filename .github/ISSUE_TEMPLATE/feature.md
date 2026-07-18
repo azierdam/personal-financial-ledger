@@ -2,7 +2,7 @@
 name: Feature
 about: Feature
 title: 'FEATURE: '
-labels: ''
+labels: size/m, type/feature
 assignees: azierdam
 
 ---
@@ -13,16 +13,16 @@ assignees: azierdam
 
 ## Business Value:
 
-##Scope:
+## Scope:
 
 ### Dependencies:
 
-## Acceptance Criteria:
+### Acceptance Criteria:
 
 ### Labels:
 
 ### Priority:
 
-## Milestone:
+### Milestone:
 
 ### Estimated Size:

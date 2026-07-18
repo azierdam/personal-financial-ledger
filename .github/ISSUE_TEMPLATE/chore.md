@@ -2,7 +2,7 @@
 name: Chore
 about: Chore
 title: 'CHORE: '
-labels: ''
+labels: type/chore
 assignees: ''
 
 ---
@@ -13,16 +13,16 @@ assignees: ''
 
 ## Business Value:
 
-##Scope:
+## Scope:
 
 ### Dependencies:
 
-## Acceptance Criteria:
+### Acceptance Criteria:
 
 ### Labels:
 
 ### Priority:
 
-## Milestone:
+### Milestone:
 
 ### Estimated Size:
