@@ -1,0 +1,3 @@
+- [ ] Bot created
+- [ ] Webhook configured
+- [ ] /start verified
