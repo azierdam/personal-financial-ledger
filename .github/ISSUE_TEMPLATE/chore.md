@@ -1,7 +1,7 @@
 ---
 name: Chore
 about: Chore
-title: "[CHORE]"
+title: CHORE
 labels: ''
 assignees: ''
 
