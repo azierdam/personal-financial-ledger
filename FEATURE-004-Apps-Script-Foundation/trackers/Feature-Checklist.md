@@ -1,0 +1,2 @@
+- [ ] Apps Script project created
+- [ ] Deployment verified
