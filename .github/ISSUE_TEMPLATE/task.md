@@ -1,7 +1,7 @@
 ---
 name: Task
 about: Task
-title: TASK
+title: 'TASK: '
 labels: ''
 assignees: ''
 

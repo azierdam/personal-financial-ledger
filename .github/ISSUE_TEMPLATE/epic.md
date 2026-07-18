@@ -1,7 +1,7 @@
 ---
 name: Epic
 about: Epic
-title: EPIC
+title: 'EPIC: '
 labels: ''
 assignees: azierdam
 
