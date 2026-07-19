@@ -49,4 +49,21 @@ class TransactionService {
       throw new Error('Failed to process transaction: ' + e.message);
     }
   }
+
+  /**
+   * Retrieves a transaction by its ID.
+   * @param {string} transactionId
+   * @returns {Transaction|null}
+   */
+  getTransactionById(transactionId) {
+    return this.transactionRepository.findById(transactionId);
+  }
+
+  /**
+   * Retrieves all transactions.
+   * @returns {Transaction[]}
+   */
+  getAllTransactions() {
+    return this.transactionRepository.findAll();
+  }
 }
