@@ -21,3 +21,43 @@ Any artifact that is intended for review, reuse, or version control must be writ
 Do not leave implementation plans, reports, review packages, or documentation in temporary directories, cache folders, or Gemini CLI working folders.
 
 Temporary directories may be used internally during execution but must never become the canonical location of project artifacts.
+
+## Git Automation Policy
+
+When a Technical Lead approval prompt contains a **Git Operations** section, execute those operations automatically.
+
+Do not ask for confirmation before running routine Git commands.
+
+Permitted operations:
+
+- git status
+- git checkout -b
+- git add
+- git commit
+- git push
+
+Always report:
+
+- current branch
+- latest commit hash
+- push status
+- working tree status
+
+Never:
+
+- merge into main
+- force push
+- delete branches
+- rewrite history
+
+unless explicitly instructed.
+
+## Planning Policy
+
+All implementation plans intended for review or approval must be created inside the repository.
+
+Do not rely on Gemini CLI temporary planning files as project artifacts.
+
+The Product Owner and Technical Lead must never be required to retrieve files from temporary directories.
+
+Repository planning documents are the authoritative planning artifacts.
