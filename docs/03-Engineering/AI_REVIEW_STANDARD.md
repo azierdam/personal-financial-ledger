@@ -1,14 +1,15 @@
 # AI Review Standard
 
 ## Definition
-Every task produces an **Engineering Handover Package** to ensure quality, traceability, and maintainability.
+Every sprint produces an **Engineering Handover Package** to ensure quality, traceability, and maintainability.
 
 ## Engineering Handover Package Structure
-- **Location:** `review/`
-  - `artifacts/`: Contains all review documentation (`gemini-handover.md` is mandatory).
+- **Location:** `review/current/`
+  - `HANDOVER.md`: Canonical entry point for review.
+  - `artifacts/`: Contains all required review documentation.
   - `snapshots/`: Contains the state of `src/`, `docs/`, `test/` relevant to the review.
 
-## Mandatory Artifacts
+## Mandatory Artifacts (`review/current/artifacts/`)
 - `repository-analysis.md` (when applicable)
 - `implementation-plan.md` (when applicable)
 - `implementation-summary.md`
@@ -20,7 +21,11 @@ Every task produces an **Engineering Handover Package** to ensure quality, trace
 - `changed-files.md`
 - `commit-message.txt`
 - `checklist.md`
-- `technical-lead-response.md` (Placeholder for Tech Lead approval)
+- `technical-lead-response.md` (Must start as placeholder)
 
-## Artifact Lifecycle
-The `review/` folder is part of the repository. All review artifacts are version-controlled and committed as part of the standard engineering workflow.
+## Cleanup Policy
+After Git push and Product Owner approval:
+1. Remove temporary Gemini planning artifacts.
+2. Remove temporary compilation directories.
+3. Remove obsolete generated review folders outside `review/current/`.
+4. Reset `review/current/` for the next sprint.
