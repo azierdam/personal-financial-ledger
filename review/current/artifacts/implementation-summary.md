@@ -1,4 +1,4 @@
-Implementation Summary: Milestone C2.1
-- **Task:** C2.1 Google Sheets Repository
+Implementation Summary: Milestone C2.2
+- **Task:** C2.2 Transaction Persistence Flow
 - **Status:** Complete
-- **Summary:** Implemented Google Sheets infrastructure layer, including SheetsGateway, explicit Mappers, and concrete Repository adapters.
+- **Summary:** Refactored TransactionService for repository-based persistence via dependency injection and added integration tests.

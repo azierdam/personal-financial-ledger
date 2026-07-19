@@ -1,41 +1,31 @@
-# HANDOVER.md: Milestone C2.1 Google Sheets Repository
+# HANDOVER.md: Milestone C2.2 Transaction Persistence Flow
 - **Sprint:** C2
-- **Objective:** Establish Google Sheets infrastructure adapters.
+- **Objective:** Enable transaction persistence via TransactionService and TransactionRepository.
 - **Implementation Status:** 
   - [x] Repository Analysis approved
   - [x] Implementation completed
   - [x] Tests passing
   - [x] Engineering Handover Package generated
-  - [x] Technical Lead Review: ✅ Approved
-  - [x] Engineering Handover Package: ✅ Approved for Merge
 
 ## Changed Files
-- src/infrastructure/sheets/SheetsGateway.gs
-- src/infrastructure/sheets/mappers/AccountMapper.gs
-- src/infrastructure/sheets/mappers/CategoryMapper.gs
-- src/infrastructure/sheets/mappers/TransactionMapper.gs
-- src/infrastructure/sheets/repositories/SheetsAccountRepository.gs
-- src/infrastructure/sheets/repositories/SheetsCategoryRepository.gs
-- src/infrastructure/sheets/repositories/SheetsTransactionRepository.gs
-- test/integration/SheetsRepositoryTest.gs
-- docs/03-Engineering/Infrastructure_Architecture.md
+- src/service/TransactionService.gs
+- test/integration/TransactionFlowTests.gs
 
 ## Architecture Summary
-- Established `SheetsGateway` for SpreadsheetApp isolation.
-- Implemented explicit Mappers for entity transformation.
-- Concrete repositories implemented adhering to Repository Contract Standard.
+- Refactored TransactionService to accept TransactionRepository via DI.
+- Persistence flow: TransactionService -> TransactionRepository.
 
 ## Test Summary
-- Integration tests confirm CRUD works via mock gateway.
+- Integration tests confirm TransactionService correctly delegates to repository.
 
 ## Risks
-- Performance with high I/O (deferred).
+- None. Interface-based persistence.
 
 ## Self Assessment
-- All acceptance criteria met. Storage-agnosticism maintained.
+- All acceptance criteria met. Domain/Infrastructure isolation preserved.
 
 ## Links
-- [Repository Analysis](docs/04-Planning/C2.1_Analysis.md)
-- [Implementation Plan](docs/04-Planning/C2.1_Plan.md)
+- [Repository Analysis](docs/04-Planning/C2.2_Analysis.md)
+- [Implementation Plan](docs/04-Planning/C2.2_Plan.md)
 - [Artifacts](review/current/artifacts/)
 - [Snapshots](review/current/snapshots/)

@@ -1,6 +1,5 @@
-feat(infrastructure): implement Google Sheets repository adapters
+feat(service): implement transaction persistence flow
 
-- Create SheetsGateway to abstract SpreadsheetApp
-- Implement explicit Mapper classes for domain entities
-- Create concrete repository adapters for Sheets
-- Add custom infrastructure error handling
+- Refactor TransactionService to use TransactionRepository via DI
+- Delegate persistence operations to repository interface
+- Add integration tests for persistence flow

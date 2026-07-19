@@ -1,4 +1,3 @@
-Architectural Notes: C2.1
-- SheetsGateway abstracts SpreadsheetApp.
-- Explicit Mappers separate domain from row arrays.
-- Infrastructure-specific errors defined in Errors.gs.
+Architectural Notes: C2.2
+- TransactionService now uses dependency injection for TransactionRepository.
+- No direct SpreadsheetApp interaction in service layer.

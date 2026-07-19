@@ -1,11 +1,9 @@
-Gemini Handover: C2.1
-- **Sprint:** C2
-- **Objective:** Establish Google Sheets infrastructure adapters.
-- **Summary:** Implemented Google Sheets infrastructure layer, including SheetsGateway, explicit Mappers, and concrete Repository adapters.
-- **Design Decisions:** Used Gateway pattern for I/O; explicit mappers for row/entity mapping.
-- **Risks:** Performance of SpreadsheetApp I/O is a future optimization.
+Gemini Handover: C2.2
+- **Summary:** Connected TransactionService to TransactionRepository adapters.
+- **Design Decisions:** Maintained strict DI. No storage leaking in service.
+- **Risks:** None.
 - **Known Limitations:** Persistence is not yet implemented (no business logic/services).
-- **Test Results:** Integration tests verify storage interaction via mocks.
-- **Self Assessment:** Architecture remains domain-isolated.
-- **Recommended Technical Lead Review Focus:** Validate infrastructure-domain isolation and Mapper design.
+- **Test Results:** Integration tests pass via mock repository.
+- **Self Assessment:** Domain services remain decoupled from infrastructure.
+- **Recommended Technical Lead Review Focus:** Validate DI and storage-agnostic service layer.
 - **Ready For Review:** Yes

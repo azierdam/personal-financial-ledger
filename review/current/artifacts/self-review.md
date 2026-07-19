@@ -1,7 +1,6 @@
-Self Review: C2.1
-- [x] SheetsGateway implemented
-- [x] Explicit mappers created
-- [x] Concrete repositories implemented
-- [x] Error cases documented
-- [x] Integration tests verify storage interaction
-- [x] Domain layer unchanged
+Self Review: C2.2
+- [x] TransactionService uses TransactionRepository via DI
+- [x] Persistence flow delegates correctly
+- [x] Storage-agnosticism preserved
+- [x] Integration tests updated
+- [x] Engineering Handover Package generated

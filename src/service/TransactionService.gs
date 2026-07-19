@@ -6,27 +6,32 @@ class TransactionService {
    * @param {TransactionRepository} transactionRepository
    */
   constructor(transactionRepository) {
-    if (!(transactionRepository instanceof TransactionRepository)) {
-      throw new Error('Valid TransactionRepository dependency is required.');
-    }
+    // Note: TransactionRepository is injected.
     this.transactionRepository = transactionRepository;
   }
 
   /**
    * Adds a new transaction based on a request.
    * @param {TransactionRequest} transactionRequest
+   * @param {Account} account
+   * @param {Category} category
    * @returns {Transaction}
    */
-  addTransaction(transactionRequest) {
+  addTransaction(transactionRequest, account, category) {
     if (!(transactionRequest instanceof TransactionRequest)) {
       throw new Error('Invalid TransactionRequest.');
+    }
+    if (!(account instanceof Account)) {
+      throw new Error('Valid Account entity is required.');
+    }
+    if (!(category instanceof Category)) {
+      throw new Error('Valid Category entity is required.');
     }
 
     try {
       const id = 'TX-' + new Date().getTime();
       const date = new Date();
-      const money = new Money(transactionRequest.amount, Config.getDefaultCurrency()); // Default currency
-      const category = new Category('General'); // Default category
+      const money = new Money(transactionRequest.amount, 'IDR'); // Default currency
       
       const transaction = new Transaction(
         id,
@@ -34,6 +39,7 @@ class TransactionService {
         money,
         transactionRequest.transactionType,
         category,
+        account,
         transactionRequest.description
       );
 

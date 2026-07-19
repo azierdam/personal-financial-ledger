@@ -1,7 +1,6 @@
 Review Checklist
-- [x] SheetsGateway implemented
-- [x] Explicit mappers created
-- [x] Concrete repositories implemented
-- [x] Error cases documented
+- [x] TransactionService refactored
+- [x] DI implemented
+- [x] Storage-agnosticism maintained
 - [x] Integration tests passed
 - [x] Engineering Handover Package (v3) complete
