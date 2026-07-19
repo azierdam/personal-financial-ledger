@@ -1,17 +1,26 @@
 # AI Review Standard
 
 ## Definition
-Every task produces a review package to ensure quality and traceability.
+Every task produces an **Engineering Handover Package** to ensure quality, traceability, and maintainability.
 
-## Review Artifacts
-- **Review Markdown:** Detailed summary of the changes, design decisions, and reasoning.
-- **Self Review:** AI-generated verification against the implementation standards.
-- **Architecture/Design Notes:** Documentation of any deviations or clarifications.
-- **Changed Files List:** Precise list of affected files.
-- **Repository Tree:** Visual representation of changed files.
-- **Review Checklist:** Completed checklist confirming all requirements.
+## Engineering Handover Package Structure
+- **Location:** `review/`
+  - `artifacts/`: Contains all review documentation (`gemini-handover.md` is mandatory).
+  - `snapshots/`: Contains the state of `src/`, `docs/`, `test/` relevant to the review.
 
-## Review Package
-- **Location:** `.temp/reviews/`
-- **Naming:** `review-[SPRINT_ID/TASK_ID].zip` (e.g., `review-S2-05.zip`)
-- **Lifecycle:** The ZIP file is a temporary artifact. It is never committed to Git and MUST be deleted after human approval.
+## Mandatory Artifacts
+- `repository-analysis.md` (when applicable)
+- `implementation-plan.md` (when applicable)
+- `implementation-summary.md`
+- `architecture-notes.md`
+- `self-review.md`
+- `gemini-handover.md` (Mandatory)
+- `validation.md`
+- `test-results.md`
+- `changed-files.md`
+- `commit-message.txt`
+- `checklist.md`
+- `technical-lead-response.md` (Placeholder for Tech Lead approval)
+
+## Artifact Lifecycle
+The `review/` folder is part of the repository. All review artifacts are version-controlled and committed as part of the standard engineering workflow.

@@ -4,6 +4,7 @@
 - [ ] Understand task requirements and acceptance criteria.
 - [ ] Inspect relevant architectural docs and existing code.
 - [ ] Verify architectural boundaries.
+- [ ] Produce and obtain approval for Repository Plan in `docs/04-Planning/` or `review/planning/`.
 
 ## Before Completion
 - [ ] Verify all implementation standards.
@@ -14,8 +15,9 @@
 ## Before Review
 - [ ] Generate self-review markdown.
 - [ ] Confirm changed files list.
-- [ ] Create review package ZIP in `.temp/reviews/`.
-- [ ] Verify no Git operations were performed.
+- [ ] Create Engineering Handover Package in `review/artifacts/`.
+- [ ] Create placeholder `technical-lead-response.md`.
+- [ ] Verify no unauthorized Git operations were performed.
 
 ## Definition of Done
 A task is complete only when:
@@ -23,8 +25,6 @@ A task is complete only when:
 ☑ Architecture preserved
 ☑ Existing objects reused
 ☑ Documentation synchronized
-☑ Review Markdown generated
-☑ Review Package generated
-☑ Repository cleaned
-☑ No Git operations executed
-☑ Awaiting ChatGPT approval
+☑ Engineering Handover Package generated and committed
+☑ No Git operations executed (until approval)
+☑ Awaiting Technical Lead and Product Owner approval
