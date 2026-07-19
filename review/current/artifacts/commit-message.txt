@@ -1,0 +1,6 @@
+feat(repository): standardize storage-agnostic repository contracts
+
+- Define AccountRepository and CategoryRepository interfaces
+- Remove 'update' from TransactionRepository to enforce immutability
+- Document Repository Contract Standard
+- Verify contract adherence with unit tests

@@ -18,9 +18,4 @@ interface TransactionRepository {
    * @return {Transaction[]}
    */
   findAll();
-  
-  /**
-   * @param {Transaction} transaction
-   */
-  update(transaction);
 }
