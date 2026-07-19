@@ -1,8 +1,8 @@
-﻿Gemini Handover: C1.1
+# Gemini Handover: C1.1
 - **Sprint:** C1
 - **Objective:** Establish Transaction Domain Model.
 - **Summary:** Refactored domain entities to use stable IDs and decoupled storage. Repository interfaces created using business-oriented methods.
-- **Design Decisions:** Added identifiers to entities. Implemented constructors with validation invariants. Decoupled repository from persistence.
+- **Design Decisions:** Removed `delete` from `TransactionRepository` to ensure immutability; entities are immutable via `Object.freeze`.
 - **Risks:** Minimal. Entities are lightweight.
 - **Known Limitations:** Persistence is not yet implemented.
 - **Test Results:** Unit tests pass entity creation and invariant checks.

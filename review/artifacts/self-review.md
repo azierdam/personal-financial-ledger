@@ -1,6 +1,7 @@
-﻿Self Review: C1.1
-- [x] Core domain entities (Account, Transaction, Category) defined
-- [x] Repository interfaces defined
-- [x] Domain invariants implemented
-- [x] Documentation synchronized
-- [x] Tests updated and passing
+# Self Review: C1.1
+- [x] Domain model established
+- [x] Storage-agnostic design maintained
+- [x] Repository interface refined (no `delete`)
+- [x] Invariants enforced
+- [x] Tests passing
+- [x] Engineering Handover Package generated

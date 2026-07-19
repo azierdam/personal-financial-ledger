@@ -1,4 +1,4 @@
-﻿Technical Lead Review
+# Technical Lead Review
 
 - **Status:** [Pending]
 - **Approved:** [No]

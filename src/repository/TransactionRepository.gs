@@ -23,9 +23,4 @@ interface TransactionRepository {
    * @param {Transaction} transaction
    */
   update(transaction);
-  
-  /**
-   * @param {string} transactionId
-   */
-  delete(transactionId);
 }

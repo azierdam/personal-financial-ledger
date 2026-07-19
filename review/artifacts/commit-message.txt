@@ -1,7 +1,5 @@
-﻿feat(domain): establish storage-agnostic transaction domain model
+feat(domain): establish storage-agnostic transaction domain model
 
-- Create Account entity
-- Add identifiers to Category and Transaction entities
-- Implement TransactionRepository business interface
-- Add lightweight domain invariants
-- Document Ledger aggregate concept
+- Remove 'delete' from TransactionRepository to enforce immutability
+- Ensure identifiers are stable and validated in constructors
+- Verify invariants in unit tests
