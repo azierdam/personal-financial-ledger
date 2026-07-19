@@ -11,3 +11,13 @@ All AI contributors MUST adhere to the [AI Engineering Playbook](docs/03-Enginee
 - **Layout**: `src/ui/Index.html` is the main entry point (shell).
 - **Partials**: Use the `include(filename)` helper function in `WebAppAdapter.gs` to inject partials (e.g., `Header`, `Navigation`) into the main layout.
 - **Styling**: Styles are defined in partials (e.g., `src/ui/Styles.html`) and included in the `Index.html` head.
+
+## Repository Artifact Policy
+
+The repository is the only persistent workspace.
+
+Any artifact that is intended for review, reuse, or version control must be written inside the repository.
+
+Do not leave implementation plans, reports, review packages, or documentation in temporary directories, cache folders, or Gemini CLI working folders.
+
+Temporary directories may be used internally during execution but must never become the canonical location of project artifacts.
