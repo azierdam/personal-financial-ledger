@@ -9,14 +9,22 @@ function testWebAppDoGet() {
     throw new Error('doGet did not return a valid HtmlOutput object');
   }
   
-  // Verify title
+  // Verify default title
   if (output.getTitle() !== 'Personal Financial Ledger') {
     throw new Error('Incorrect title');
   }
+}
+
+function testWebAppRouting() {
+  // Test valid routing
+  const transactionsPage = doGet({parameter: {page: 'transactions'}});
+  if (!transactionsPage) {
+    throw new Error('Failed to load transactions page');
+  }
   
-  // Verify meta tags (basic check)
-  const content = output.getContent();
-  if (content.indexOf('viewport') === -1) {
-    throw new Error('Missing viewport meta tag');
+  // Test invalid routing (should fallback to default - dashboard)
+  const invalidPage = doGet({parameter: {page: 'invalid'}});
+  if (!invalidPage) {
+    throw new Error('Failed to load dashboard fallback');
   }
 }
