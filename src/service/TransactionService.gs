@@ -25,7 +25,7 @@ class TransactionService {
     try {
       const id = 'TX-' + new Date().getTime();
       const date = new Date();
-      const money = new Money(transactionRequest.amount, 'USD'); // Default currency
+      const money = new Money(transactionRequest.amount, Config.getDefaultCurrency()); // Default currency
       const category = new Category('General'); // Default category
       
       const transaction = new Transaction(
