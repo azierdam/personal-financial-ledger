@@ -1,4 +1,4 @@
 const Config = Object.freeze({
-  SPREADSHEET_ID: 'YOUR_SPREADSHEET_ID_HERE',
-  LEDGER_SHEET_NAME: 'Ledger'
+  getSpreadsheetId: () => PropertiesService.getScriptProperties().getProperty('SPREADSHEET_ID'),
+  getLedgerSheetName: () => PropertiesService.getScriptProperties().getProperty('LEDGER_SHEET_NAME') || 'Ledger'
 });

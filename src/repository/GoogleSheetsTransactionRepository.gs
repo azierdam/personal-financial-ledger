@@ -7,18 +7,24 @@ class GoogleSheetsTransactionRepository extends TransactionRepository {
    * @param {Transaction} transaction
    */
   save(transaction) {
-    if (!transaction) {
-      throw new Error('Transaction is required.');
+    if (!(transaction instanceof Transaction)) {
+      throw new Error('Invalid transaction.');
     }
 
-    const ss = SpreadsheetApp.openById(Config.SPREADSHEET_ID);
+    const spreadsheetId = Config.getSpreadsheetId();
+    if (!spreadsheetId) {
+      throw new Error('Spreadsheet ID not configured.');
+    }
+
+    const ss = SpreadsheetApp.openById(spreadsheetId);
     if (!ss) {
-      throw new Error('Could not open spreadsheet with ID: ' + Config.SPREADSHEET_ID);
+      throw new Error('Could not open spreadsheet with ID: ' + spreadsheetId);
     }
 
-    const sheet = ss.getSheetByName(Config.LEDGER_SHEET_NAME);
+    const sheetName = Config.getLedgerSheetName();
+    const sheet = ss.getSheetByName(sheetName);
     if (!sheet) {
-      throw new Error('Could not find sheet with name: ' + Config.LEDGER_SHEET_NAME);
+      throw new Error('Could not find sheet with name: ' + sheetName);
     }
 
     try {
