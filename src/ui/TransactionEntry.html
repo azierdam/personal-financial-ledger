@@ -1,42 +1,77 @@
+<?!= include('src/ui/Validation'); ?>
 <section class="app-form">
   <h2>New Transaction</h2>
-  <form id="transactionForm">
+  <form id="transactionForm" novalidate>
     <div class="form-group">
       <label for="date">Date</label>
-      <input type="date" id="date" name="date" required>
+      <input type="date" id="date" name="date">
+      <span id="date-error" class="error-message"></span>
     </div>
     <div class="form-group">
       <label for="type">Type</label>
-      <select id="type" name="type" required>
+      <select id="type" name="type">
         <option value="expense">Expense</option>
         <option value="income">Income</option>
       </select>
     </div>
     <div class="form-group">
       <label for="amount">Amount</label>
-      <input type="number" id="amount" name="amount" required min="0">
+      <input type="number" id="amount" name="amount" min="0">
+      <span id="amount-error" class="error-message"></span>
     </div>
     <div class="form-group">
       <label for="description">Description</label>
-      <input type="text" id="description" name="description" required>
+      <input type="text" id="description" name="description">
+      <span id="description-error" class="error-message"></span>
     </div>
     <div class="form-group">
       <label for="category">Category</label>
-      <select id="category" name="category" required>
+      <select id="category" name="category">
+        <option value="">Select...</option>
         <option value="food">Food</option>
         <option value="transport">Transport</option>
       </select>
+      <span id="category-error" class="error-message"></span>
     </div>
     <div class="form-group">
       <label for="account">Account</label>
-      <select id="account" name="account" required>
+      <select id="account" name="account">
+        <option value="">Select...</option>
         <option value="cash">Cash</option>
         <option value="bank">Bank</option>
       </select>
+      <span id="account-error" class="error-message"></span>
     </div>
     <div class="form-actions">
       <button type="submit">Save</button>
       <button type="reset">Reset</button>
     </div>
+    <div id="form-feedback"></div>
   </form>
 </section>
+
+<script>
+  const form = document.getElementById('transactionForm');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = Object.fromEntries(new FormData(form));
+    
+    // Clear previous feedback
+    document.getElementById('form-feedback').textContent = '';
+    
+    const result = ValidationEngine.validate(formData);
+    
+    if (result.isValid) {
+      document.getElementById('form-feedback').textContent = 'Transaction saved (simulated).';
+      form.reset();
+    } else {
+      ValidationEngine.renderErrors(result.errors, form);
+    }
+  });
+  
+  form.addEventListener('reset', function() {
+    form.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+    document.getElementById('form-feedback').textContent = '';
+  });
+</script>

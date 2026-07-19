@@ -1,0 +1,7 @@
+﻿feat(transaction): implement reusable client-side validation
+
+- Create reusable ValidationEngine module
+- Separate validation logic from UI rendering
+- Integrate validation into TransactionEntry form
+- Add unit tests for validation logic
+- Update UI architecture documentation

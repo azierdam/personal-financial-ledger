@@ -1,0 +1,42 @@
+<script>
+/**
+ * Reusable client-side validation logic.
+ */
+const ValidationEngine = {
+  // Domain logic
+  validate: function(formData) {
+    const errors = {};
+    
+    // Required fields check
+    ['date', 'amount', 'description', 'category', 'account'].forEach(field => {
+      if (!formData[field]) {
+        errors[field] = 'This field is required.';
+      }
+    });
+    
+    // Amount check
+    if (formData.amount && parseFloat(formData.amount) <= 0) {
+      errors.amount = 'Amount must be greater than zero.';
+    }
+    
+    return {
+      isValid: Object.keys(errors).length === 0,
+      errors: errors
+    };
+  },
+  
+  // UI logic
+  renderErrors: function(errors, formElement) {
+    // Clear previous errors
+    formElement.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+    
+    // Render new errors
+    for (const field in errors) {
+      const errorEl = formElement.querySelector(`#${field}-error`);
+      if (errorEl) {
+        errorEl.textContent = errors[field];
+      }
+    }
+  }
+};
+</script>
