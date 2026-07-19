@@ -94,3 +94,22 @@ After cleanup is complete, development will continue with the Expense Transactio
 # Need More Information?
 
 Refer to the documentation under the `docs/` directory for detailed project information and implementation guidance.
+
+---
+
+## AI Engineering
+
+This repository follows the AI Engineering Playbook. AI contributors MUST complete repository analysis before implementation.
+
+### Recommended Reading Order
+1. START_HERE.md
+2. README.md
+3. docs/INDEX.md
+4. docs/03-Engineering/AI_ENGINEERING_CONSTITUTION.md
+5. docs/03-Engineering/AI_WORKFLOW.md
+6. docs/03-Engineering/AI_IMPLEMENTATION_STANDARD.md
+7. docs/03-Engineering/AI_REPOSITORY_AWARENESS.md
+8. docs/03-Engineering/AI_CHECKLIST.md
+9. docs/01-Architecture/
+10. Relevant source code
+11. Current implementation task
