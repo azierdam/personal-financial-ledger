@@ -67,11 +67,9 @@
     },
     {
       "label": "Engineering: Prepare Gemini",
-      "dependsOn": [
-        "Engineering: Doctor",
-        "Engineering: Context",
-        "Engineering: Prompt (Gemini)"
-      ],
+      "type": "shell",
+      "command": "python -m tools.engineering prepare gemini",
+      "presentation": { "reveal": "always" },
       "group": {
         "kind": "build",
         "isDefault": false
