@@ -1,4 +1,4 @@
-Implementation Summary: Milestone C1.2
-- **Task:** C1.2 Repository Contracts
+Implementation Summary: Milestone C2.1
+- **Task:** C2.1 Google Sheets Repository
 - **Status:** Complete
-- **Summary:** Established Account and Category repository interfaces, enforced Transaction immutability, and documented the Repository Contract Standard.
+- **Summary:** Implemented Google Sheets infrastructure layer, including SheetsGateway, explicit Mappers, and concrete Repository adapters.

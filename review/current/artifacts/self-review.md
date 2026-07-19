@@ -1,6 +1,7 @@
-Self Review: C1.2
-- [x] AccountRepository/CategoryRepository interfaces defined
-- [x] TransactionRepository excludes update/delete
-- [x] Repository Contract Standard documented
-- [x] Unit tests verify contract adherence
-- [x] Engineering Handover Package generated
+Self Review: C2.1
+- [x] SheetsGateway implemented
+- [x] Explicit mappers created
+- [x] Concrete repositories implemented
+- [x] Error cases documented
+- [x] Integration tests verify storage interaction
+- [x] Domain layer unchanged

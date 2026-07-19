@@ -1,37 +1,40 @@
-# HANDOVER.md: Milestone C1.2 Repository Contracts
-- **Sprint:** C1
-- **Objective:** Establish storage-agnostic repository contracts.
+# HANDOVER.md: Milestone C2.1 Google Sheets Repository
+- **Sprint:** C2
+- **Objective:** Establish Google Sheets infrastructure adapters.
 - **Implementation Status:** 
   - [x] Repository Analysis approved
   - [x] Implementation completed
   - [x] Tests passing
   - [x] Engineering Handover Package generated
   - [x] Technical Lead approval obtained
-  - [x] Product Owner approval obtained (Approved for merge)
 
 ## Changed Files
-- src/repository/AccountRepository.gs
-- src/repository/CategoryRepository.gs
-- src/repository/TransactionRepository.gs
-- test/unit/RepositoryContractTest.gs
-- docs/03-Engineering/Repository_Contract_Standard.md
+- src/infrastructure/sheets/SheetsGateway.gs
+- src/infrastructure/sheets/mappers/AccountMapper.gs
+- src/infrastructure/sheets/mappers/CategoryMapper.gs
+- src/infrastructure/sheets/mappers/TransactionMapper.gs
+- src/infrastructure/sheets/repositories/SheetsAccountRepository.gs
+- src/infrastructure/sheets/repositories/SheetsCategoryRepository.gs
+- src/infrastructure/sheets/repositories/SheetsTransactionRepository.gs
+- test/integration/SheetsRepositoryTest.gs
+- docs/03-Engineering/Infrastructure_Architecture.md
 
 ## Architecture Summary
-- Established standardized Repository Contract Standard.
-- TransactionRepository enforces immutability (no update/delete).
-- Account/CategoryRepositories allow update for evolving configuration.
+- Established `SheetsGateway` for SpreadsheetApp isolation.
+- Implemented explicit Mappers for entity transformation.
+- Concrete repositories implemented adhering to Repository Contract Standard.
 
 ## Test Summary
-- Contract adherence tests pass (CRUD method existence/exclusion).
+- Integration tests confirm CRUD works via mock gateway.
 
 ## Risks
-- None. Interface-only changes are low risk.
+- Performance with high I/O (deferred).
 
 ## Self Assessment
 - All acceptance criteria met. Storage-agnosticism maintained.
 
 ## Links
-- [Repository Analysis](docs/04-Planning/C1.2_Analysis.md)
-- [Implementation Plan](docs/04-Planning/C1.2_Plan.md)
+- [Repository Analysis](docs/04-Planning/C2.1_Analysis.md)
+- [Implementation Plan](docs/04-Planning/C2.1_Plan.md)
 - [Artifacts](review/current/artifacts/)
 - [Snapshots](review/current/snapshots/)

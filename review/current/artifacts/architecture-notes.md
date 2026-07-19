@@ -1,4 +1,4 @@
-Architectural Notes: C1.2
-- Standardized repository contract: [EntityName]Repository.
-- TransactionRepository immutable (only save, findById, findAll).
-- Account/CategoryRepository mutable (save, findById, findAll, update).
+Architectural Notes: C2.1
+- SheetsGateway abstracts SpreadsheetApp.
+- Explicit Mappers separate domain from row arrays.
+- Infrastructure-specific errors defined in Errors.gs.

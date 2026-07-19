@@ -1,6 +1,6 @@
-feat(repository): standardize storage-agnostic repository contracts
+feat(infrastructure): implement Google Sheets repository adapters
 
-- Define AccountRepository and CategoryRepository interfaces
-- Remove 'update' from TransactionRepository to enforce immutability
-- Document Repository Contract Standard
-- Verify contract adherence with unit tests
+- Create SheetsGateway to abstract SpreadsheetApp
+- Implement explicit Mapper classes for domain entities
+- Create concrete repository adapters for Sheets
+- Add custom infrastructure error handling
