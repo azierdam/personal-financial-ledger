@@ -1,6 +1,5 @@
-feat(repository): standardize storage-agnostic repository contracts
+feat(service): implement transaction persistence flow
 
-- Define AccountRepository and CategoryRepository interfaces
-- Remove 'update' from TransactionRepository to enforce immutability
-- Document Repository Contract Standard
-- Verify contract adherence with unit tests
+- Refactor TransactionService to use TransactionRepository via DI
+- Delegate persistence operations to repository interface
+- Add integration tests for persistence flow

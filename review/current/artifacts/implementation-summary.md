@@ -1,4 +1,4 @@
-Implementation Summary: Milestone C1.2
-- **Task:** C1.2 Repository Contracts
+Implementation Summary: Milestone C2.2
+- **Task:** C2.2 Transaction Persistence Flow
 - **Status:** Complete
-- **Summary:** Established Account and Category repository interfaces, enforced Transaction immutability, and documented the Repository Contract Standard.
+- **Summary:** Refactored TransactionService for repository-based persistence via dependency injection and added integration tests.

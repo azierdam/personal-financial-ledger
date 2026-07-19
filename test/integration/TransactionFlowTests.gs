@@ -1,21 +1,23 @@
 /**
- * Simple Integration Tests
+ * Integration tests for Transaction persistence flow.
  */
-function runTests() {
-  const tests = [
-    { name: 'Valid Transaction', input: '/add 50000 Lunch', expected: 200 },
-    { name: 'Invalid Command', input: '/wrong 50000 Lunch', expected: 500 },
-    { name: 'Invalid Amount', input: '/add abc Lunch', expected: 500 },
-    { name: 'Missing Description', input: '/add 50000', expected: 500 }
-  ];
-
-  tests.forEach(test => {
-    try {
-      const response = TelegramAdapter.handleWebhook({ message: { text: test.input } });
-      // In a real environment we'd check ContentService output
-      console.log('Test: ' + test.name + ' - Passed');
-    } catch (e) {
-      console.error('Test: ' + test.name + ' - Failed: ' + e.message);
-    }
-  });
+function testTransactionPersistenceFlow() {
+  // Mock Repository
+  const mockRepo = {
+    savedTransaction: null,
+    save: function(t) { this.savedTransaction = t; },
+    findById: function(id) { return null; },
+    findAll: function() { return []; }
+  };
+  
+  const service = new TransactionService(mockRepo);
+  const request = new TransactionRequest('command', 100, 'Lunch', TransactionType.EXPENSE);
+  const account = new Account('acc1', 'Cash');
+  const category = new Category('cat1', 'Food');
+  
+  const transaction = service.addTransaction(request, account, category);
+  
+  if (mockRepo.savedTransaction !== transaction) {
+    throw new Error('Transaction was not saved to repository');
+  }
 }
