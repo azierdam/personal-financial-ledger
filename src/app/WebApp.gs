@@ -2,25 +2,26 @@
  * Navigation configuration.
  */
 const PAGES = [
-  { id: 'dashboard', label: 'Dashboard' },
-  { id: 'transactions', label: 'Transactions' },
-  { id: 'categories', label: 'Categories' },
-  { id: 'accounts', label: 'Accounts' },
-  { id: 'reports', label: 'Reports' },
-  { id: 'settings', label: 'Settings' }
+  { id: 'dashboard', label: 'Dashboard', template: 'Dashboard' },
+  { id: 'transactions', label: 'Transactions', template: 'Transactions' },
+  { id: 'transactionEntry', label: 'New Transaction', template: 'TransactionEntry' },
+  { id: 'categories', label: 'Categories', template: 'Categories' },
+  { id: 'accounts', label: 'Accounts', template: 'Accounts' },
+  { id: 'reports', label: 'Reports', template: 'Reports' },
+  { id: 'settings', label: 'Settings', template: 'Settings' }
 ];
 
 /**
  * WebApp handles the initial web request and renders the main UI template.
  */
 function doGet(e) {
-  const page = e.parameter.page || 'dashboard';
+  const pageId = e.parameter.page || 'dashboard';
   
   // Validate page
-  const pageConfig = PAGES.find(p => p.id === page) || PAGES[0];
+  const pageConfig = PAGES.find(p => p.id === pageId) || PAGES[0];
   
   const template = HtmlService.createTemplateFromFile('src/ui/Index');
-  template.page = pageConfig.id;
+  template.page = pageConfig;
   template.pages = PAGES;
   
   return template

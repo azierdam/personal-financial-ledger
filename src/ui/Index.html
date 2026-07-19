@@ -10,7 +10,7 @@
     <div class="app-container">
       <?!= include('src/ui/Navigation'); ?>
       <main class="app-main" id="content">
-        <?!= include('src/ui/' + page.charAt(0).toUpperCase() + page.slice(1)); ?>
+        <?!= include('src/ui/' + page.template); ?>
       </main>
     </div>
   </body>

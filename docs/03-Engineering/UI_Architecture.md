@@ -5,15 +5,16 @@ The PFL application uses a server-side rendered UI approach using Google Apps Sc
 
 ## Structure
 - `src/ui/`: Contains all HTML templates and styles.
-- `src/app/WebApp.gs`: Application entry point, routing logic, and helper functions.
+- `src/app/WebApp.gs`: Application entry point, routing logic, and configuration.
 - `Index.html`: The main entry point shell, integrating partials.
 
 ## Routing
-Routing is handled by passing a `page` query parameter to the `doGet` function (e.g., `?page=transactions`).
-The `WebApp.gs` validates the requested page against the `PAGES` configuration array and renders the corresponding template partial.
+Routing is handled by passing a `page` query parameter to the `doGet` function (e.g., `?page=transactionEntry`).
+The `WebApp.gs` validates the requested page against the `PAGES` configuration array, which maps `id` to an explicit `template` name, and renders the corresponding template partial.
 
 ## Pages
-- `Dashboard.html`: Default view.
+- `Dashboard.html`
+- `TransactionEntry.html`: Form for recording new financial transactions.
 - `Transactions.html`
 - `Categories.html`
 - `Accounts.html`

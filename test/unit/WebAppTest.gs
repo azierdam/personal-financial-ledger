@@ -16,10 +16,10 @@ function testWebAppDoGet() {
 }
 
 function testWebAppRouting() {
-  // Test valid routing
-  const transactionsPage = doGet({parameter: {page: 'transactions'}});
-  if (!transactionsPage) {
-    throw new Error('Failed to load transactions page');
+  // Test valid routing (explicit template)
+  const entryPage = doGet({parameter: {page: 'transactionEntry'}});
+  if (!entryPage) {
+    throw new Error('Failed to load transaction entry page');
   }
   
   // Test invalid routing (should fallback to default - dashboard)
