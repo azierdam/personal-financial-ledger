@@ -46,6 +46,36 @@
         "clear": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Engineering: Doctor",
+      "type": "shell",
+      "command": "python -m tools.engineering doctor",
+      "presentation": { "reveal": "always" }
+    },
+    {
+      "label": "Engineering: Context",
+      "type": "shell",
+      "command": "python -m tools.engineering context",
+      "presentation": { "reveal": "always" }
+    },
+    {
+      "label": "Engineering: Prompt (Gemini)",
+      "type": "shell",
+      "command": "python -m tools.engineering prompt gemini",
+      "presentation": { "reveal": "always" }
+    },
+    {
+      "label": "Engineering: Prepare Gemini",
+      "dependsOn": [
+        "Engineering: Doctor",
+        "Engineering: Context",
+        "Engineering: Prompt (Gemini)"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
     }
   ]
 }
