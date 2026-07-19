@@ -1,0 +1,11 @@
+# Ignore files not needed for deployment
+**/*.md
+**/.temp/
+**/review/
+**/scripts/
+**/test/
+**/.vscode/
+.git/
+package.json
+package-lock.json
+LICENSE

@@ -1,19 +1,24 @@
 {
   "name": "personalfinance",
   "version": "1.0.0",
-  "description": "🚧 Work in Progress",
+  "description": "Production-quality personal finance application",
   "main": "index.js",
   "directories": {
     "doc": "docs",
     "test": "test"
   },
-"scripts": {
-  "start-day": "node scripts/start-day.js",
-  "doctor": "node scripts/doctor.js",
-  "task": "node scripts/task.js",
-  "review": "node scripts/review.js",
-  "sync": "node scripts/sync.js"
-},
+  "scripts": {
+    "doctor": "node scripts/doctor.js",
+    "test": "node scripts/test-runner.js",
+    "lint": "eslint src/**",
+    "push": "clasp push",
+    "deploy": "clasp deploy"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "gas-fakes": "^1.0.0",
+    "eslint": "^8.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azierdam/personal-financial-ledger.git"
