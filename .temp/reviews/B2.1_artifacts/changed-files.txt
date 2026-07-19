@@ -1,0 +1,6 @@
+src/app/WebApp.gs
+src/ui/Index.html
+src/ui/TransactionEntry.html
+src/ui/Styles.html
+docs/03-Engineering/UI_Architecture.md
+test/unit/WebAppTest.gs

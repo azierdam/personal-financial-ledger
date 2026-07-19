@@ -1,0 +1,4 @@
+package.json
+.claspignore
+docs/03-Engineering/plans/E1_Dev_Environment.md
+docs/03-Engineering/ENGINEERING_ENVIRONMENT.md
