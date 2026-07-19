@@ -8,6 +8,14 @@ This document is implementation-independent.
 
 ---
 
+# Future Aggregate: Ledger
+The Ledger is the future root aggregate containing:
+- Accounts
+- Categories
+- Transactions
+
+---
+
 # Core Principles
 
 - Every financial event is recorded as a Transaction.

@@ -4,16 +4,17 @@
  */
 class Transaction {
   /**
-   * @param {string} id
+   * @param {string} transactionId
    * @param {Date} date
    * @param {Money} amount
    * @param {string} type - TransactionType
    * @param {Category} category
+   * @param {Account} account
    * @param {string} description
    */
-  constructor(id, date, amount, type, category, description) {
-    if (typeof id !== 'string' || id.trim().length === 0) {
-      throw new Error('Transaction id must be a non-empty string.');
+  constructor(transactionId, date, amount, type, category, account, description) {
+    if (typeof transactionId !== 'string' || transactionId.trim().length === 0) {
+      throw new Error('TransactionId must be a non-empty string.');
     }
     if (!(date instanceof Date) || isNaN(date.getTime())) {
       throw new Error('Transaction date must be a valid Date object.');
@@ -27,16 +28,20 @@ class Transaction {
     if (!(category instanceof Category)) {
       throw new Error('Transaction category must be an instance of Category.');
     }
+    if (!(account instanceof Account)) {
+      throw new Error('Transaction account must be an instance of Account.');
+    }
     if (typeof description !== 'string') {
       throw new Error('Transaction description must be a string.');
     }
 
-    this.id = id;
+    this.transactionId = transactionId.trim();
     this.date = date;
     this.amount = amount;
     this.type = type;
     this.category = category;
-    this.description = description;
+    this.account = account;
+    this.description = description.trim();
     Object.freeze(this);
   }
 }

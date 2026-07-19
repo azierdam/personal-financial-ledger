@@ -1,13 +1,31 @@
 /**
- * Abstract base class for Transaction repositories.
- * Concrete implementations must extend this class and implement its methods.
+ * Defines the contract for Transaction storage.
+ * Storage-agnostic interface.
  */
-class TransactionRepository {
+interface TransactionRepository {
   /**
-   * Saves a transaction.
    * @param {Transaction} transaction
    */
-  save(transaction) {
-    throw new Error('Method not implemented.');
-  }
+  save(transaction);
+  
+  /**
+   * @param {string} transactionId
+   * @return {Transaction|null}
+   */
+  findById(transactionId);
+  
+  /**
+   * @return {Transaction[]}
+   */
+  findAll();
+  
+  /**
+   * @param {Transaction} transaction
+   */
+  update(transaction);
+  
+  /**
+   * @param {string} transactionId
+   */
+  delete(transactionId);
 }

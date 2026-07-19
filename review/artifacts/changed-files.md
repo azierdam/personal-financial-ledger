@@ -1,5 +1,6 @@
-﻿src/ui/TransactionEntry.html
-src/ui/Validation.html
-src/app/ValidationEngine.gs
-test/unit/ValidationTest.gs
-docs/03-Engineering/UI_Architecture.md
+﻿src/domain/Account.gs
+src/domain/Category.gs
+src/domain/Transaction.gs
+src/repository/TransactionRepository.gs
+docs/01-Architecture/Domain_Model.md
+test/unit/TransactionDomainTest.gs

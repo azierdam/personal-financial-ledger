@@ -1,4 +1,4 @@
-﻿Review Package: Milestone B2.2 - Transaction Entry Validation
-- **Task:** B2.2 Transaction Entry Validation
+﻿Review Package: Milestone C1.1 - Transaction Domain Model
+- **Task:** C1.1 Transaction Domain Model
 - **Status:** Complete
-- **Summary:** Implemented reusable client-side validation logic and integrated it into the Transaction Entry form.
+- **Summary:** Refined domain entities with stable identifiers, implemented business-oriented repository interfaces, and added domain invariants.

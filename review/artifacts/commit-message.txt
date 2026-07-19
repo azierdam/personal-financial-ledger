@@ -1,7 +1,7 @@
-﻿feat(transaction): implement reusable client-side validation
+﻿feat(domain): establish storage-agnostic transaction domain model
 
-- Create reusable ValidationEngine module
-- Separate validation logic from UI rendering
-- Integrate validation into TransactionEntry form
-- Add unit tests for validation logic
-- Update UI architecture documentation
+- Create Account entity
+- Add identifiers to Category and Transaction entities
+- Implement TransactionRepository business interface
+- Add lightweight domain invariants
+- Document Ledger aggregate concept

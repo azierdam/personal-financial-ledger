@@ -1,3 +1,3 @@
-﻿Validation Results: B2.2
+﻿Validation Results: C1.1
 - Tests: Passed
-- UI Validation: Manual verification successful (errors appear/clear, submission blocked/allowed).
+- Entity invariants: Validated
