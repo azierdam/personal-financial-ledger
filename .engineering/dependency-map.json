@@ -18,6 +18,14 @@
   "START_HERE.md": [],
   "appsscript.json": [],
   "archive/obsolete/README-archive.md": [],
+  "archive/obsolete/architecture-notes.md": [],
+  "archive/obsolete/changed-files.md": [],
+  "archive/obsolete/checklist.md": [],
+  "archive/obsolete/commit-message.txt": [],
+  "archive/obsolete/gemini-handover.md": [],
+  "archive/obsolete/implementation-summary.md": [],
+  "archive/obsolete/self-review.md": [],
+  "archive/obsolete/validation.md": [],
   "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md": [],
   "archive/planning/FEATURE-001-Domain-Model/README.md": [],
   "archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.drawio": [],
@@ -121,6 +129,7 @@
   "docs/03-Engineering/DEFINITION_OF_DONE.md": [],
   "docs/03-Engineering/ENGINEERING_ENVIRONMENT.md": [],
   "docs/03-Engineering/ENGINEERING_WORKFLOW.md": [],
+  "docs/03-Engineering/ENGINEERING_WORKFLOW_V2.md": [],
   "docs/03-Engineering/FEATURE_TEMPLATE.md": [],
   "docs/03-Engineering/Google_Sheets_Blueprint_v1.md": [],
   "docs/03-Engineering/Infrastructure_Architecture.md": [],
@@ -172,13 +181,8 @@
   "docs/project/SPRINT_TRACKER.md": [],
   "package.json": [],
   "pull-request-template.md": [],
-  "review/artifacts/architecture-notes.md": [],
-  "review/artifacts/changed-files.md": [],
-  "review/artifacts/checklist.md": [],
   "review/artifacts/commit-message.txt": [],
-  "review/artifacts/gemini-handover.md": [],
   "review/artifacts/implementation-summary.md": [],
-  "review/artifacts/self-review.md": [],
   "review/artifacts/validation.md": [],
   "review/current/HANDOVER.md": [],
   "review/current/artifacts/architecture-notes.md": [],
@@ -201,6 +205,12 @@
   "review/package_test_final/self-review.md": [],
   "review/package_test_final/technical-lead-approval.md": [],
   "review/package_test_final/validation.md": [],
+  "review/package_test_final2/gemini-handover.md": [],
+  "review/package_test_final2/implementation-summary.md": [],
+  "review/package_test_final2/manifest.json": [],
+  "review/package_test_final2/self-review.md": [],
+  "review/package_test_final2/technical-lead-approval.md": [],
+  "review/package_test_final2/validation.md": [],
   "review/review-B2.2.zip": [],
   "review/review-C1.1.zip": [],
   "review/review-package-chatgpt.zip": [],
@@ -345,7 +355,7 @@
     "deque,",
     "json",
     "os",
-    "repository"
+    "repository,"
   ],
   "tools/engineering/core/markdown.py": [],
   "tools/engineering/core/output.py": [
@@ -355,8 +365,7 @@
     "json",
     "manifest,",
     "os",
-    "shutil",
-    "zipfile"
+    "shutil"
   ],
   "tools/engineering/core/repository.py": [
     "os",
@@ -368,6 +377,11 @@
     "os",
     "re",
     "repository"
+  ],
+  "tools/engineering/core/review_generator.py": [
+    "datetime",
+    "json",
+    "os"
   ],
   "tools/engineering/templates/context.md": [],
   "tools/engineering/templates/prompt.md": [],

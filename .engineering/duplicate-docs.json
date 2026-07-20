@@ -246,6 +246,13 @@
   },
   {
     "files": [
+      "archive/obsolete/gemini-handover.md",
+      "docs/03-Engineering/templates/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
       "assets/.gitkeep",
       "docs/04-Planning/.gitkeep"
     ],
@@ -281,8 +288,22 @@
   },
   {
     "files": [
-      "docs/03-Engineering/templates/gemini-handover.md",
-      "review/artifacts/gemini-handover.md"
+      "archive/obsolete/commit-message.txt",
+      "review/artifacts/commit-message.txt"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/implementation-summary.md",
+      "review/artifacts/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/validation.md",
+      "review/artifacts/validation.md"
     ],
     "reason": "Same filename"
   },
@@ -295,49 +316,49 @@
   },
   {
     "files": [
-      "review/artifacts/architecture-notes.md",
+      "archive/obsolete/architecture-notes.md",
       "review/current/artifacts/architecture-notes.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "review/artifacts/changed-files.md",
+      "archive/obsolete/changed-files.md",
       "review/current/artifacts/changed-files.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "review/artifacts/checklist.md",
+      "archive/obsolete/checklist.md",
       "review/current/artifacts/checklist.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "review/artifacts/commit-message.txt",
+      "archive/obsolete/commit-message.txt",
       "review/current/artifacts/commit-message.txt"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "docs/03-Engineering/templates/gemini-handover.md",
+      "archive/obsolete/gemini-handover.md",
       "review/current/artifacts/gemini-handover.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "review/artifacts/implementation-summary.md",
+      "archive/obsolete/implementation-summary.md",
       "review/current/artifacts/implementation-summary.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "review/artifacts/self-review.md",
+      "archive/obsolete/self-review.md",
       "review/current/artifacts/self-review.md"
     ],
     "reason": "Same filename"
@@ -351,14 +372,14 @@
   },
   {
     "files": [
-      "review/artifacts/validation.md",
+      "archive/obsolete/validation.md",
       "review/current/artifacts/validation.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "review/artifacts/architecture-notes.md",
+      "archive/obsolete/architecture-notes.md",
       "review/package_test_final/architecture-notes.md"
     ],
     "reason": "Same filename"
@@ -372,7 +393,7 @@
   },
   {
     "files": [
-      "review/artifacts/changed-files.md",
+      "archive/obsolete/changed-files.md",
       "review/package_test_final/changed-files.md"
     ],
     "reason": "Same filename"
@@ -386,7 +407,7 @@
   },
   {
     "files": [
-      "review/artifacts/checklist.md",
+      "archive/obsolete/checklist.md",
       "review/package_test_final/checklist.md"
     ],
     "reason": "Same filename"
@@ -400,14 +421,14 @@
   },
   {
     "files": [
-      "docs/03-Engineering/templates/gemini-handover.md",
+      "archive/obsolete/gemini-handover.md",
       "review/package_test_final/gemini-handover.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "review/artifacts/implementation-summary.md",
+      "archive/obsolete/implementation-summary.md",
       "review/package_test_final/implementation-summary.md"
     ],
     "reason": "Same filename"
@@ -421,7 +442,7 @@
   },
   {
     "files": [
-      "review/artifacts/self-review.md",
+      "archive/obsolete/self-review.md",
       "review/package_test_final/self-review.md"
     ],
     "reason": "Same filename"
@@ -435,8 +456,50 @@
   },
   {
     "files": [
-      "review/artifacts/validation.md",
+      "archive/obsolete/validation.md",
       "review/package_test_final/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/gemini-handover.md",
+      "review/package_test_final2/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/implementation-summary.md",
+      "review/package_test_final2/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/package_test_final/manifest.json",
+      "review/package_test_final2/manifest.json"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/self-review.md",
+      "review/package_test_final2/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/current/technical-lead-approval.md",
+      "review/package_test_final2/technical-lead-approval.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/validation.md",
+      "review/package_test_final2/validation.md"
     ],
     "reason": "Same filename"
   },

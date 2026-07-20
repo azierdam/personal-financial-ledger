@@ -1,7 +1,7 @@
 import json
 import os
 from collections import deque, defaultdict
-from ..core import repository
+from ..core import repository, approval
 
 def topological_sort(nodes, edges):
     adj = defaultdict(list)
@@ -27,12 +27,15 @@ def topological_sort(nodes, edges):
 
 def generate_manifest(root):
     # Load inputs
+    approval_file = os.path.join(root, "review", "current", "technical-lead-approval.md")
+    approval_data = approval.parse(approval_file) if os.path.exists(approval_file) else {}
+    sprint_id = approval_data.get("Sprint", "Unknown").strip()
+
     with open(os.path.join(root, '.engineering', 'knowledge', 'repository-graph.json'), 'r', encoding='utf-8') as f:
         graph = json.load(f)
     
     # Simple heuristic: Task per file modification (simplified for foundation)
     tasks = []
-    nodes = {n['id']: n for n in graph['nodes']}
     
     # Task mapping (deterministic based on path)
     for n in graph['nodes']:
@@ -53,8 +56,6 @@ def generate_manifest(root):
             
     # Topological sort of tasks based on file dependency edges
     task_ids = [t['id'] for t in tasks]
-    # Simple dependency mapping: tasks depend on target nodes
-    # For this foundation, just use file dependencies
     
     order = [t['id'] for t in tasks] # Basic deterministic ordering
     
@@ -62,7 +63,7 @@ def generate_manifest(root):
     manifest = {
         "version": "1.0",
         "generated_at": "2026-07-20T21:30:00Z",
-        "milestone": "1.7",
+        "milestone": sprint_id,
         "tasks": tasks
     }
     
@@ -78,4 +79,4 @@ def generate_manifest(root):
     save({"tasks": len(tasks), "dependencies": 0}, 'execution-statistics.json')
     
     with open(os.path.join(output_dir, 'execution-summary.md'), 'w', encoding='utf-8') as f:
-        f.write("# Execution Summary\n\nMilestone: 1.7\nTask Count: " + str(len(tasks)))
+        f.write(f"# Execution Summary\n\nMilestone: {sprint_id}\nTask Count: {len(tasks)}")

@@ -104,6 +104,54 @@
       "type": "documentation"
     },
     {
+      "file_name": "architecture-notes.md",
+      "id": "archive/obsolete/architecture-notes.md",
+      "path": "archive/obsolete/architecture-notes.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "changed-files.md",
+      "id": "archive/obsolete/changed-files.md",
+      "path": "archive/obsolete/changed-files.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "checklist.md",
+      "id": "archive/obsolete/checklist.md",
+      "path": "archive/obsolete/checklist.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "commit-message.txt",
+      "id": "archive/obsolete/commit-message.txt",
+      "path": "archive/obsolete/commit-message.txt",
+      "type": "source"
+    },
+    {
+      "file_name": "gemini-handover.md",
+      "id": "archive/obsolete/gemini-handover.md",
+      "path": "archive/obsolete/gemini-handover.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "implementation-summary.md",
+      "id": "archive/obsolete/implementation-summary.md",
+      "path": "archive/obsolete/implementation-summary.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "self-review.md",
+      "id": "archive/obsolete/self-review.md",
+      "path": "archive/obsolete/self-review.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "validation.md",
+      "id": "archive/obsolete/validation.md",
+      "path": "archive/obsolete/validation.md",
+      "type": "documentation"
+    },
+    {
       "file_name": "CHANGELOG.md",
       "id": "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
       "path": "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
@@ -722,6 +770,12 @@
       "type": "documentation"
     },
     {
+      "file_name": "ENGINEERING_WORKFLOW_V2.md",
+      "id": "docs/03-Engineering/ENGINEERING_WORKFLOW_V2.md",
+      "path": "docs/03-Engineering/ENGINEERING_WORKFLOW_V2.md",
+      "type": "documentation"
+    },
+    {
       "file_name": "FEATURE_TEMPLATE.md",
       "id": "docs/03-Engineering/FEATURE_TEMPLATE.md",
       "path": "docs/03-Engineering/FEATURE_TEMPLATE.md",
@@ -980,45 +1034,15 @@
       "type": "documentation"
     },
     {
-      "file_name": "architecture-notes.md",
-      "id": "review/artifacts/architecture-notes.md",
-      "path": "review/artifacts/architecture-notes.md",
-      "type": "documentation"
-    },
-    {
-      "file_name": "changed-files.md",
-      "id": "review/artifacts/changed-files.md",
-      "path": "review/artifacts/changed-files.md",
-      "type": "documentation"
-    },
-    {
-      "file_name": "checklist.md",
-      "id": "review/artifacts/checklist.md",
-      "path": "review/artifacts/checklist.md",
-      "type": "documentation"
-    },
-    {
       "file_name": "commit-message.txt",
       "id": "review/artifacts/commit-message.txt",
       "path": "review/artifacts/commit-message.txt",
       "type": "source"
     },
     {
-      "file_name": "gemini-handover.md",
-      "id": "review/artifacts/gemini-handover.md",
-      "path": "review/artifacts/gemini-handover.md",
-      "type": "documentation"
-    },
-    {
       "file_name": "implementation-summary.md",
       "id": "review/artifacts/implementation-summary.md",
       "path": "review/artifacts/implementation-summary.md",
-      "type": "documentation"
-    },
-    {
-      "file_name": "self-review.md",
-      "id": "review/artifacts/self-review.md",
-      "path": "review/artifacts/self-review.md",
       "type": "documentation"
     },
     {
@@ -1151,6 +1175,42 @@
       "file_name": "validation.md",
       "id": "review/package_test_final/validation.md",
       "path": "review/package_test_final/validation.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "gemini-handover.md",
+      "id": "review/package_test_final2/gemini-handover.md",
+      "path": "review/package_test_final2/gemini-handover.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "implementation-summary.md",
+      "id": "review/package_test_final2/implementation-summary.md",
+      "path": "review/package_test_final2/implementation-summary.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "manifest.json",
+      "id": "review/package_test_final2/manifest.json",
+      "path": "review/package_test_final2/manifest.json",
+      "type": "configuration"
+    },
+    {
+      "file_name": "self-review.md",
+      "id": "review/package_test_final2/self-review.md",
+      "path": "review/package_test_final2/self-review.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "technical-lead-approval.md",
+      "id": "review/package_test_final2/technical-lead-approval.md",
+      "path": "review/package_test_final2/technical-lead-approval.md",
+      "type": "documentation"
+    },
+    {
+      "file_name": "validation.md",
+      "id": "review/package_test_final2/validation.md",
+      "path": "review/package_test_final2/validation.md",
       "type": "documentation"
     },
     {
@@ -1643,6 +1703,12 @@
       "file_name": "repository_audit.py",
       "id": "tools/engineering/core/repository_audit.py",
       "path": "tools/engineering/core/repository_audit.py",
+      "type": "source"
+    },
+    {
+      "file_name": "review_generator.py",
+      "id": "tools/engineering/core/review_generator.py",
+      "path": "tools/engineering/core/review_generator.py",
       "type": "source"
     },
     {

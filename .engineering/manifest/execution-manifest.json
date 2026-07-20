@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-07-20T21:30:00Z",
-  "milestone": "1.7",
+  "milestone": "D1.8",
   "tasks": [
     {
       "dependencies": [],
@@ -37,6 +37,26 @@
       ],
       "risk": "Low",
       "title": "Implement LICENSE",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/obsolete/commit-message.txt",
+      "documents": [],
+      "files": [
+        "archive/obsolete/commit-message.txt"
+      ],
+      "id": "TASK-archive-obsolete-commit-message-txt",
+      "objective": "Refactor/Implement archive/obsolete/commit-message.txt",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement commit-message.txt",
       "validation": [
         "audit",
         "package"
@@ -1797,6 +1817,26 @@
       ],
       "risk": "Low",
       "title": "Implement repository_audit.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/review_generator.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/review_generator.py"
+      ],
+      "id": "TASK-tools-engineering-core-review_generator-py",
+      "objective": "Refactor/Implement tools/engineering/core/review_generator.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement review_generator.py",
       "validation": [
         "audit",
         "package"

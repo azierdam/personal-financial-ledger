@@ -3,6 +3,7 @@
   "nodes": [
     "TASK--claspignore",
     "TASK-LICENSE",
+    "TASK-archive-obsolete-commit-message-txt",
     "TASK-archive-planning-FEATURE-001-Domain-Model-diagrams-domain-model-drawio",
     "TASK-archive-planning-FEATURE-001-Domain-Model-diagrams-domain-model-mmd",
     "TASK-archive-planning-FEATURE-001-Domain-Model-diagrams-entity-lifecycle-mmd",
@@ -91,6 +92,7 @@
     "TASK-tools-engineering-core-packaging-py",
     "TASK-tools-engineering-core-repository-py",
     "TASK-tools-engineering-core-repository_audit-py",
+    "TASK-tools-engineering-core-review_generator-py",
     "TASK-tools-engineering-tests-test_audit-py",
     "TASK-tools-engineering-tests-test_parser-py",
     "TASK-tools-engineering-tests-test_safety-py",
