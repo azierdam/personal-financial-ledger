@@ -6,19 +6,23 @@ Technical Lead Decision: 🟡 Approved with Refinements
 
 ---
 
+# Sprint
+
+D1.1
+
+---
+
 # Objective
 
-Implement the first functional Transaction Listing page.
+Implement the first Transaction Listing page.
 
-This milestone delivers the first end-to-end user-visible feature by displaying persisted transactions through the existing service layer.
+This milestone delivers the first user-visible feature by displaying stored transactions using the existing service layer.
 
 ---
 
 # Architecture
 
-The implementation must preserve the existing layered architecture.
-
-```text
+```
 Transactions.html
         │
         ▼
@@ -34,17 +38,20 @@ TransactionRepository
 GoogleSheetsTransactionRepository
 ```
 
+The UI must consume TransactionService only.
+
 ---
 
 # Scope
 
 Implement:
 
-- Transaction Listing page
-- UI → WebApp integration
-- TransactionService integration
+- Transactions.html page
+- WebApp endpoint for retrieving transactions
+- Integration with TransactionService
+- Basic transaction table
 - Integration tests
-- Documentation updates (if required)
+- Documentation updates where necessary
 
 ---
 
@@ -56,31 +63,30 @@ The UI must never:
 - instantiate repositories
 - contain business logic
 
-Use the existing TransactionService.
-
 Do not modify repository architecture.
-
-Do not introduce reporting logic.
 
 Do not implement:
 
 - edit
 - delete
 - filtering
+- searching
 - sorting
 - pagination
-- dashboard
 - reports
+- dashboard
+
+Keep the implementation focused on listing transactions only.
 
 ---
 
 # Acceptance Criteria
 
-The milestone is complete when:
+The sprint is complete when:
 
 - Transactions page displays all stored transactions.
-- Data is retrieved through TransactionService only.
-- Architecture boundaries remain intact.
+- Data flows through TransactionService.
+- Repository layer remains unchanged.
 - Integration tests pass.
 - Documentation is synchronized.
 
@@ -91,14 +97,14 @@ The milestone is complete when:
 Generate:
 
 - Engineering Handover Package
-- Validation results
-- Git status
+- Validation Results
+- Git Status
 
 ---
 
 # Conventional Commit
 
-```text
+```
 feat(ui): implement transaction listing page
 ```
 
@@ -106,6 +112,8 @@ feat(ui): implement transaction listing page
 
 # Stop Condition
 
-Do not merge.
+Stop after implementation.
+
+Do not continue to the next sprint.
 
 Wait for Technical Lead review.

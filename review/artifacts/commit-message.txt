@@ -1,5 +1,6 @@
-refactor(cli): align engineering workflow with sprint lifecycle
+fix(cli): correct approval document parser
 
-- Ensure `review/current/` directory exists in `prepare`.
-- Distinguish Working Files from Sprint Artifacts in `README.md`.
-- Enhance logging in `prepare` to clarify workflow.
+- Split by '# ' instead of '## ' to match template.
+- Validate presence of required sections.
+- Handle parsing errors with exit status 1.
+- Add comprehensive unit tests.

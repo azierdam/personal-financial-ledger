@@ -1,11 +1,15 @@
-# Implementation Summary: Engineering CLI Workflow Alignment
+# Implementation Summary: Engineering CLI Parser Fix
 
 ## Changes
-- Updated `tools/engineering/commands/prepare.py` to:
-    - Verify and create `review/current/` directory.
-    - Clearly log working file regeneration.
-- Updated `tools/engineering/README.md` to define Working Files (`.context.md`, `.prompt.md`, `review/current/technical-lead-approval.md`) and Sprint Artifacts (`review/artifacts/*`).
+- Updated `tools/engineering/core/approval.py` to correctly parse the Technical Lead approval template (which uses '# ' for sections).
+- Implemented strict validation for required sections in the approval document.
+- Updated `tools/engineering/commands/prompt.py` to handle parsing errors gracefully with clear user feedback.
+- Enhanced unit tests in `tools/engineering/tests/test_parser.py` to cover successful parsing and error scenarios for missing sections.
 
 ## Validation
-- Verified with `prepare` command execution.
-- Git status confirms all modifications.
+- Verified with current `review/current/technical-lead-approval.md`.
+- Verified parsing error handling when required sections are missing.
+- All unit tests passed.
+
+## Git Status
+- Confirmed modifications to `tools/engineering/core/approval.py`, `tools/engineering/commands/prompt.py`, and `tools/engineering/tests/test_parser.py`.
