@@ -1,4 +1,4 @@
-# Sprint D1.1 — Transaction Listing UI
+# Sprint D1.2 — Transaction Detail View
 
 ## Status
 
@@ -8,22 +8,22 @@ Technical Lead Decision: 🟡 Approved with Refinements
 
 # Sprint
 
-D1.1
+D1.2
 
 ---
 
 # Objective
 
-Implement the first Transaction Listing page.
+Implement the Transaction Detail View.
 
-This milestone delivers the first user-visible feature by displaying stored transactions using the existing service layer.
+This milestone allows users to inspect a single transaction using the existing service layer.
 
 ---
 
 # Architecture
 
 ```
-Transactions.html
+TransactionDetail.html
         │
         ▼
 WebApp.gs
@@ -33,12 +33,9 @@ TransactionService
         │
         ▼
 TransactionRepository
-        │
-        ▼
-GoogleSheetsTransactionRepository
 ```
 
-The UI must consume TransactionService only.
+Maintain the existing layered architecture.
 
 ---
 
@@ -46,12 +43,11 @@ The UI must consume TransactionService only.
 
 Implement:
 
-- Transactions.html page
-- WebApp endpoint for retrieving transactions
-- Integration with TransactionService
-- Basic transaction table
-- Integration tests
-- Documentation updates where necessary
+- TransactionDetail.html
+- WebApp routing for a single transaction
+- TransactionService integration
+- Display complete transaction information
+- Integration tests where required
 
 ---
 
@@ -71,22 +67,18 @@ Do not implement:
 - delete
 - filtering
 - searching
-- sorting
-- pagination
 - reports
 - dashboard
 
-Keep the implementation focused on listing transactions only.
+This sprint is view-only.
 
 ---
 
 # Acceptance Criteria
 
-The sprint is complete when:
-
-- Transactions page displays all stored transactions.
+- A transaction can be displayed by ID.
 - Data flows through TransactionService.
-- Repository layer remains unchanged.
+- Existing architecture remains unchanged.
 - Integration tests pass.
 - Documentation is synchronized.
 
@@ -105,7 +97,7 @@ Generate:
 # Conventional Commit
 
 ```
-feat(ui): implement transaction listing page
+feat(ui): implement transaction detail view
 ```
 
 ---
@@ -113,7 +105,5 @@ feat(ui): implement transaction listing page
 # Stop Condition
 
 Stop after implementation.
-
-Do not continue to the next sprint.
 
 Wait for Technical Lead review.

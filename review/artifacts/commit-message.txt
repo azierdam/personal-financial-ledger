@@ -1,6 +1,6 @@
-feat(ui): implement transaction listing page
+feat(ui): implement transaction detail view
 
-- Create `Transactions.html` with basic transaction table.
-- Implement `getService()` in `WebApp.gs`.
-- Update `doGet` to fetch and pass transactions to template.
-- Ensure service layer usage.
+- Create `TransactionDetail.html` for single transaction inspection.
+- Register `transactionDetail` page in `WebApp.gs`.
+- Update `doGet` routing to fetch transaction by ID from request.
+- Ensure view-only implementation adhering to architectural constraints.

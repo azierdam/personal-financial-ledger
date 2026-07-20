@@ -1,0 +1,22 @@
+<section>
+  <h2>Transaction Details</h2>
+  <? if (transaction) { ?>
+    <dl>
+      <dt>ID</dt>
+      <dd><?= transaction.transactionId ?></dd>
+      <dt>Date</dt>
+      <dd><?= transaction.date.toLocaleDateString() ?></dd>
+      <dt>Type</dt>
+      <dd><?= transaction.type ?></dd>
+      <dt>Category</dt>
+      <dd><?= transaction.category.name ?></dd>
+      <dt>Amount</dt>
+      <dd><?= transaction.amount.amount ?> <?= transaction.amount.currency ?></dd>
+      <dt>Description</dt>
+      <dd><?= transaction.description ?></dd>
+    </dl>
+  <? } else { ?>
+    <p>Transaction not found.</p>
+  <? } ?>
+  <a href="?page=transactions">Back to Transactions</a>
+</section>

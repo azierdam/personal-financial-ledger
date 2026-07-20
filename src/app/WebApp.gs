@@ -4,6 +4,7 @@
 const PAGES = [
   { id: 'dashboard', label: 'Dashboard', template: 'Dashboard' },
   { id: 'transactions', label: 'Transactions', template: 'Transactions' },
+  { id: 'transactionDetail', label: 'Transaction Details', template: 'TransactionDetail' },
   { id: 'transactionEntry', label: 'New Transaction', template: 'TransactionEntry' },
   { id: 'categories', label: 'Categories', template: 'Categories' },
   { id: 'accounts', label: 'Accounts', template: 'Accounts' },
@@ -34,6 +35,8 @@ function doGet(e) {
   
   if (pageId === 'transactions') {
     template.transactions = getService().getAllTransactions();
+  } else if (pageId === 'transactionDetail') {
+    template.transaction = getService().getTransactionById(e.parameter.id);
   }
   
   return template
