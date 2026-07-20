@@ -284,6 +284,9 @@
   "tools/engineering/commands/impact.py": [
     "repository,"
   ],
+  "tools/engineering/commands/manifest.py": [
+    "repository,"
+  ],
   "tools/engineering/commands/package.py": [
     "os",
     "repository,",
@@ -337,6 +340,12 @@
     "datetime",
     "git,",
     "json"
+  ],
+  "tools/engineering/core/manifest_engine.py": [
+    "deque,",
+    "json",
+    "os",
+    "repository"
   ],
   "tools/engineering/core/markdown.py": [],
   "tools/engineering/core/output.py": [

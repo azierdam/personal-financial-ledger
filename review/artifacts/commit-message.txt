@@ -1,6 +1,1 @@
-refactor(cli): separate repository preparation from working file generation
-
-- Introduce `setup` command for Git repository operations.
-- Refactor `prepare` command to focus on working file generation.
-- Decouple repository state management from artifact regeneration.
-- Synchronize CLI documentation with the new two-phase workflow.
+feat(cli): implement execution manifest engine

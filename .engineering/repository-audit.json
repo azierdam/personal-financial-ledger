@@ -2917,12 +2917,12 @@
     "file_name": "review-package-chatgpt.zip",
     "generated": false,
     "language": "Binary",
-    "last_modified": "1784554211.8308837",
+    "last_modified": "1784557993.967853",
     "referenced_by": [],
     "references": [],
     "relative_path": "review/review-package-chatgpt.zip",
-    "sha256": "cef05a4e0397487d79205c4aee183f6e924b82b07ac2fb92afaf7940b2d836a5",
-    "size": 4554
+    "sha256": "83320bf31a60f37d60607a7ff9b6c7ddf53590e73ef5ce1f58f3854aac9ac04b",
+    "size": 4352
   },
   {
     "artifact_type": "other",
@@ -3712,12 +3712,12 @@
     "file_name": "README.md",
     "generated": false,
     "language": "Markdown",
-    "last_modified": "1784554144.2285643",
+    "last_modified": "1784557754.7014732",
     "referenced_by": [],
     "references": [],
     "relative_path": "tools/engineering/README.md",
-    "sha256": "ebae3accf7b0cb2935326df6f50997310916ce876af4cced48311a33df26bff5",
-    "size": 2950
+    "sha256": "3f6ca10d211f7e96fdc8e546ec53df741090da1ef666a4a9775a4d8667f2972a",
+    "size": 2997
   },
   {
     "artifact_type": "tooling",
@@ -3742,12 +3742,12 @@
     "file_name": "__main__.py",
     "generated": false,
     "language": "Python",
-    "last_modified": "1784555653.4344976",
+    "last_modified": "1784557701.5039673",
     "referenced_by": [],
     "references": [],
     "relative_path": "tools/engineering/__main__.py",
-    "sha256": "0609ee16e8f1b110413f2dbbb53fe5881eb78b7d2dcc69e8b7ec84b4270ba3d8",
-    "size": 2325
+    "sha256": "33d385b7ffd44344198641f377200f1e22be8d2340797e99186ce318b5e95e78",
+    "size": 2490
   },
   {
     "artifact_type": "tooling",
@@ -3838,6 +3838,21 @@
     "relative_path": "tools/engineering/commands/impact.py",
     "sha256": "fafb9b17230046442547d2328b54863898928aa8c02590bfdf5e117c092742c6",
     "size": 265
+  },
+  {
+    "artifact_type": "tooling",
+    "directory": "tools/engineering/commands",
+    "exists": true,
+    "extension": ".py",
+    "file_name": "manifest.py",
+    "generated": false,
+    "language": "Python",
+    "last_modified": "1784557623.8252861",
+    "referenced_by": [],
+    "references": [],
+    "relative_path": "tools/engineering/commands/manifest.py",
+    "sha256": "9512f2fb4990f5f12cbaaf32ea6baa522d60527ac5fa3d669073c5b637ddfee9",
+    "size": 275
   },
   {
     "artifact_type": "tooling",
@@ -3982,12 +3997,12 @@
     "file_name": "knowledge_graph.py",
     "generated": false,
     "language": "Python",
-    "last_modified": "1784553972.7221732",
+    "last_modified": "1784557930.9467945",
     "referenced_by": [],
     "references": [],
     "relative_path": "tools/engineering/core/knowledge_graph.py",
-    "sha256": "673d1e06e083dff3c6294ec718a51f3ce08a5b61cd5e03251909d0690f000693",
-    "size": 3255
+    "sha256": "eb4c76d49debfb879aeb6820b77ae42281652017098dba0ec9435aed6fe542d4",
+    "size": 3297
   },
   {
     "artifact_type": "tooling",
@@ -4003,6 +4018,21 @@
     "relative_path": "tools/engineering/core/manifest.py",
     "sha256": "2bfc7f4740ed562735380644586f05bba02b9f7037e1067afa5f7854e29f136a",
     "size": 442
+  },
+  {
+    "artifact_type": "tooling",
+    "directory": "tools/engineering/core",
+    "exists": true,
+    "extension": ".py",
+    "file_name": "manifest_engine.py",
+    "generated": false,
+    "language": "Python",
+    "last_modified": "1784558056.8772423",
+    "referenced_by": [],
+    "references": [],
+    "relative_path": "tools/engineering/core/manifest_engine.py",
+    "sha256": "391064c2a8d6d0139cea4dea040efee117faae6d918ac371ee3d591a3fcaf814",
+    "size": 3110
   },
   {
     "artifact_type": "tooling",

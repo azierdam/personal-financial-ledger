@@ -37,6 +37,7 @@ Each command has a single, distinct responsibility:
 | `prepare` | Orchestrate workspace generation (doctor, context, prompt). |
 | `audit` | Generate repository factual audit. |
 | `graph` | Generate repository knowledge graph. |
+| `manifest` | Generate execution manifest. |
 | `package` | Package review artifacts based on contract. |
 
 ## Branch Naming Rules

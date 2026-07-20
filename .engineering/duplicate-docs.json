@@ -488,5 +488,12 @@
       "tools/engineering/README.md"
     ],
     "reason": "Same filename"
+  },
+  {
+    "files": [
+      "tools/engineering/commands/manifest.py",
+      "tools/engineering/core/manifest.py"
+    ],
+    "reason": "Same filename"
   }
 ]

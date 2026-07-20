@@ -30,7 +30,8 @@ def build_graph(root):
         node = {
             "id": node_id,
             "type": get_node_type(f),
-            "path": node_id
+            "path": node_id,
+            "file_name": f['file_name']
         }
         nodes.append(node)
         node_ids.add(node_id)

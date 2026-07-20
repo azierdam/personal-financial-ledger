@@ -1,0 +1,1887 @@
+{
+  "generated_at": "2026-07-20T21:30:00Z",
+  "milestone": "1.7",
+  "tasks": [
+    {
+      "dependencies": [],
+      "description": "Implementation for .claspignore",
+      "documents": [],
+      "files": [
+        ".claspignore"
+      ],
+      "id": "TASK--claspignore",
+      "objective": "Refactor/Implement .claspignore",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .claspignore",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for LICENSE",
+      "documents": [],
+      "files": [
+        "LICENSE"
+      ],
+      "id": "TASK-LICENSE",
+      "objective": "Refactor/Implement LICENSE",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement LICENSE",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.drawio",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.drawio"
+      ],
+      "id": "TASK-archive-planning-FEATURE-001-Domain-Model-diagrams-domain-model-drawio",
+      "objective": "Refactor/Implement archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.drawio",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement domain-model.drawio",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.mmd",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.mmd"
+      ],
+      "id": "TASK-archive-planning-FEATURE-001-Domain-Model-diagrams-domain-model-mmd",
+      "objective": "Refactor/Implement archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.mmd",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement domain-model.mmd",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-001-Domain-Model/diagrams/entity-lifecycle.mmd",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-001-Domain-Model/diagrams/entity-lifecycle.mmd"
+      ],
+      "id": "TASK-archive-planning-FEATURE-001-Domain-Model-diagrams-entity-lifecycle-mmd",
+      "objective": "Refactor/Implement archive/planning/FEATURE-001-Domain-Model/diagrams/entity-lifecycle.mmd",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement entity-lifecycle.mmd",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-002-Ledger-Architecture/diagrams/architecture.mmd",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-002-Ledger-Architecture/diagrams/architecture.mmd"
+      ],
+      "id": "TASK-archive-planning-FEATURE-002-Ledger-Architecture-diagrams-architecture-mmd",
+      "objective": "Refactor/Implement archive/planning/FEATURE-002-Ledger-Architecture/diagrams/architecture.mmd",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement architecture.mmd",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-002-Ledger-Architecture/diagrams/dataflow.mmd",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-002-Ledger-Architecture/diagrams/dataflow.mmd"
+      ],
+      "id": "TASK-archive-planning-FEATURE-002-Ledger-Architecture-diagrams-dataflow-mmd",
+      "objective": "Refactor/Implement archive/planning/FEATURE-002-Ledger-Architecture/diagrams/dataflow.mmd",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement dataflow.mmd",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-004-Apps-Script-Foundation/src/Code.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-004-Apps-Script-Foundation/src/Code.gs"
+      ],
+      "id": "TASK-archive-planning-FEATURE-004-Apps-Script-Foundation-src-Code-gs",
+      "objective": "Refactor/Implement archive/planning/FEATURE-004-Apps-Script-Foundation/src/Code.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Code.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramCommands.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramCommands.gs"
+      ],
+      "id": "TASK-archive-planning-FEATURE-005-Telegram-Foundation-src-TelegramCommands-gs",
+      "objective": "Refactor/Implement archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramCommands.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TelegramCommands.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramRouter.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramRouter.gs"
+      ],
+      "id": "TASK-archive-planning-FEATURE-005-Telegram-Foundation-src-TelegramRouter-gs",
+      "objective": "Refactor/Implement archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramRouter.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TelegramRouter.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-006-Transaction-Engine/src/TransactionService.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-006-Transaction-Engine/src/TransactionService.gs"
+      ],
+      "id": "TASK-archive-planning-FEATURE-006-Transaction-Engine-src-TransactionService-gs",
+      "objective": "Refactor/Implement archive/planning/FEATURE-006-Transaction-Engine/src/TransactionService.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionService.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/FEATURE-006-Transaction-Engine/src/ValidationService.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/FEATURE-006-Transaction-Engine/src/ValidationService.gs"
+      ],
+      "id": "TASK-archive-planning-FEATURE-006-Transaction-Engine-src-ValidationService-gs",
+      "objective": "Refactor/Implement archive/planning/FEATURE-006-Transaction-Engine/src/ValidationService.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement ValidationService.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/PACK-02-Master-Data/src/CategoryService.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/PACK-02-Master-Data/src/CategoryService.gs"
+      ],
+      "id": "TASK-archive-planning-PACK-02-Master-Data-src-CategoryService-gs",
+      "objective": "Refactor/Implement archive/planning/PACK-02-Master-Data/src/CategoryService.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement CategoryService.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/PACK-02-Master-Data/src/TagService.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/PACK-02-Master-Data/src/TagService.gs"
+      ],
+      "id": "TASK-archive-planning-PACK-02-Master-Data-src-TagService-gs",
+      "objective": "Refactor/Implement archive/planning/PACK-02-Master-Data/src/TagService.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TagService.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/PACK-02-Master-Data/src/WalletService.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/PACK-02-Master-Data/src/WalletService.gs"
+      ],
+      "id": "TASK-archive-planning-PACK-02-Master-Data-src-WalletService-gs",
+      "objective": "Refactor/Implement archive/planning/PACK-02-Master-Data/src/WalletService.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement WalletService.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/PACK-03-Reporting/src/BalanceService.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/PACK-03-Reporting/src/BalanceService.gs"
+      ],
+      "id": "TASK-archive-planning-PACK-03-Reporting-src-BalanceService-gs",
+      "objective": "Refactor/Implement archive/planning/PACK-03-Reporting/src/BalanceService.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement BalanceService.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/PACK-04-Configuration/src/Config.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/PACK-04-Configuration/src/Config.gs"
+      ],
+      "id": "TASK-archive-planning-PACK-04-Configuration-src-Config-gs",
+      "objective": "Refactor/Implement archive/planning/PACK-04-Configuration/src/Config.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Config.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for archive/planning/PACK-05-Core/src/Logger.gs",
+      "documents": [],
+      "files": [
+        "archive/planning/PACK-05-Core/src/Logger.gs"
+      ],
+      "id": "TASK-archive-planning-PACK-05-Core-src-Logger-gs",
+      "objective": "Refactor/Implement archive/planning/PACK-05-Core/src/Logger.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Logger.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for assets/.gitkeep",
+      "documents": [],
+      "files": [
+        "assets/.gitkeep"
+      ],
+      "id": "TASK-assets--gitkeep",
+      "objective": "Refactor/Implement assets/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for docs/.gitkeep",
+      "documents": [],
+      "files": [
+        "docs/.gitkeep"
+      ],
+      "id": "TASK-docs--gitkeep",
+      "objective": "Refactor/Implement docs/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for docs/00-Governance/.gitkeep",
+      "documents": [],
+      "files": [
+        "docs/00-Governance/.gitkeep"
+      ],
+      "id": "TASK-docs-00-Governance--gitkeep",
+      "objective": "Refactor/Implement docs/00-Governance/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for docs/01-Architecture/.gitkeep",
+      "documents": [],
+      "files": [
+        "docs/01-Architecture/.gitkeep"
+      ],
+      "id": "TASK-docs-01-Architecture--gitkeep",
+      "objective": "Refactor/Implement docs/01-Architecture/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for docs/02-ADR/.gitkeep",
+      "documents": [],
+      "files": [
+        "docs/02-ADR/.gitkeep"
+      ],
+      "id": "TASK-docs-02-ADR--gitkeep",
+      "objective": "Refactor/Implement docs/02-ADR/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for docs/03-Engineering/.gitkeep",
+      "documents": [],
+      "files": [
+        "docs/03-Engineering/.gitkeep"
+      ],
+      "id": "TASK-docs-03-Engineering--gitkeep",
+      "objective": "Refactor/Implement docs/03-Engineering/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for docs/04-Planning/.gitkeep",
+      "documents": [],
+      "files": [
+        "docs/04-Planning/.gitkeep"
+      ],
+      "id": "TASK-docs-04-Planning--gitkeep",
+      "objective": "Refactor/Implement docs/04-Planning/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for docs/05-Learning/.gitkeep",
+      "documents": [],
+      "files": [
+        "docs/05-Learning/.gitkeep"
+      ],
+      "id": "TASK-docs-05-Learning--gitkeep",
+      "objective": "Refactor/Implement docs/05-Learning/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for review/artifacts/commit-message.txt",
+      "documents": [],
+      "files": [
+        "review/artifacts/commit-message.txt"
+      ],
+      "id": "TASK-review-artifacts-commit-message-txt",
+      "objective": "Refactor/Implement review/artifacts/commit-message.txt",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement commit-message.txt",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for review/current/artifacts/commit-message.txt",
+      "documents": [],
+      "files": [
+        "review/current/artifacts/commit-message.txt"
+      ],
+      "id": "TASK-review-current-artifacts-commit-message-txt",
+      "objective": "Refactor/Implement review/current/artifacts/commit-message.txt",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement commit-message.txt",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for review/review-B2.2.zip",
+      "documents": [],
+      "files": [
+        "review/review-B2.2.zip"
+      ],
+      "id": "TASK-review-review-B2-2-zip",
+      "objective": "Refactor/Implement review/review-B2.2.zip",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement review-B2.2.zip",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for review/review-C1.1.zip",
+      "documents": [],
+      "files": [
+        "review/review-C1.1.zip"
+      ],
+      "id": "TASK-review-review-C1-1-zip",
+      "objective": "Refactor/Implement review/review-C1.1.zip",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement review-C1.1.zip",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for review/review-package-chatgpt.zip",
+      "documents": [],
+      "files": [
+        "review/review-package-chatgpt.zip"
+      ],
+      "id": "TASK-review-review-package-chatgpt-zip",
+      "objective": "Refactor/Implement review/review-package-chatgpt.zip",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement review-package-chatgpt.zip",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for scripts/doctor.js",
+      "documents": [],
+      "files": [
+        "scripts/doctor.js"
+      ],
+      "id": "TASK-scripts-doctor-js",
+      "objective": "Refactor/Implement scripts/doctor.js",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement doctor.js",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for scripts/review.js",
+      "documents": [],
+      "files": [
+        "scripts/review.js"
+      ],
+      "id": "TASK-scripts-review-js",
+      "objective": "Refactor/Implement scripts/review.js",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement review.js",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for scripts/start-day.js",
+      "documents": [],
+      "files": [
+        "scripts/start-day.js"
+      ],
+      "id": "TASK-scripts-start-day-js",
+      "objective": "Refactor/Implement scripts/start-day.js",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement start-day.js",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for scripts/sync.js",
+      "documents": [],
+      "files": [
+        "scripts/sync.js"
+      ],
+      "id": "TASK-scripts-sync-js",
+      "objective": "Refactor/Implement scripts/sync.js",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement sync.js",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for scripts/task.js",
+      "documents": [],
+      "files": [
+        "scripts/task.js"
+      ],
+      "id": "TASK-scripts-task-js",
+      "objective": "Refactor/Implement scripts/task.js",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement task.js",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/.gitkeep",
+      "documents": [],
+      "files": [
+        "src/.gitkeep"
+      ],
+      "id": "TASK-src--gitkeep",
+      "objective": "Refactor/Implement src/.gitkeep",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement .gitkeep",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/adapter/TelegramAdapter.gs",
+      "documents": [],
+      "files": [
+        "src/adapter/TelegramAdapter.gs"
+      ],
+      "id": "TASK-src-adapter-TelegramAdapter-gs",
+      "objective": "Refactor/Implement src/adapter/TelegramAdapter.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TelegramAdapter.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/app/ValidationEngine.gs",
+      "documents": [],
+      "files": [
+        "src/app/ValidationEngine.gs"
+      ],
+      "id": "TASK-src-app-ValidationEngine-gs",
+      "objective": "Refactor/Implement src/app/ValidationEngine.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement ValidationEngine.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/app/WebApp.gs",
+      "documents": [],
+      "files": [
+        "src/app/WebApp.gs"
+      ],
+      "id": "TASK-src-app-WebApp-gs",
+      "objective": "Refactor/Implement src/app/WebApp.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement WebApp.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/config/Config.gs",
+      "documents": [],
+      "files": [
+        "src/config/Config.gs"
+      ],
+      "id": "TASK-src-config-Config-gs",
+      "objective": "Refactor/Implement src/config/Config.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Config.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/domain/Account.gs",
+      "documents": [],
+      "files": [
+        "src/domain/Account.gs"
+      ],
+      "id": "TASK-src-domain-Account-gs",
+      "objective": "Refactor/Implement src/domain/Account.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Account.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/domain/Category.gs",
+      "documents": [],
+      "files": [
+        "src/domain/Category.gs"
+      ],
+      "id": "TASK-src-domain-Category-gs",
+      "objective": "Refactor/Implement src/domain/Category.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Category.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/domain/Money.gs",
+      "documents": [],
+      "files": [
+        "src/domain/Money.gs"
+      ],
+      "id": "TASK-src-domain-Money-gs",
+      "objective": "Refactor/Implement src/domain/Money.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Money.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/domain/Transaction.gs",
+      "documents": [],
+      "files": [
+        "src/domain/Transaction.gs"
+      ],
+      "id": "TASK-src-domain-Transaction-gs",
+      "objective": "Refactor/Implement src/domain/Transaction.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Transaction.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/domain/TransactionType.gs",
+      "documents": [],
+      "files": [
+        "src/domain/TransactionType.gs"
+      ],
+      "id": "TASK-src-domain-TransactionType-gs",
+      "objective": "Refactor/Implement src/domain/TransactionType.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionType.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/Errors.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/Errors.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-Errors-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/Errors.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Errors.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/SheetsGateway.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/SheetsGateway.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-SheetsGateway-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/SheetsGateway.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement SheetsGateway.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/mappers/AccountMapper.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/mappers/AccountMapper.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-mappers-AccountMapper-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/mappers/AccountMapper.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement AccountMapper.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/mappers/CategoryMapper.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/mappers/CategoryMapper.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-mappers-CategoryMapper-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/mappers/CategoryMapper.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement CategoryMapper.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/mappers/TransactionMapper.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/mappers/TransactionMapper.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-mappers-TransactionMapper-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/mappers/TransactionMapper.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionMapper.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/repositories/SheetsAccountRepository.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/repositories/SheetsAccountRepository.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-repositories-SheetsAccountRepository-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/repositories/SheetsAccountRepository.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement SheetsAccountRepository.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/repositories/SheetsCategoryRepository.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/repositories/SheetsCategoryRepository.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-repositories-SheetsCategoryRepository-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/repositories/SheetsCategoryRepository.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement SheetsCategoryRepository.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/infrastructure/sheets/repositories/SheetsTransactionRepository.gs",
+      "documents": [],
+      "files": [
+        "src/infrastructure/sheets/repositories/SheetsTransactionRepository.gs"
+      ],
+      "id": "TASK-src-infrastructure-sheets-repositories-SheetsTransactionRepository-gs",
+      "objective": "Refactor/Implement src/infrastructure/sheets/repositories/SheetsTransactionRepository.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement SheetsTransactionRepository.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/parser/TransactionParser.gs",
+      "documents": [],
+      "files": [
+        "src/parser/TransactionParser.gs"
+      ],
+      "id": "TASK-src-parser-TransactionParser-gs",
+      "objective": "Refactor/Implement src/parser/TransactionParser.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionParser.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/parser/TransactionRequest.gs",
+      "documents": [],
+      "files": [
+        "src/parser/TransactionRequest.gs"
+      ],
+      "id": "TASK-src-parser-TransactionRequest-gs",
+      "objective": "Refactor/Implement src/parser/TransactionRequest.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionRequest.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/repository/AccountRepository.gs",
+      "documents": [],
+      "files": [
+        "src/repository/AccountRepository.gs"
+      ],
+      "id": "TASK-src-repository-AccountRepository-gs",
+      "objective": "Refactor/Implement src/repository/AccountRepository.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement AccountRepository.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/repository/CategoryRepository.gs",
+      "documents": [],
+      "files": [
+        "src/repository/CategoryRepository.gs"
+      ],
+      "id": "TASK-src-repository-CategoryRepository-gs",
+      "objective": "Refactor/Implement src/repository/CategoryRepository.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement CategoryRepository.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/repository/GoogleSheetsTransactionRepository.gs",
+      "documents": [],
+      "files": [
+        "src/repository/GoogleSheetsTransactionRepository.gs"
+      ],
+      "id": "TASK-src-repository-GoogleSheetsTransactionRepository-gs",
+      "objective": "Refactor/Implement src/repository/GoogleSheetsTransactionRepository.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement GoogleSheetsTransactionRepository.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/repository/TransactionRepository.gs",
+      "documents": [],
+      "files": [
+        "src/repository/TransactionRepository.gs"
+      ],
+      "id": "TASK-src-repository-TransactionRepository-gs",
+      "objective": "Refactor/Implement src/repository/TransactionRepository.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionRepository.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/service/TransactionService.gs",
+      "documents": [],
+      "files": [
+        "src/service/TransactionService.gs"
+      ],
+      "id": "TASK-src-service-TransactionService-gs",
+      "objective": "Refactor/Implement src/service/TransactionService.gs",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionService.gs",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Accounts.html",
+      "documents": [],
+      "files": [
+        "src/ui/Accounts.html"
+      ],
+      "id": "TASK-src-ui-Accounts-html",
+      "objective": "Refactor/Implement src/ui/Accounts.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Accounts.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Categories.html",
+      "documents": [],
+      "files": [
+        "src/ui/Categories.html"
+      ],
+      "id": "TASK-src-ui-Categories-html",
+      "objective": "Refactor/Implement src/ui/Categories.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Categories.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Dashboard.html",
+      "documents": [],
+      "files": [
+        "src/ui/Dashboard.html"
+      ],
+      "id": "TASK-src-ui-Dashboard-html",
+      "objective": "Refactor/Implement src/ui/Dashboard.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Dashboard.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Header.html",
+      "documents": [],
+      "files": [
+        "src/ui/Header.html"
+      ],
+      "id": "TASK-src-ui-Header-html",
+      "objective": "Refactor/Implement src/ui/Header.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Header.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Index.html",
+      "documents": [],
+      "files": [
+        "src/ui/Index.html"
+      ],
+      "id": "TASK-src-ui-Index-html",
+      "objective": "Refactor/Implement src/ui/Index.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Index.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Navigation.html",
+      "documents": [],
+      "files": [
+        "src/ui/Navigation.html"
+      ],
+      "id": "TASK-src-ui-Navigation-html",
+      "objective": "Refactor/Implement src/ui/Navigation.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Navigation.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Reports.html",
+      "documents": [],
+      "files": [
+        "src/ui/Reports.html"
+      ],
+      "id": "TASK-src-ui-Reports-html",
+      "objective": "Refactor/Implement src/ui/Reports.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Reports.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Settings.html",
+      "documents": [],
+      "files": [
+        "src/ui/Settings.html"
+      ],
+      "id": "TASK-src-ui-Settings-html",
+      "objective": "Refactor/Implement src/ui/Settings.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Settings.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Styles.html",
+      "documents": [],
+      "files": [
+        "src/ui/Styles.html"
+      ],
+      "id": "TASK-src-ui-Styles-html",
+      "objective": "Refactor/Implement src/ui/Styles.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Styles.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/TransactionDetail.html",
+      "documents": [],
+      "files": [
+        "src/ui/TransactionDetail.html"
+      ],
+      "id": "TASK-src-ui-TransactionDetail-html",
+      "objective": "Refactor/Implement src/ui/TransactionDetail.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionDetail.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/TransactionEntry.html",
+      "documents": [],
+      "files": [
+        "src/ui/TransactionEntry.html"
+      ],
+      "id": "TASK-src-ui-TransactionEntry-html",
+      "objective": "Refactor/Implement src/ui/TransactionEntry.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionEntry.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/TransactionForm.html",
+      "documents": [],
+      "files": [
+        "src/ui/TransactionForm.html"
+      ],
+      "id": "TASK-src-ui-TransactionForm-html",
+      "objective": "Refactor/Implement src/ui/TransactionForm.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement TransactionForm.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Transactions.html",
+      "documents": [],
+      "files": [
+        "src/ui/Transactions.html"
+      ],
+      "id": "TASK-src-ui-Transactions-html",
+      "objective": "Refactor/Implement src/ui/Transactions.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Transactions.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for src/ui/Validation.html",
+      "documents": [],
+      "files": [
+        "src/ui/Validation.html"
+      ],
+      "id": "TASK-src-ui-Validation-html",
+      "objective": "Refactor/Implement src/ui/Validation.html",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement Validation.html",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/__init__.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/__init__.py"
+      ],
+      "id": "TASK-tools-engineering-__init__-py",
+      "objective": "Refactor/Implement tools/engineering/__init__.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement __init__.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/__main__.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/__main__.py"
+      ],
+      "id": "TASK-tools-engineering-__main__-py",
+      "objective": "Refactor/Implement tools/engineering/__main__.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement __main__.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/approval.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/approval.py"
+      ],
+      "id": "TASK-tools-engineering-core-approval-py",
+      "objective": "Refactor/Implement tools/engineering/core/approval.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement approval.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/cleanup_engine.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/cleanup_engine.py"
+      ],
+      "id": "TASK-tools-engineering-core-cleanup_engine-py",
+      "objective": "Refactor/Implement tools/engineering/core/cleanup_engine.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement cleanup_engine.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/filesystem.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/filesystem.py"
+      ],
+      "id": "TASK-tools-engineering-core-filesystem-py",
+      "objective": "Refactor/Implement tools/engineering/core/filesystem.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement filesystem.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/git.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/git.py"
+      ],
+      "id": "TASK-tools-engineering-core-git-py",
+      "objective": "Refactor/Implement tools/engineering/core/git.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement git.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/impact_engine.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/impact_engine.py"
+      ],
+      "id": "TASK-tools-engineering-core-impact_engine-py",
+      "objective": "Refactor/Implement tools/engineering/core/impact_engine.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement impact_engine.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/knowledge_graph.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/knowledge_graph.py"
+      ],
+      "id": "TASK-tools-engineering-core-knowledge_graph-py",
+      "objective": "Refactor/Implement tools/engineering/core/knowledge_graph.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement knowledge_graph.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/manifest.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/manifest.py"
+      ],
+      "id": "TASK-tools-engineering-core-manifest-py",
+      "objective": "Refactor/Implement tools/engineering/core/manifest.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement manifest.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/manifest_engine.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/manifest_engine.py"
+      ],
+      "id": "TASK-tools-engineering-core-manifest_engine-py",
+      "objective": "Refactor/Implement tools/engineering/core/manifest_engine.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement manifest_engine.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/markdown.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/markdown.py"
+      ],
+      "id": "TASK-tools-engineering-core-markdown-py",
+      "objective": "Refactor/Implement tools/engineering/core/markdown.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement markdown.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/output.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/output.py"
+      ],
+      "id": "TASK-tools-engineering-core-output-py",
+      "objective": "Refactor/Implement tools/engineering/core/output.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement output.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/packaging.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/packaging.py"
+      ],
+      "id": "TASK-tools-engineering-core-packaging-py",
+      "objective": "Refactor/Implement tools/engineering/core/packaging.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement packaging.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/repository.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/repository.py"
+      ],
+      "id": "TASK-tools-engineering-core-repository-py",
+      "objective": "Refactor/Implement tools/engineering/core/repository.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement repository.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/core/repository_audit.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/core/repository_audit.py"
+      ],
+      "id": "TASK-tools-engineering-core-repository_audit-py",
+      "objective": "Refactor/Implement tools/engineering/core/repository_audit.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement repository_audit.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/tests/test_audit.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/tests/test_audit.py"
+      ],
+      "id": "TASK-tools-engineering-tests-test_audit-py",
+      "objective": "Refactor/Implement tools/engineering/tests/test_audit.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement test_audit.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/tests/test_parser.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/tests/test_parser.py"
+      ],
+      "id": "TASK-tools-engineering-tests-test_parser-py",
+      "objective": "Refactor/Implement tools/engineering/tests/test_parser.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement test_parser.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/tests/test_safety.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/tests/test_safety.py"
+      ],
+      "id": "TASK-tools-engineering-tests-test_safety-py",
+      "objective": "Refactor/Implement tools/engineering/tests/test_safety.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement test_safety.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    },
+    {
+      "dependencies": [],
+      "description": "Implementation for tools/engineering/tests/test_slugify.py",
+      "documents": [],
+      "files": [
+        "tools/engineering/tests/test_slugify.py"
+      ],
+      "id": "TASK-tools-engineering-tests-test_slugify-py",
+      "objective": "Refactor/Implement tools/engineering/tests/test_slugify.py",
+      "priority": "Medium",
+      "reasoning": [
+        "Repository fact: dependency"
+      ],
+      "risk": "Low",
+      "title": "Implement test_slugify.py",
+      "validation": [
+        "audit",
+        "package"
+      ]
+    }
+  ],
+  "version": "1.0"
+}
