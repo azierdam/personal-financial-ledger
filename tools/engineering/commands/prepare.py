@@ -26,7 +26,8 @@ def run(agent):
         output.error("Sprint ID missing in approval document.")
         sys.exit(1)
         
-    branch_name = f"feature/{sprint_id.lower()}-create-transaction"
+    raw_branch_name = f"feature/{sprint_id}-create-transaction"
+    branch_name = git.slugify_branch_name(raw_branch_name)
     
     print(f"\n--- Branch Automation ---")
     print(f"Target Branch: {branch_name}")

@@ -1,14 +1,13 @@
 # Validation Results
 
-## Context Strategy Verification
-- **Priority 1 (Existing Artifacts)**: Verified. CLI detects artifacts in `review/artifacts/` and skips analysis.
-- **Priority 2 (Incremental Delta)**: Verified. CLI detects changes via `git diff` when artifacts are missing and reports delta usage.
-- **Priority 3 (Repository Analysis)**: Verified. CLI performs full filesystem scan when artifacts are missing and no diff exists.
+## Git Branch Slugification
+- The new `slugify_branch_name` function correctly handles:
+    - Unicode characters (`é` -> `e`).
+    - Whitespace and special characters (`–`, `/`, ` ` -> `-`).
+    - Multiple consecutive separators (`---` -> `-`).
+    - Leading/trailing separators (stripped).
+- Automated tests pass for all representative scenarios.
 
-## Documentation
-- Updated `tools/engineering/README.md` with new strategy explanation and priority order.
-
-## Functionality
-- CLI clearly reports the used strategy: `Context Source: ✓ ...`.
-- No architectural changes or new dependencies introduced.
-- Backward compatibility maintained for all commands.
+## Engineering CLI Workflow
+- `python -m tools.engineering prepare gemini` now correctly generates the Git-compliant branch name and automates checkout.
+- No regression on existing parsing or context generation logic.

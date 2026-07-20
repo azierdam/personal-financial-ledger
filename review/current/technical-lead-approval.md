@@ -1,35 +1,66 @@
 # Sprint
-D1.6
+
+Engineering CLI – Git Branch Slugification
 
 # Objective
-Optimize Engineering CLI context generation strategy.
+
+Fix Engineering CLI branch generation so that feature branch names derived from the Sprint section always produce valid Git branch names.
 
 # Scope
-- Implement priority-based context generation (Artifacts > Delta > Full).
-- Update Engineering CLI `context` command logic.
-- Document context generation strategy.
-- Validate the three scenarios.
+
+- Investigate current branch generation.
+- Implement deterministic branch slugification.
+- Replace spaces with hyphens.
+- Convert to lowercase.
+- Replace Unicode dashes with standard hyphens.
+- Remove unsupported Git branch characters.
+- Collapse repeated hyphens.
+- Trim leading and trailing separators.
+- Preserve deterministic output.
+- Update documentation.
+- Add automated tests for branch generation.
 
 # Constraints
-- Maintain backward compatibility.
-- Context generation must report the chosen strategy.
-- Repository analysis is the fallback.
+
+- Preserve existing Engineering CLI workflow.
+- Do not modify the approval parser.
+- Do not modify context generation.
+- Do not modify package generation.
+- Keep implementation simple.
+- Do not introduce new dependencies.
 
 # Acceptance Criteria
-- Context generation prefers existing artifacts.
-- Incremental context generation is supported.
-- Repository analysis is used only as a fallback.
-- Documentation is synchronized.
+
+The sprint is complete when:
+
+- Sprint titles always produce valid Git branch names.
+- Unicode punctuation is normalized.
+- Spaces are converted to hyphens.
+- Invalid Git characters are removed.
+- Existing workflows remain backward compatible.
+- Automated tests cover representative sprint titles.
+- Documentation is updated.
 
 # Deliverables
+
 - Implementation Summary
 - Validation Results
-- Updated Workflow Documentation
+- Updated Documentation
 - Git Status
 - Recommended Commit Message
 
 # Conventional Commit
-feat(cli): optimize engineering context generation
+
+fix(cli): sanitize generated git branch names
 
 # Stop Condition
-Stop only after the repository is synchronized with main and ready for the next sprint.
+
+Stop after implementation.
+
+Generate the Engineering Review Package using:
+
+python -m tools.engineering package chatgpt
+
+Do not perform repository finalization.
+
+Wait for Technical Lead review.

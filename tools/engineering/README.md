@@ -26,6 +26,14 @@ Each command has a single, distinct responsibility:
 | `prepare` | Orchestrate environment setup (branching, context, prompt). |
 | `package` | Package review artifacts. |
 
+## Branch Naming Rules
+Branch names are generated deterministically based on the sprint ID to ensure Git compliance:
+- Normalized to lowercase ASCII.
+- All non-alphanumeric characters replaced with single hyphens.
+- Repeated hyphens collapsed to a single hyphen.
+- Leading and trailing hyphens removed.
+- Example: "Engineering CLI – Sprint 1.0" -> `engineering-cli-sprint-1-0`
+
 ## Machine Contract (`technical-lead-approval.md`)
 The parser *strictly requires* these sections to be present and non-empty:
 - `# Sprint`

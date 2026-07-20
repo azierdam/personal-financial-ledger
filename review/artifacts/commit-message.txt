@@ -1,6 +1,6 @@
-feat(cli): optimize engineering context generation
+fix(cli): implement robust git branch slugification
 
-- Implement tiered context generation strategy: Artifacts > Delta > Fallback.
-- Improve performance and token usage by minimizing redundant analysis.
-- Report chosen context strategy clearly in CLI output.
-- Update documentation to explain the new strategy.
+- Add deterministic slugification to ensure Git compliance for branch names.
+- Sanitize branch names immediately before Git execution.
+- Add comprehensive unit tests.
+- Update documentation.
