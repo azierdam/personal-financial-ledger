@@ -1,4 +1,5 @@
-docs: clarify approval vs review workflow
+docs: implement Engineering Workflow v2.1 documentation
 
-- Distinguish technical-lead-approval.md from technical-lead-review.md.
-- Ensure CLI only interacts with technical-lead-approval.md.
+- Update workflow lifecycle.
+- Define artifact ownership.
+- Clarify CLI command responsibilities.

@@ -1,30 +1,23 @@
-# Engineering Workflow
+# Engineering Workflow v2.1
 
 ## Engineering Lifecycle
-1. **Feature Request**
-2. **Technical Lead**: Creates `review/current/technical-lead-approval.md` (Approval Template)
-3. **Engineering CLI**: `prepare` (Parses approval, automates branch/context/prompt)
-4. **Gemini CLI**: Implementation
-5. **Technical Lead**: Reviews implementation, creates `technical-lead-review.md` (Review Document)
-6. **Authorization**: Technical Lead Review authorizes Post-Approval Actions
-7. **Validation & Git Commit**
-8. **Merge**
+1. **Technical Lead Approval**: Technical Lead creates `review/current/technical-lead-approval.md` (Implementation Specification).
+2. **Engineering CLI (`prepare`)**: Automates workspace setup based on `approval.md` (Branch management, Context, Prompt).
+3. **Gemini Implementation**: Implementation based on `.prompt.md`.
+4. **Technical Lead Review**: Technical Lead reviews implementation and creates `technical-lead-review.md`.
+5. **Authorization**: Technical Lead review authorizes Post-Approval Actions (Git commit, merge).
+6. **Finalization**: Repository synchronized with `main`.
 
-## Technical Lead Documents
-1. `technical-lead-approval.md`
-   - Parsed by Engineering CLI (Machine Contract).
-   - Authorizes implementation.
-2. `technical-lead-review.md`
-   - Authored manually by Technical Lead after implementation.
-   - Authorizes repository synchronization/next steps.
+## Artifact Ownership
 
-## Responsibilities
-- **Implementation AI**: Analyzes, implements, tests, and packages.
-- **Technical Lead**: Approves architecture (`approval.md`) and validates quality (`review.md`).
-- **Human Developer**: Approves and commits changes.
-
-## Engineering Principles
-- Simple solutions, incremental changes, reusable components.
+| Artifact | Owner | Purpose |
+| :--- | :--- | :--- |
+| `technical-lead-approval.md` | Technical Lead | Machine Contract (Implementation Spec) |
+| `technical-lead-review.md` | Technical Lead | Authorization (Review/Post-Approval) |
+| `.context.md` | Engineering CLI | Gemini context |
+| `.prompt.md` | Engineering CLI | Gemini implementation prompt |
+| Handover Artifacts | Gemini | Review/Validation (Summary, Val, Git Status, etc.) |
 
 ## Scope Guardrails
 - Strictly enforce task scope. No unrelated refactoring.
+- Engineering CLI automates, Technical Lead decides.
