@@ -1,22 +1,19 @@
-# Implementation Summary: Repository Intelligence Foundation (Audit)
+# Implementation Summary: Repository Cleanup Engine
 
 ## Changes
-- Implemented `python -m tools.engineering audit` command.
-- Created `tools/engineering/core/repository_audit.py` for factual repository scanning.
-- Generates required JSON reports in `.engineering/`:
-    - `repository-audit.json` (Factual file inventory)
-    - `documentation-inventory.json` (Doc file inventory)
-    - `duplicate-docs.json` (Deterministic duplicate detection)
-    - `stale-docs.json` (Factually broken link detection)
-    - `dependency-map.json` (Factual dependency map)
-- Integrated into Engineering CLI (`__main__.py` and `README.md`).
+- Created `tools/engineering/core/cleanup_engine.py` to execute approved repository cleanup actions (`archive`, `relocate`) based on `approved-findings.json`.
+- Created `tools/engineering/commands/cleanup.py` to interface with the cleanup engine.
+- Integrated `cleanup` command into the Engineering CLI (`__main__.py`).
+- Added traceability artifacts in `.engineering/cleanup/` (`cleanup-execution.json`, `cleanup-log.json`, `cleanup-summary.md`).
+- Executed approved actions:
+    - Relocated `archive/planning-artifacts/` to `archive/planning/`.
+    - Archived `archive/README.md` to `archive/obsolete/README-archive.md`.
 
 ## Validation
-- Verified `python -m tools.engineering audit` scans the repository and generates all JSON files.
-- Verified deterministic ordering of JSON output.
-- Integration test `test_audit.py` passes.
-- Confirmed backward compatibility.
+- Audit (`python -m tools.engineering audit`) verified successfully after cleanup.
+- Review package (`python -m tools.engineering package chatgpt`) generated successfully with all required artifacts.
+- No new findings or decisions created; only pre-approved actions executed.
 
 ## Git Status
 - Current branch: `feature/artifact-driven-orchestrator`
-- Confirmed modifications: `tools/engineering/` commands, core, and documentation.
+- Confirmed modifications to `.engineering/` and `archive/` structures.

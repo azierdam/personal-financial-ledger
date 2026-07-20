@@ -278,6 +278,9 @@
     "repository,",
     "sys"
   ],
+  "tools/engineering/commands/graph.py": [
+    "repository,"
+  ],
   "tools/engineering/commands/package.py": [
     "os",
     "repository,",
@@ -315,6 +318,11 @@
     "re",
     "subprocess",
     "unicodedata"
+  ],
+  "tools/engineering/core/knowledge_graph.py": [
+    "json",
+    "os",
+    "repository"
   ],
   "tools/engineering/core/manifest.py": [
     "datetime",

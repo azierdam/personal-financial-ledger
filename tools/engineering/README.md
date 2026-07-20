@@ -36,6 +36,7 @@ Each command has a single, distinct responsibility:
 | `setup` | Orchestrate repository preparation (branching). |
 | `prepare` | Orchestrate workspace generation (doctor, context, prompt). |
 | `audit` | Generate repository factual audit. |
+| `graph` | Generate repository knowledge graph. |
 | `package` | Package review artifacts based on contract. |
 
 ## Branch Naming Rules

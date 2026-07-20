@@ -1,0 +1,1385 @@
+{
+  "edges": [],
+  "nodes": [
+    {
+      "id": ".claspignore",
+      "path": ".claspignore",
+      "type": "source"
+    },
+    {
+      "id": ".context.md",
+      "path": ".context.md",
+      "type": "generated"
+    },
+    {
+      "id": ".github/AGENTS.md",
+      "path": ".github/AGENTS.md",
+      "type": "documentation"
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/bug.md",
+      "path": ".github/ISSUE_TEMPLATE/bug.md",
+      "type": "documentation"
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/chore.md",
+      "path": ".github/ISSUE_TEMPLATE/chore.md",
+      "type": "documentation"
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/epic.md",
+      "path": ".github/ISSUE_TEMPLATE/epic.md",
+      "type": "documentation"
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/feature.md",
+      "path": ".github/ISSUE_TEMPLATE/feature.md",
+      "type": "documentation"
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/story.md",
+      "path": ".github/ISSUE_TEMPLATE/story.md",
+      "type": "documentation"
+    },
+    {
+      "id": ".github/ISSUE_TEMPLATE/task.md",
+      "path": ".github/ISSUE_TEMPLATE/task.md",
+      "type": "documentation"
+    },
+    {
+      "id": ".prompt.md",
+      "path": ".prompt.md",
+      "type": "generated"
+    },
+    {
+      "id": ".vscode/tasks.json",
+      "path": ".vscode/tasks.json",
+      "type": "configuration"
+    },
+    {
+      "id": "GEMINI.md",
+      "path": "GEMINI.md",
+      "type": "documentation"
+    },
+    {
+      "id": "LICENSE",
+      "path": "LICENSE",
+      "type": "source"
+    },
+    {
+      "id": "README.md",
+      "path": "README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "START_HERE.md",
+      "path": "START_HERE.md",
+      "type": "documentation"
+    },
+    {
+      "id": "appsscript.json",
+      "path": "appsscript.json",
+      "type": "configuration"
+    },
+    {
+      "id": "archive/obsolete/README-archive.md",
+      "path": "archive/obsolete/README-archive.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/README.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.drawio",
+      "path": "archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.drawio",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.mmd",
+      "path": "archive/planning/FEATURE-001-Domain-Model/diagrams/domain-model.mmd",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/diagrams/entity-lifecycle.mmd",
+      "path": "archive/planning/FEATURE-001-Domain-Model/diagrams/entity-lifecycle.mmd",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/docs/Business-Rules.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/docs/Business-Rules.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/docs/Domain-Glossary.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/docs/Domain-Glossary.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/docs/Domain-Model.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/docs/Domain-Model.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/docs/Entity-Lifecycle.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/docs/Entity-Lifecycle.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/docs/Entity-Relationship.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/docs/Entity-Relationship.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/docs/Validation-Checklist.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/docs/Validation-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "path": "archive/planning/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/CHANGELOG.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/CHANGELOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/README.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/diagrams/architecture.mmd",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/diagrams/architecture.mmd",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/diagrams/dataflow.mmd",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/diagrams/dataflow.mmd",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Apps-Script-Architecture.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Apps-Script-Architecture.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Extension-Points.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Extension-Points.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Google-Sheets-Model.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Google-Sheets-Model.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Ledger-Architecture.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Ledger-Architecture.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Telegram-Flow.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Telegram-Flow.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Validation-Flow.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/docs/Validation-Flow.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-002-Ledger-Architecture/trackers/Feature-Checklist.md",
+      "path": "archive/planning/FEATURE-002-Ledger-Architecture/trackers/Feature-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-003-Google-Sheets-Foundation/CHANGELOG.md",
+      "path": "archive/planning/FEATURE-003-Google-Sheets-Foundation/CHANGELOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-003-Google-Sheets-Foundation/README.md",
+      "path": "archive/planning/FEATURE-003-Google-Sheets-Foundation/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-003-Google-Sheets-Foundation/docs/Column-Definitions.md",
+      "path": "archive/planning/FEATURE-003-Google-Sheets-Foundation/docs/Column-Definitions.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-003-Google-Sheets-Foundation/docs/Data-Validation.md",
+      "path": "archive/planning/FEATURE-003-Google-Sheets-Foundation/docs/Data-Validation.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-003-Google-Sheets-Foundation/docs/Sheet-Specification.md",
+      "path": "archive/planning/FEATURE-003-Google-Sheets-Foundation/docs/Sheet-Specification.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-003-Google-Sheets-Foundation/templates/Google-Sheets-Setup.md",
+      "path": "archive/planning/FEATURE-003-Google-Sheets-Foundation/templates/Google-Sheets-Setup.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-003-Google-Sheets-Foundation/trackers/Feature-Checklist.md",
+      "path": "archive/planning/FEATURE-003-Google-Sheets-Foundation/trackers/Feature-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
+      "path": "archive/planning/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-004-Apps-Script-Foundation/README.md",
+      "path": "archive/planning/FEATURE-004-Apps-Script-Foundation/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-004-Apps-Script-Foundation/docs/Architecture.md",
+      "path": "archive/planning/FEATURE-004-Apps-Script-Foundation/docs/Architecture.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-004-Apps-Script-Foundation/docs/Deployment.md",
+      "path": "archive/planning/FEATURE-004-Apps-Script-Foundation/docs/Deployment.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-004-Apps-Script-Foundation/src/Code.gs",
+      "path": "archive/planning/FEATURE-004-Apps-Script-Foundation/src/Code.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-004-Apps-Script-Foundation/src/appsscript.json",
+      "path": "archive/planning/FEATURE-004-Apps-Script-Foundation/src/appsscript.json",
+      "type": "configuration"
+    },
+    {
+      "id": "archive/planning/FEATURE-004-Apps-Script-Foundation/trackers/Feature-Checklist.md",
+      "path": "archive/planning/FEATURE-004-Apps-Script-Foundation/trackers/Feature-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/CHANGELOG.md",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/CHANGELOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/README.md",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/docs/Bot-Architecture.md",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/docs/Bot-Architecture.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/docs/Commands.md",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/docs/Commands.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/docs/Webhook-Setup.md",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/docs/Webhook-Setup.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramCommands.gs",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramCommands.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramRouter.gs",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/src/TelegramRouter.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-005-Telegram-Foundation/trackers/Feature-Checklist.md",
+      "path": "archive/planning/FEATURE-005-Telegram-Foundation/trackers/Feature-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-006-Transaction-Engine/CHANGELOG.md",
+      "path": "archive/planning/FEATURE-006-Transaction-Engine/CHANGELOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-006-Transaction-Engine/README.md",
+      "path": "archive/planning/FEATURE-006-Transaction-Engine/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-006-Transaction-Engine/docs/Transaction-Service.md",
+      "path": "archive/planning/FEATURE-006-Transaction-Engine/docs/Transaction-Service.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-006-Transaction-Engine/docs/Validation-Rules.md",
+      "path": "archive/planning/FEATURE-006-Transaction-Engine/docs/Validation-Rules.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/FEATURE-006-Transaction-Engine/src/TransactionService.gs",
+      "path": "archive/planning/FEATURE-006-Transaction-Engine/src/TransactionService.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-006-Transaction-Engine/src/ValidationService.gs",
+      "path": "archive/planning/FEATURE-006-Transaction-Engine/src/ValidationService.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/FEATURE-006-Transaction-Engine/trackers/Feature-Checklist.md",
+      "path": "archive/planning/FEATURE-006-Transaction-Engine/trackers/Feature-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-02-Master-Data/README.md",
+      "path": "archive/planning/PACK-02-Master-Data/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-02-Master-Data/docs/Category-Management.md",
+      "path": "archive/planning/PACK-02-Master-Data/docs/Category-Management.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-02-Master-Data/docs/Tag-Management.md",
+      "path": "archive/planning/PACK-02-Master-Data/docs/Tag-Management.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-02-Master-Data/docs/Wallet-Management.md",
+      "path": "archive/planning/PACK-02-Master-Data/docs/Wallet-Management.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-02-Master-Data/src/CategoryService.gs",
+      "path": "archive/planning/PACK-02-Master-Data/src/CategoryService.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/PACK-02-Master-Data/src/TagService.gs",
+      "path": "archive/planning/PACK-02-Master-Data/src/TagService.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/PACK-02-Master-Data/src/WalletService.gs",
+      "path": "archive/planning/PACK-02-Master-Data/src/WalletService.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/PACK-03-Reporting/README.md",
+      "path": "archive/planning/PACK-03-Reporting/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-03-Reporting/docs/Balance-Calculation.md",
+      "path": "archive/planning/PACK-03-Reporting/docs/Balance-Calculation.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-03-Reporting/docs/Dashboard.md",
+      "path": "archive/planning/PACK-03-Reporting/docs/Dashboard.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-03-Reporting/docs/Reporting.md",
+      "path": "archive/planning/PACK-03-Reporting/docs/Reporting.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-03-Reporting/src/BalanceService.gs",
+      "path": "archive/planning/PACK-03-Reporting/src/BalanceService.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/PACK-04-Configuration/README.md",
+      "path": "archive/planning/PACK-04-Configuration/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-04-Configuration/docs/Audit-Log.md",
+      "path": "archive/planning/PACK-04-Configuration/docs/Audit-Log.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-04-Configuration/docs/Configuration.md",
+      "path": "archive/planning/PACK-04-Configuration/docs/Configuration.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-04-Configuration/docs/Settings.md",
+      "path": "archive/planning/PACK-04-Configuration/docs/Settings.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-04-Configuration/src/Config.gs",
+      "path": "archive/planning/PACK-04-Configuration/src/Config.gs",
+      "type": "source"
+    },
+    {
+      "id": "archive/planning/PACK-05-Core/README.md",
+      "path": "archive/planning/PACK-05-Core/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-05-Core/docs/Error-Handling.md",
+      "path": "archive/planning/PACK-05-Core/docs/Error-Handling.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-05-Core/docs/Logging.md",
+      "path": "archive/planning/PACK-05-Core/docs/Logging.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-05-Core/docs/Sprint-1-Checklist.md",
+      "path": "archive/planning/PACK-05-Core/docs/Sprint-1-Checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-05-Core/docs/Testing.md",
+      "path": "archive/planning/PACK-05-Core/docs/Testing.md",
+      "type": "documentation"
+    },
+    {
+      "id": "archive/planning/PACK-05-Core/src/Logger.gs",
+      "path": "archive/planning/PACK-05-Core/src/Logger.gs",
+      "type": "source"
+    },
+    {
+      "id": "assets/.gitkeep",
+      "path": "assets/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/.gitkeep",
+      "path": "docs/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/00-Governance/.gitkeep",
+      "path": "docs/00-Governance/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/00-Governance/Business_Event_Catalog_v1.0_Part1.md",
+      "path": "docs/00-Governance/Business_Event_Catalog_v1.0_Part1.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/00-Governance/Finance_Ledger_Constitution_v1.0.md",
+      "path": "docs/00-Governance/Finance_Ledger_Constitution_v1.0.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/00-Governance/Product_Vision.md",
+      "path": "docs/00-Governance/Product_Vision.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/00-Governance/Repository-Governance.md",
+      "path": "docs/00-Governance/Repository-Governance.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/01-Architecture/.gitkeep",
+      "path": "docs/01-Architecture/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/01-Architecture/Domain_Model.md",
+      "path": "docs/01-Architecture/Domain_Model.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/01-Architecture/MVP_User_Journeys.md",
+      "path": "docs/01-Architecture/MVP_User_Journeys.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/01-Architecture/README.md",
+      "path": "docs/01-Architecture/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/02-ADR/.gitkeep",
+      "path": "docs/02-ADR/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/02-Design/Apps_Script_Architecture.md",
+      "path": "docs/02-Design/Apps_Script_Architecture.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/02-Design/Data_Model.md",
+      "path": "docs/02-Design/Data_Model.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/02-Design/Google_Sheets_Schema.md",
+      "path": "docs/02-Design/Google_Sheets_Schema.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/02-Design/Telegram_Commands.md",
+      "path": "docs/02-Design/Telegram_Commands.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/.gitkeep",
+      "path": "docs/03-Engineering/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/03-Engineering/AI_CHECKLIST.md",
+      "path": "docs/03-Engineering/AI_CHECKLIST.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/AI_DECISION_LOG.md",
+      "path": "docs/03-Engineering/AI_DECISION_LOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/AI_ENGINEERING_CONSTITUTION.md",
+      "path": "docs/03-Engineering/AI_ENGINEERING_CONSTITUTION.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/AI_IMPLEMENTATION_STANDARD.md",
+      "path": "docs/03-Engineering/AI_IMPLEMENTATION_STANDARD.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/AI_PROMPT_TEMPLATE.md",
+      "path": "docs/03-Engineering/AI_PROMPT_TEMPLATE.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/AI_REPOSITORY_AWARENESS.md",
+      "path": "docs/03-Engineering/AI_REPOSITORY_AWARENESS.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/AI_REVIEW_STANDARD.md",
+      "path": "docs/03-Engineering/AI_REVIEW_STANDARD.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/AI_WORKFLOW.md",
+      "path": "docs/03-Engineering/AI_WORKFLOW.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/DEFINITION_OF_DONE.md",
+      "path": "docs/03-Engineering/DEFINITION_OF_DONE.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/ENGINEERING_ENVIRONMENT.md",
+      "path": "docs/03-Engineering/ENGINEERING_ENVIRONMENT.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/ENGINEERING_WORKFLOW.md",
+      "path": "docs/03-Engineering/ENGINEERING_WORKFLOW.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/FEATURE_TEMPLATE.md",
+      "path": "docs/03-Engineering/FEATURE_TEMPLATE.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/Google_Sheets_Blueprint_v1.md",
+      "path": "docs/03-Engineering/Google_Sheets_Blueprint_v1.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/Infrastructure_Architecture.md",
+      "path": "docs/03-Engineering/Infrastructure_Architecture.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/REVIEW_CHECKLIST.md",
+      "path": "docs/03-Engineering/REVIEW_CHECKLIST.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/Repository_Contract_Standard.md",
+      "path": "docs/03-Engineering/Repository_Contract_Standard.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/Sprint-Reviews/Milestone-A.md",
+      "path": "docs/03-Engineering/Sprint-Reviews/Milestone-A.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/Sprint-Reviews/S2-04.md",
+      "path": "docs/03-Engineering/Sprint-Reviews/S2-04.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/Sprint-Reviews/S2-05.md",
+      "path": "docs/03-Engineering/Sprint-Reviews/S2-05.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/Sprint-Reviews/S2-06.md",
+      "path": "docs/03-Engineering/Sprint-Reviews/S2-06.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/UI_Architecture.md",
+      "path": "docs/03-Engineering/UI_Architecture.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/plans/E1_Dev_Environment.md",
+      "path": "docs/03-Engineering/plans/E1_Dev_Environment.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/technical-lead-review.md",
+      "path": "docs/03-Engineering/technical-lead-review.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/templates/HANDOVER.md",
+      "path": "docs/03-Engineering/templates/HANDOVER.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/templates/gemini-handover.md",
+      "path": "docs/03-Engineering/templates/gemini-handover.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/03-Engineering/templates/technical-lead-response.md",
+      "path": "docs/03-Engineering/templates/technical-lead-response.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/.gitkeep",
+      "path": "docs/04-Planning/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/04-Planning/B2.2_Transaction_Entry_Validation.md",
+      "path": "docs/04-Planning/B2.2_Transaction_Entry_Validation.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C1.1_Analysis.md",
+      "path": "docs/04-Planning/C1.1_Analysis.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C1.1_Plan.md",
+      "path": "docs/04-Planning/C1.1_Plan.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C1.2_Analysis.md",
+      "path": "docs/04-Planning/C1.2_Analysis.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C1.2_Plan.md",
+      "path": "docs/04-Planning/C1.2_Plan.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C2.1_Analysis.md",
+      "path": "docs/04-Planning/C2.1_Analysis.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C2.1_Plan.md",
+      "path": "docs/04-Planning/C2.1_Plan.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C2.2_Analysis.md",
+      "path": "docs/04-Planning/C2.2_Analysis.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/C2.2_Plan.md",
+      "path": "docs/04-Planning/C2.2_Plan.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/E1_CLI_Analysis.md",
+      "path": "docs/04-Planning/E1_CLI_Analysis.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/E1_CLI_Plan.md",
+      "path": "docs/04-Planning/E1_CLI_Plan.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/IMPLEMENTATION_ORDER.md",
+      "path": "docs/04-Planning/IMPLEMENTATION_ORDER.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/MASTER_BACKLOG.md",
+      "path": "docs/04-Planning/MASTER_BACKLOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/PRODUCT_BREAKDOWN_STRUCTURE.md",
+      "path": "docs/04-Planning/PRODUCT_BREAKDOWN_STRUCTURE.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/PROJECT_TRACKER.md",
+      "path": "docs/04-Planning/PROJECT_TRACKER.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/RELEASE_PLAN.md",
+      "path": "docs/04-Planning/RELEASE_PLAN.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/Roadmap.md",
+      "path": "docs/04-Planning/Roadmap.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/04-Planning/SPRINT_PLAN.md",
+      "path": "docs/04-Planning/SPRINT_PLAN.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/05-Learning/.gitkeep",
+      "path": "docs/05-Learning/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "docs/INDEX.md",
+      "path": "docs/INDEX.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/project/BACKLOG.md",
+      "path": "docs/project/BACKLOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/project/CHANGELOG.md",
+      "path": "docs/project/CHANGELOG.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/project/PROJECT_STATUS.md",
+      "path": "docs/project/PROJECT_STATUS.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/project/ROADMAP.md",
+      "path": "docs/project/ROADMAP.md",
+      "type": "documentation"
+    },
+    {
+      "id": "docs/project/SPRINT_TRACKER.md",
+      "path": "docs/project/SPRINT_TRACKER.md",
+      "type": "documentation"
+    },
+    {
+      "id": "package.json",
+      "path": "package.json",
+      "type": "configuration"
+    },
+    {
+      "id": "pull-request-template.md",
+      "path": "pull-request-template.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/artifacts/architecture-notes.md",
+      "path": "review/artifacts/architecture-notes.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/artifacts/changed-files.md",
+      "path": "review/artifacts/changed-files.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/artifacts/checklist.md",
+      "path": "review/artifacts/checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/artifacts/commit-message.txt",
+      "path": "review/artifacts/commit-message.txt",
+      "type": "source"
+    },
+    {
+      "id": "review/artifacts/gemini-handover.md",
+      "path": "review/artifacts/gemini-handover.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/artifacts/implementation-summary.md",
+      "path": "review/artifacts/implementation-summary.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/artifacts/self-review.md",
+      "path": "review/artifacts/self-review.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/artifacts/validation.md",
+      "path": "review/artifacts/validation.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/HANDOVER.md",
+      "path": "review/current/HANDOVER.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/architecture-notes.md",
+      "path": "review/current/artifacts/architecture-notes.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/changed-files.md",
+      "path": "review/current/artifacts/changed-files.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/checklist.md",
+      "path": "review/current/artifacts/checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/commit-message.txt",
+      "path": "review/current/artifacts/commit-message.txt",
+      "type": "source"
+    },
+    {
+      "id": "review/current/artifacts/gemini-handover.md",
+      "path": "review/current/artifacts/gemini-handover.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/implementation-summary.md",
+      "path": "review/current/artifacts/implementation-summary.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/self-review.md",
+      "path": "review/current/artifacts/self-review.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/technical-lead-response.md",
+      "path": "review/current/artifacts/technical-lead-response.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/artifacts/validation.md",
+      "path": "review/current/artifacts/validation.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/current/technical-lead-approval.md",
+      "path": "review/current/technical-lead-approval.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package-validation.md",
+      "path": "review/package-validation.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/architecture-notes.md",
+      "path": "review/package_test_final/architecture-notes.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/changed-files.md",
+      "path": "review/package_test_final/changed-files.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/checklist.md",
+      "path": "review/package_test_final/checklist.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/gemini-handover.md",
+      "path": "review/package_test_final/gemini-handover.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/implementation-summary.md",
+      "path": "review/package_test_final/implementation-summary.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/manifest.json",
+      "path": "review/package_test_final/manifest.json",
+      "type": "configuration"
+    },
+    {
+      "id": "review/package_test_final/self-review.md",
+      "path": "review/package_test_final/self-review.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/technical-lead-approval.md",
+      "path": "review/package_test_final/technical-lead-approval.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/package_test_final/validation.md",
+      "path": "review/package_test_final/validation.md",
+      "type": "documentation"
+    },
+    {
+      "id": "review/review-B2.2.zip",
+      "path": "review/review-B2.2.zip",
+      "type": "source"
+    },
+    {
+      "id": "review/review-C1.1.zip",
+      "path": "review/review-C1.1.zip",
+      "type": "source"
+    },
+    {
+      "id": "review/review-package-chatgpt.zip",
+      "path": "review/review-package-chatgpt.zip",
+      "type": "source"
+    },
+    {
+      "id": "scripts/doctor.js",
+      "path": "scripts/doctor.js",
+      "type": "source"
+    },
+    {
+      "id": "scripts/review.js",
+      "path": "scripts/review.js",
+      "type": "source"
+    },
+    {
+      "id": "scripts/start-day.js",
+      "path": "scripts/start-day.js",
+      "type": "source"
+    },
+    {
+      "id": "scripts/sync.js",
+      "path": "scripts/sync.js",
+      "type": "source"
+    },
+    {
+      "id": "scripts/task.js",
+      "path": "scripts/task.js",
+      "type": "source"
+    },
+    {
+      "id": "src/.gitkeep",
+      "path": "src/.gitkeep",
+      "type": "source"
+    },
+    {
+      "id": "src/adapter/TelegramAdapter.gs",
+      "path": "src/adapter/TelegramAdapter.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/app/ValidationEngine.gs",
+      "path": "src/app/ValidationEngine.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/app/WebApp.gs",
+      "path": "src/app/WebApp.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/config/Config.gs",
+      "path": "src/config/Config.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/domain/Account.gs",
+      "path": "src/domain/Account.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/domain/Category.gs",
+      "path": "src/domain/Category.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/domain/Money.gs",
+      "path": "src/domain/Money.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/domain/Transaction.gs",
+      "path": "src/domain/Transaction.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/domain/TransactionType.gs",
+      "path": "src/domain/TransactionType.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/Errors.gs",
+      "path": "src/infrastructure/sheets/Errors.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/SheetsGateway.gs",
+      "path": "src/infrastructure/sheets/SheetsGateway.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/mappers/AccountMapper.gs",
+      "path": "src/infrastructure/sheets/mappers/AccountMapper.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/mappers/CategoryMapper.gs",
+      "path": "src/infrastructure/sheets/mappers/CategoryMapper.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/mappers/TransactionMapper.gs",
+      "path": "src/infrastructure/sheets/mappers/TransactionMapper.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/repositories/SheetsAccountRepository.gs",
+      "path": "src/infrastructure/sheets/repositories/SheetsAccountRepository.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/repositories/SheetsCategoryRepository.gs",
+      "path": "src/infrastructure/sheets/repositories/SheetsCategoryRepository.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/infrastructure/sheets/repositories/SheetsTransactionRepository.gs",
+      "path": "src/infrastructure/sheets/repositories/SheetsTransactionRepository.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/parser/TransactionParser.gs",
+      "path": "src/parser/TransactionParser.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/parser/TransactionRequest.gs",
+      "path": "src/parser/TransactionRequest.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/repository/AccountRepository.gs",
+      "path": "src/repository/AccountRepository.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/repository/CategoryRepository.gs",
+      "path": "src/repository/CategoryRepository.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/repository/GoogleSheetsTransactionRepository.gs",
+      "path": "src/repository/GoogleSheetsTransactionRepository.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/repository/TransactionRepository.gs",
+      "path": "src/repository/TransactionRepository.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/service/TransactionService.gs",
+      "path": "src/service/TransactionService.gs",
+      "type": "source"
+    },
+    {
+      "id": "src/ui/Accounts.html",
+      "path": "src/ui/Accounts.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Categories.html",
+      "path": "src/ui/Categories.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Dashboard.html",
+      "path": "src/ui/Dashboard.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Header.html",
+      "path": "src/ui/Header.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Index.html",
+      "path": "src/ui/Index.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Navigation.html",
+      "path": "src/ui/Navigation.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Reports.html",
+      "path": "src/ui/Reports.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Settings.html",
+      "path": "src/ui/Settings.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Styles.html",
+      "path": "src/ui/Styles.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/TransactionDetail.html",
+      "path": "src/ui/TransactionDetail.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/TransactionEntry.html",
+      "path": "src/ui/TransactionEntry.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/TransactionForm.html",
+      "path": "src/ui/TransactionForm.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Transactions.html",
+      "path": "src/ui/Transactions.html",
+      "type": "template"
+    },
+    {
+      "id": "src/ui/Validation.html",
+      "path": "src/ui/Validation.html",
+      "type": "template"
+    },
+    {
+      "id": "test/.gitkeep",
+      "path": "test/.gitkeep",
+      "type": "test"
+    },
+    {
+      "id": "test/integration/SheetsRepositoryTest.gs",
+      "path": "test/integration/SheetsRepositoryTest.gs",
+      "type": "test"
+    },
+    {
+      "id": "test/integration/TransactionFlowTests.gs",
+      "path": "test/integration/TransactionFlowTests.gs",
+      "type": "test"
+    },
+    {
+      "id": "test/integration/TransactionRetrievalTests.gs",
+      "path": "test/integration/TransactionRetrievalTests.gs",
+      "type": "test"
+    },
+    {
+      "id": "test/unit/RepositoryContractTest.gs",
+      "path": "test/unit/RepositoryContractTest.gs",
+      "type": "test"
+    },
+    {
+      "id": "test/unit/TransactionDomainTest.gs",
+      "path": "test/unit/TransactionDomainTest.gs",
+      "type": "test"
+    },
+    {
+      "id": "test/unit/ValidationTest.gs",
+      "path": "test/unit/ValidationTest.gs",
+      "type": "test"
+    },
+    {
+      "id": "test/unit/WebAppTest.gs",
+      "path": "test/unit/WebAppTest.gs",
+      "type": "test"
+    },
+    {
+      "id": "tools/engineering/README.md",
+      "path": "tools/engineering/README.md",
+      "type": "documentation"
+    },
+    {
+      "id": "tools/engineering/__init__.py",
+      "path": "tools/engineering/__init__.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/__main__.py",
+      "path": "tools/engineering/__main__.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/commands/audit.py",
+      "path": "tools/engineering/commands/audit.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/cleanup.py",
+      "path": "tools/engineering/commands/cleanup.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/context.py",
+      "path": "tools/engineering/commands/context.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/doctor.py",
+      "path": "tools/engineering/commands/doctor.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/graph.py",
+      "path": "tools/engineering/commands/graph.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/package.py",
+      "path": "tools/engineering/commands/package.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/prepare.py",
+      "path": "tools/engineering/commands/prepare.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/prompt.py",
+      "path": "tools/engineering/commands/prompt.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/commands/setup.py",
+      "path": "tools/engineering/commands/setup.py",
+      "type": "command"
+    },
+    {
+      "id": "tools/engineering/core/approval.py",
+      "path": "tools/engineering/core/approval.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/cleanup_engine.py",
+      "path": "tools/engineering/core/cleanup_engine.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/filesystem.py",
+      "path": "tools/engineering/core/filesystem.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/git.py",
+      "path": "tools/engineering/core/git.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/knowledge_graph.py",
+      "path": "tools/engineering/core/knowledge_graph.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/manifest.py",
+      "path": "tools/engineering/core/manifest.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/markdown.py",
+      "path": "tools/engineering/core/markdown.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/output.py",
+      "path": "tools/engineering/core/output.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/packaging.py",
+      "path": "tools/engineering/core/packaging.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/repository.py",
+      "path": "tools/engineering/core/repository.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/core/repository_audit.py",
+      "path": "tools/engineering/core/repository_audit.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/templates/context.md",
+      "path": "tools/engineering/templates/context.md",
+      "type": "documentation"
+    },
+    {
+      "id": "tools/engineering/templates/prompt.md",
+      "path": "tools/engineering/templates/prompt.md",
+      "type": "documentation"
+    },
+    {
+      "id": "tools/engineering/tests/test_audit.py",
+      "path": "tools/engineering/tests/test_audit.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/tests/test_parser.py",
+      "path": "tools/engineering/tests/test_parser.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/tests/test_safety.py",
+      "path": "tools/engineering/tests/test_safety.py",
+      "type": "source"
+    },
+    {
+      "id": "tools/engineering/tests/test_slugify.py",
+      "path": "tools/engineering/tests/test_slugify.py",
+      "type": "source"
+    }
+  ]
+}

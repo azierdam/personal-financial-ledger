@@ -1,7 +1,7 @@
 # tools/engineering/__main__.py
 import argparse
 import sys
-from .commands import doctor, context, prompt, prepare, package, setup, audit, cleanup
+from .commands import doctor, context, prompt, prepare, package, setup, audit, cleanup, graph
 
 def main():
     parser = argparse.ArgumentParser(description="Engineering CLI for PFL")
@@ -34,6 +34,9 @@ def main():
     # cleanup
     subparsers.add_parser("cleanup", help="Execute approved repository cleanup")
 
+    # graph
+    subparsers.add_parser("graph", help="Generate repository knowledge graph")
+
     args = parser.parse_args()
 
     if args.command == "doctor":
@@ -52,6 +55,8 @@ def main():
         audit.run()
     elif args.command == "cleanup":
         cleanup.run()
+    elif args.command == "graph":
+        graph.run()
     else:
         parser.print_help()
 

@@ -2527,12 +2527,12 @@
     "file_name": "implementation-summary.md",
     "generated": false,
     "language": "Markdown",
-    "last_modified": "1784548933.0494938",
+    "last_modified": "1784553333.8141322",
     "referenced_by": [],
     "references": [],
     "relative_path": "review/artifacts/implementation-summary.md",
-    "sha256": "f40531f1d4b26d6048d5b9030a73ed08936183919aa95f5e13b82d7dcb359ad4",
-    "size": 1056
+    "sha256": "e74a92f3e7c22abac49e6aa330643b2e18a6b3361022e77e575a1102b01931a7",
+    "size": 1141
   },
   {
     "artifact_type": "artifact",
@@ -2557,12 +2557,12 @@
     "file_name": "validation.md",
     "generated": false,
     "language": "Markdown",
-    "last_modified": "1784548933.0514882",
+    "last_modified": "1784553455.406425",
     "referenced_by": [],
     "references": [],
     "relative_path": "review/artifacts/validation.md",
-    "sha256": "22bc62c2c86d395b1f3ac0232d3b3f35b925ae72a7513d5bde520b72dcce352b",
-    "size": 933
+    "sha256": "d3e64419782fcdedde5450a26386930384a55236385f59ffa6ae654d3a7c051d",
+    "size": 475
   },
   {
     "artifact_type": "artifact",
@@ -2917,11 +2917,11 @@
     "file_name": "review-package-chatgpt.zip",
     "generated": false,
     "language": "Binary",
-    "last_modified": "1784548933.0534823",
+    "last_modified": "1784553315.207469",
     "referenced_by": [],
     "references": [],
     "relative_path": "review/review-package-chatgpt.zip",
-    "sha256": "97e52e5666b486d8fdb71669158893266e62b128564e33d68f3bf7a2f836fb65",
+    "sha256": "eaf876403d8ed516a3adbb76a76cba6d9cbf493079dd479e5a9e1f4010a80acc",
     "size": 4734
   },
   {
@@ -3712,12 +3712,12 @@
     "file_name": "README.md",
     "generated": false,
     "language": "Markdown",
-    "last_modified": "1784548933.05448",
+    "last_modified": "1784554144.2285643",
     "referenced_by": [],
     "references": [],
     "relative_path": "tools/engineering/README.md",
-    "sha256": "c92ef52891706fbfe4c34824fd1423522868ba813499aace844ad6b7f6d4b478",
-    "size": 2898
+    "sha256": "ebae3accf7b0cb2935326df6f50997310916ce876af4cced48311a33df26bff5",
+    "size": 2950
   },
   {
     "artifact_type": "tooling",
@@ -3742,12 +3742,12 @@
     "file_name": "__main__.py",
     "generated": false,
     "language": "Python",
-    "last_modified": "1784553021.3760483",
+    "last_modified": "1784554088.202458",
     "referenced_by": [],
     "references": [],
     "relative_path": "tools/engineering/__main__.py",
-    "sha256": "e7ba78a596ce83f8b502e8899d69427c4af4753a0ca02a717b487058bcf593e3",
-    "size": 2001
+    "sha256": "f4e8df95d36bad9c96aa825c09adf62682aebcb4b823b0488ea775d9e37bee7c",
+    "size": 2159
   },
   {
     "artifact_type": "tooling",
@@ -3808,6 +3808,21 @@
     "relative_path": "tools/engineering/commands/doctor.py",
     "sha256": "fa499e125a9fdf35f558bff55283185a699467d181bd0fa5f4988d63126bb4d4",
     "size": 575
+  },
+  {
+    "artifact_type": "tooling",
+    "directory": "tools/engineering/commands",
+    "exists": true,
+    "extension": ".py",
+    "file_name": "graph.py",
+    "generated": false,
+    "language": "Python",
+    "last_modified": "1784554032.788824",
+    "referenced_by": [],
+    "references": [],
+    "relative_path": "tools/engineering/commands/graph.py",
+    "sha256": "e34ee6c23364a7382618f0c55fcfa46d0e2f2f9dcd829b4ff6dd19706a7f51a0",
+    "size": 267
   },
   {
     "artifact_type": "tooling",
@@ -3928,6 +3943,21 @@
     "relative_path": "tools/engineering/core/git.py",
     "sha256": "0d291add21adae1ec4b2798c2416bea3e9528e0a7f2a80e4bcb7dd2e41b0561d",
     "size": 1401
+  },
+  {
+    "artifact_type": "tooling",
+    "directory": "tools/engineering/core",
+    "exists": true,
+    "extension": ".py",
+    "file_name": "knowledge_graph.py",
+    "generated": false,
+    "language": "Python",
+    "last_modified": "1784553972.7221732",
+    "referenced_by": [],
+    "references": [],
+    "relative_path": "tools/engineering/core/knowledge_graph.py",
+    "sha256": "673d1e06e083dff3c6294ec718a51f3ce08a5b61cd5e03251909d0690f000693",
+    "size": 3255
   },
   {
     "artifact_type": "tooling",
