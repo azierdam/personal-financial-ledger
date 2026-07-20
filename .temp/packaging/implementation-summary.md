@@ -1,17 +1,17 @@
 # Implementation Summary: Engineering CLI Workflow Separation
 
 ## Changes
-- **Repository Prep/Setup**: Introduced a dedicated `python -m tools.engineering setup` command. This command is now solely responsible for Git repository preparation: validating approvals, pulling changes, and managing feature branch creation based on the sprint ID.
-- **Working File Generation**: Refactored `prepare` command to be strictly focused on regenerating the engineering workspace (context and prompt) without side effects related to Git branches or repository state.
-- **CLI Registration**: Updated `tools/engineering/__main__.py` to expose the new `setup` command and clearly decouple the responsibilities.
-- **Documentation**: Synchronized `tools/engineering/README.md` to define the new two-phase workflow (Phase 1: Repository Preparation vs. Phase 2: Working File Generation) and updated artifact ownership mapping.
+- **Repository Prep/Setup**: Introduced dedicated `python -m tools.engineering setup` command (Phase 1).
+- **Working File Generation**: Refactored `prepare` command (Phase 2).
+- **Workflow Decoupling**: Repository state management is now strictly separated from artifact regeneration.
+- **Documentation**: Synchronized `docs/03-Engineering/ENGINEERING_WORKFLOW.md` and `tools/engineering/README.md` to reflect the two-phase lifecycle.
 
 ## Validation
-- Verified `setup` command performs Git operations (branching, pull) correctly.
-- Verified `prepare` command regenerates working files without Git side effects.
+- Verified `setup` correctly manages branches and Git state without generating workspace files.
+- Verified `prepare` correctly regenerates working files without Git side effects.
 - Confirmed backward compatibility: existing workflows are preserved while now being split into deterministic phases.
-- Documentation reflects the new, separated responsibilities.
+- Documentation accurately defines the new lifecycle and command responsibilities.
 
 ## Git Status
-- Current branch: `feature-d1-6-create-transaction`
-- Confirmed modifications to `tools/engineering/commands/setup.py`, `tools/engineering/commands/prepare.py`, `tools/engineering/__main__.py`, and `tools/engineering/README.md`.
+- Current branch: `feature-d1-8-workflow-separation`
+- Confirmed modifications to `tools/engineering/commands/setup.py`, `tools/engineering/commands/prepare.py`, and `docs/`.
