@@ -1,0 +1,16 @@
+[
+  {
+    "action": "Relocate planning artifacts",
+    "execution_order": 1,
+    "rationale": "Centralize historical documentation for better visibility.",
+    "risk_level": "Low",
+    "blocking_dependencies": []
+  },
+  {
+    "action": "Archive duplicate READMEs",
+    "execution_order": 2,
+    "rationale": "Remove confusion caused by multiple READMEs.",
+    "risk_level": "Low",
+    "blocking_dependencies": []
+  }
+]

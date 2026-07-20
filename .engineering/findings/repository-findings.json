@@ -1,0 +1,28 @@
+[
+  {
+    "id": "FIND-DUP-001",
+    "severity": "Low",
+    "category": "Duplicate Artifact",
+    "title": "Duplicate README.md files",
+    "description": "Multiple README.md files exist across different directories.",
+    "evidence": [".engineering/duplicate-docs.json"],
+    "affected_files": ["README.md", "archive/README.md", "archive/planning-artifacts/FEATURE-001-Domain-Model/README.md"],
+    "recommended_action": "Archive",
+    "priority": "P3",
+    "dependencies": [],
+    "requires_manual_review": true
+  },
+  {
+    "id": "FIND-ORG-001",
+    "severity": "Medium",
+    "category": "Repository Organization",
+    "title": "Unstructured Planning Artifacts",
+    "description": "Planning artifacts are scattered in archive/planning-artifacts.",
+    "evidence": [".engineering/repository-audit.json"],
+    "affected_files": ["archive/planning-artifacts/"],
+    "recommended_action": "Relocate",
+    "priority": "P2",
+    "dependencies": [],
+    "requires_manual_review": true
+  }
+]
