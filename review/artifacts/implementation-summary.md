@@ -1,16 +1,12 @@
-# Implementation Summary: Machine Contract for Technical Lead Approval Parser
+# Implementation Summary: Separating Approval and Review Workflow
 
 ## Changes
-- Refactored `tools/engineering/core/approval.py` to only extract strictly required sections, safely ignoring any optional sections.
-- Enforced strict validation for required sections, ensuring the parser fails with a clear error if they are missing or empty.
-- Updated `tools/engineering/tests/test_parser.py` with comprehensive unit tests for successful parsing, optional sections, and validation failures.
-- Updated `tools/engineering/README.md` to document the new "Machine Contract" for the approval template.
+- Updated `docs/03-Engineering/ENGINEERING_WORKFLOW.md` to clearly distinguish between the roles of `technical-lead-approval.md` (parsed by Engineering CLI) and `technical-lead-review.md` (authored by Technical Lead for review authorization).
+- Updated `tools/engineering/README.md` to explicitly note that the Engineering CLI does not parse or interact with `technical-lead-review.md`.
 
 ## Validation
-- Parsed existing `review/current/technical-lead-approval.md` successfully.
-- Verified parser correctly ignores optional sections (`# Branch Strategy`, `# Architecture`, etc.).
-- Verified parser failure when required sections are missing or empty.
-- All unit tests passed.
+- Workflow documentation now reflects the updated lifecycle.
+- Engineering CLI parser remains unchanged and correctly targets only `technical-lead-approval.md`.
 
 ## Git Status
-- Confirmed modifications to `tools/engineering/core/approval.py`, `tools/engineering/tests/test_parser.py`, and `tools/engineering/README.md`.
+- Confirmed modifications to `docs/03-Engineering/ENGINEERING_WORKFLOW.md` and `tools/engineering/README.md`.
