@@ -1,0 +1,18 @@
+{
+  "milestone": "1.5B",
+  "required_deliverables": [
+    "technical-lead-approval.md",
+    "implementation-summary.md",
+    "validation.md"
+  ],
+  "optional_deliverables": [
+    "checklist.md",
+    "architecture-notes.md",
+    "changed-files.md",
+    "self-review.md",
+    "gemini-handover.md"
+  ],
+  "excluded_patterns": ["*.zip", ".temp/*", ".engineering/*"],
+  "generated_outputs": ["manifest.json"],
+  "validation_requirements": ["ALL_REQUIRED_PRESENT"]
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "finding_id": "FIND-DUP-001",
+    "decision": "Approve",
+    "approved_action": "Archive",
+    "implementation_milestone": "1.6",
+    "notes": "Confirmed duplicate README files."
+  },
+  {
+    "finding_id": "FIND-ORG-001",
+    "decision": "Approve",
+    "approved_action": "Relocate",
+    "implementation_milestone": "1.6",
+    "notes": "Confirmed scattered planning artifacts."
+  }
+]

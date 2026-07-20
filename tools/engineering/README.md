@@ -36,6 +36,7 @@ Each command has a single, distinct responsibility:
 | `setup` | Orchestrate repository preparation (branching). |
 | `prepare` | Orchestrate workspace generation (doctor, context, prompt). |
 | `audit` | Generate repository factual audit. |
+| `package` | Package review artifacts based on contract. |
 
 ## Branch Naming Rules
 Branch names are generated deterministically based on the sprint ID to ensure Git compliance:
