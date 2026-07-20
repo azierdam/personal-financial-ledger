@@ -2,7 +2,24 @@ import os
 import zipfile
 import shutil
 import json
-from . import manifest
+from . import manifest, approval
+
+def generate_structured_summary(root, sprint_id):
+    approval_file = os.path.join(root, "review", "current", "technical-lead-approval.md")
+    approval_data = approval.parse(approval_file) if os.path.exists(approval_file) else {}
+    
+    # Simple extraction of components
+    summary = f"# Engineering Review Summary\n\n"
+    summary += f"## Milestone\n{sprint_id}\n\n"
+    summary += f"## Objective\n{approval_data.get('Objective', 'N/A')}\n\n"
+    summary += f"## Tasks\n(See approved-findings.json)\n\n"
+    summary += f"## Deliverables\n(See manifest.json)\n\n"
+    summary += f"## Changed Files\n(See repository-audit.json)\n\n"
+    summary += f"## Validation Evidence\n(See validation.md)\n\n"
+    summary += f"## Known Limitations\n(See self-review.md)\n\n"
+    summary += f"## Next Milestone\n(See technical-lead-review.md)\n\n"
+    
+    return summary
 
 def package(profile, sprint_id, root):
     contract_path = os.path.join(root, ".engineering", "contracts", "engineering-package-contract.json")
@@ -19,9 +36,15 @@ def package(profile, sprint_id, root):
         shutil.rmtree(package_dir)
     os.makedirs(package_dir)
 
-    # Collect artifacts
+    # Generate Structured Summary
+    structured_summary = generate_structured_summary(root, sprint_id)
+    with open(os.path.join(package_dir, "implementation-summary.md"), 'w', encoding='utf-8') as f:
+        f.write(structured_summary)
+
+    # Collect artifacts (copy others)
     missing = []
     for art in required:
+        if art == "implementation-summary.md": continue
         found = False
         for search_dir in ["review/current", "review/artifacts"]:
             src = os.path.join(root, search_dir, art)
@@ -37,6 +60,7 @@ def package(profile, sprint_id, root):
     
     # Copy optional if exist
     for art in optional:
+        if art == "implementation-summary.md": continue
         for search_dir in ["review/current", "review/artifacts"]:
             src = os.path.join(root, search_dir, art)
             if os.path.exists(src):

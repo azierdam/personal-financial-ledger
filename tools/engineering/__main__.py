@@ -1,7 +1,7 @@
 # tools/engineering/__main__.py
 import argparse
 import sys
-from .commands import doctor, context, prompt, prepare, package, setup, audit, cleanup, graph
+from .commands import doctor, context, prompt, prepare, package, setup, audit, cleanup, graph, impact
 
 def main():
     parser = argparse.ArgumentParser(description="Engineering CLI for PFL")
@@ -37,6 +37,9 @@ def main():
     # graph
     subparsers.add_parser("graph", help="Generate repository knowledge graph")
 
+    # impact
+    subparsers.add_parser("impact", help="Generate documentation impact analysis")
+
     args = parser.parse_args()
 
     if args.command == "doctor":
@@ -57,6 +60,8 @@ def main():
         cleanup.run()
     elif args.command == "graph":
         graph.run()
+    elif args.command == "impact":
+        impact.run()
     else:
         parser.print_help()
 

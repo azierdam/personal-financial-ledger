@@ -281,6 +281,9 @@
   "tools/engineering/commands/graph.py": [
     "repository,"
   ],
+  "tools/engineering/commands/impact.py": [
+    "repository,"
+  ],
   "tools/engineering/commands/package.py": [
     "os",
     "repository,",
@@ -319,6 +322,12 @@
     "subprocess",
     "unicodedata"
   ],
+  "tools/engineering/core/impact_engine.py": [
+    "git",
+    "json",
+    "os",
+    "repository"
+  ],
   "tools/engineering/core/knowledge_graph.py": [
     "json",
     "os",
@@ -335,7 +344,7 @@
   ],
   "tools/engineering/core/packaging.py": [
     "json",
-    "manifest",
+    "manifest,",
     "os",
     "shutil",
     "zipfile"

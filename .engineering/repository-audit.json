@@ -2917,12 +2917,12 @@
     "file_name": "review-package-chatgpt.zip",
     "generated": false,
     "language": "Binary",
-    "last_modified": "1784553315.207469",
+    "last_modified": "1784554211.8308837",
     "referenced_by": [],
     "references": [],
     "relative_path": "review/review-package-chatgpt.zip",
-    "sha256": "eaf876403d8ed516a3adbb76a76cba6d9cbf493079dd479e5a9e1f4010a80acc",
-    "size": 4734
+    "sha256": "cef05a4e0397487d79205c4aee183f6e924b82b07ac2fb92afaf7940b2d836a5",
+    "size": 4554
   },
   {
     "artifact_type": "other",
@@ -3742,12 +3742,12 @@
     "file_name": "__main__.py",
     "generated": false,
     "language": "Python",
-    "last_modified": "1784554088.202458",
+    "last_modified": "1784555653.4344976",
     "referenced_by": [],
     "references": [],
     "relative_path": "tools/engineering/__main__.py",
-    "sha256": "f4e8df95d36bad9c96aa825c09adf62682aebcb4b823b0488ea775d9e37bee7c",
-    "size": 2159
+    "sha256": "0609ee16e8f1b110413f2dbbb53fe5881eb78b7d2dcc69e8b7ec84b4270ba3d8",
+    "size": 2325
   },
   {
     "artifact_type": "tooling",
@@ -3823,6 +3823,21 @@
     "relative_path": "tools/engineering/commands/graph.py",
     "sha256": "e34ee6c23364a7382618f0c55fcfa46d0e2f2f9dcd829b4ff6dd19706a7f51a0",
     "size": 267
+  },
+  {
+    "artifact_type": "tooling",
+    "directory": "tools/engineering/commands",
+    "exists": true,
+    "extension": ".py",
+    "file_name": "impact.py",
+    "generated": false,
+    "language": "Python",
+    "last_modified": "1784555588.7412784",
+    "referenced_by": [],
+    "references": [],
+    "relative_path": "tools/engineering/commands/impact.py",
+    "sha256": "fafb9b17230046442547d2328b54863898928aa8c02590bfdf5e117c092742c6",
+    "size": 265
   },
   {
     "artifact_type": "tooling",
@@ -3949,6 +3964,21 @@
     "directory": "tools/engineering/core",
     "exists": true,
     "extension": ".py",
+    "file_name": "impact_engine.py",
+    "generated": false,
+    "language": "Python",
+    "last_modified": "1784555524.8046083",
+    "referenced_by": [],
+    "references": [],
+    "relative_path": "tools/engineering/core/impact_engine.py",
+    "sha256": "b5825b7bea97d9599032473ddff766b3c4a1925257cb7ec1495aff2ac411c2cf",
+    "size": 2897
+  },
+  {
+    "artifact_type": "tooling",
+    "directory": "tools/engineering/core",
+    "exists": true,
+    "extension": ".py",
     "file_name": "knowledge_graph.py",
     "generated": false,
     "language": "Python",
@@ -4012,12 +4042,12 @@
     "file_name": "packaging.py",
     "generated": false,
     "language": "Python",
-    "last_modified": "1784548933.0574715",
+    "last_modified": "1784555722.2133403",
     "referenced_by": [],
     "references": [],
     "relative_path": "tools/engineering/core/packaging.py",
-    "sha256": "993b1c9ac0acb9d41b5e24d35bf3962b6053fe01569e747ecf7449ab2b2d51d2",
-    "size": 1871
+    "sha256": "3f8a4e80bcd33295383551671a2870b4b15bb7f259b29835dc64203a0b5a68d1",
+    "size": 3135
   },
   {
     "artifact_type": "tooling",
