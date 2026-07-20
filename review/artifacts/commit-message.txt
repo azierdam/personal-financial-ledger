@@ -1,1 +1,1 @@
-feat(cli): implement execution manifest engine
+feat(cli): implement canonical Engineering Workflow v2.1

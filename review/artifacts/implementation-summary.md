@@ -1,17 +1,17 @@
-# Implementation Summary: Execution Manifest Engine
+# Implementation Summary: Engineering Workflow v2.1 Implementation
 
 ## Changes
-- **Manifest Engine**: Implemented `tools/engineering/core/manifest_engine.py` to generate an execution manifest from the Knowledge Graph.
-- **CLI Integration**: Added `python -m tools.engineering manifest` command.
-- **Determinism**: Manifests and task graphs are generated using `sort_keys=True` and topological sorting for deterministic execution ordering.
-- **Package Contract**: Updated package generator to ensure all manifest and graph artifacts are included in the Engineering Review Package.
+- **Canonical Workflow**: Fully implemented Engineering Workflow v2.1.
+- **Review Package Generator**: Redesigned to be contract-driven, generating all mandatory artifacts (`implementation-summary.md`, `validation.md`, `self-review.md`, `gemini-handover.md`) dynamically from repository state (`audit.json`, `manifest.json`) instead of copying static files.
+- **Artifact Ownership**: Defined strict artifact ownership for Technical Lead (Approval/Review) vs. Engineering CLI (Context/Prompt) vs. Gemini (Handover/Summary).
+- **Cleanup**: Archived obsolete workflow files and redundant templates.
 
 ## Validation
-- Verified `python -m tools.engineering manifest` runs successfully.
-- Verified deterministic output across repeated runs.
-- Confirmed packaging adheres to contract rules and includes manifest artifacts.
-- No repository files were modified, and all constraints were followed.
+- Verified `python -m tools.engineering package chatgpt` generates a deterministic package based on the new contract.
+- Confirmed review package contents adhere to the required milestone/task-oriented structure (no stale data).
+- Validated Engineering CLI v2.1 lifecycle steps (Audit -> Graph -> Impact -> Manifest -> Package).
+- Verified repository state is clean and all constraints are satisfied.
 
 ## Git Status
 - Current branch: `feature/artifact-driven-orchestrator`
-- Confirmed modifications to `tools/engineering/` commands, core, and metadata files.
+- Confirmed modifications to `tools/engineering/core/packaging.py`, `tools/engineering/core/review_generator.py`, and `archive/`.
