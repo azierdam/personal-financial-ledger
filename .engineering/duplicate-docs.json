@@ -1,0 +1,499 @@
+[
+  {
+    "files": [
+      "README.md",
+      "archive/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning-artifacts/FEATURE-002-Ledger-Architecture/CHANGELOG.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/FEATURE-002-Ledger-Architecture/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning-artifacts/FEATURE-002-Ledger-Architecture/trackers/Feature-Checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning-artifacts/FEATURE-003-Google-Sheets-Foundation/CHANGELOG.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/FEATURE-003-Google-Sheets-Foundation/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning-artifacts/FEATURE-003-Google-Sheets-Foundation/trackers/Feature-Checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "appsscript.json",
+      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/src/appsscript.json"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/trackers/Feature-Checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
+      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/CHANGELOG.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/CHANGELOG.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/trackers/Feature-Checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
+      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/CHANGELOG.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/CHANGELOG.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/trackers/Feature-Checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/PACK-02-Master-Data/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/PACK-03-Reporting/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/PACK-04-Configuration/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning-artifacts/PACK-05-Core/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/00-Governance/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/00-Governance/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/01-Architecture/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/01-Architecture/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "docs/01-Architecture/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/02-ADR/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/02-ADR/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/03-Engineering/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/03-Engineering/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/03-Engineering/Google_Sheets_Blueprint_v1.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/04-Planning/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/04-Planning/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/05-Learning/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "docs/05-Learning/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "docs/project/CHANGELOG.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "docs/03-Engineering/templates/gemini-handover.md",
+      "review/artifacts/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "docs/03-Engineering/templates/HANDOVER.md",
+      "review/current/HANDOVER.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/architecture-notes.md",
+      "review/current/artifacts/architecture-notes.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/changed-files.md",
+      "review/current/artifacts/changed-files.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/checklist.md",
+      "review/current/artifacts/checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/commit-message.txt",
+      "review/current/artifacts/commit-message.txt"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "docs/03-Engineering/templates/gemini-handover.md",
+      "review/current/artifacts/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/implementation-summary.md",
+      "review/current/artifacts/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/self-review.md",
+      "review/current/artifacts/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "docs/03-Engineering/templates/technical-lead-response.md",
+      "review/current/artifacts/technical-lead-response.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/validation.md",
+      "review/current/artifacts/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/architecture-notes.md",
+      "review/package_test_final/architecture-notes.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/package_test_final/architecture-notes.md",
+      "review/package_test_final/changed-files.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "review/artifacts/changed-files.md",
+      "review/package_test_final/changed-files.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/package_test_final/architecture-notes.md",
+      "review/package_test_final/checklist.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "review/artifacts/checklist.md",
+      "review/package_test_final/checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/package_test_final/architecture-notes.md",
+      "review/package_test_final/gemini-handover.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "docs/03-Engineering/templates/gemini-handover.md",
+      "review/package_test_final/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/implementation-summary.md",
+      "review/package_test_final/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/package_test_final/architecture-notes.md",
+      "review/package_test_final/self-review.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "review/artifacts/self-review.md",
+      "review/package_test_final/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/current/technical-lead-approval.md",
+      "review/package_test_final/technical-lead-approval.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "review/artifacts/validation.md",
+      "review/package_test_final/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "src/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "src/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/PACK-04-Configuration/src/Config.gs",
+      "src/config/Config.gs"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/src/TransactionService.gs",
+      "src/service/TransactionService.gs"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "test/.gitkeep"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "assets/.gitkeep",
+      "test/.gitkeep"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "tools/engineering/README.md"
+    ],
+    "reason": "Same filename"
+  }
+]

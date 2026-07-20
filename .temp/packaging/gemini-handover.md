@@ -1,11 +1,18 @@
-# Status
+# Summary
+Implementation of D1.4: Transaction Editing. Users can now edit Date, Category, and Description fields of existing transactions.
 
-Not Applicable
+# Architecture
+Layered architecture preserved (Repository -> Service -> UI). `WebApp.gs` handles request routing.
 
-## Reason
+# Known Risks
+- Concurrent edit conflicts.
 
-Not required.
+# Known Limitations
+- Edit-specific validation is minimal.
 
-## Generation Decision
+# Review Focus
+- Repository `update` method implementation.
+- UI form pre-population and read-only field logic.
 
-N/A
+# Recommended Next Milestone
+Transaction Entry refinement (or equivalent).
