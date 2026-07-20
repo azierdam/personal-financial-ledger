@@ -1,0 +1,48 @@
+<section>
+  <h2><?= transaction ? 'Edit' : 'Create' ?> Transaction</h2>
+  <form id="transaction-form" onsubmit="event.preventDefault(); submitForm(this);">
+    <input type="hidden" id="transactionId" name="transactionId" value="<?= transaction ? transaction.transactionId : '' ?>">
+    <div>
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required value="<?= transaction ? transaction.date.toISOString().split('T')[0] : '' ?>">
+    </div>
+    <div>
+      <label for="type">Type</label>
+      <select id="type" name="type" required>
+        <option value="EXPENSE" <?= transaction && transaction.type === 'EXPENSE' ? 'selected' : '' ?>>Expense</option>
+        <option value="INCOME" <?= transaction && transaction.type === 'INCOME' ? 'selected' : '' ?>>Income</option>
+      </select>
+    </div>
+    <div>
+      <label for="category">Category</label>
+      <input type="text" id="category" name="category" required value="<?= transaction ? transaction.category.name : '' ?>">
+    </div>
+    <div>
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" name="amount" required value="<?= transaction ? transaction.amount.amount : '' ?>">
+    </div>
+    <div>
+      <label for="description">Description</label>
+      <input type="text" id="description" name="description" required value="<?= transaction ? transaction.description : '' ?>">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="form-feedback"></div>
+
+  <script>
+    function submitForm(form) {
+      const feedback = document.getElementById('form-feedback');
+      feedback.textContent = 'Submitting...';
+      
+      google.script.run
+        .withSuccessHandler(function() {
+          feedback.textContent = 'Transaction saved successfully!';
+          if (!form.transactionId.value) form.reset();
+        })
+        .withFailureHandler(function(err) {
+          feedback.textContent = 'Error: ' + err;
+        })
+        .processTransactionForm(form);
+    }
+  </script>
+</section>

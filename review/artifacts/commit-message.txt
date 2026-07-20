@@ -1,6 +1,1 @@
-feat(ui): implement transaction detail view
-
-- Create `TransactionDetail.html` for single transaction inspection.
-- Register `transactionDetail` page in `WebApp.gs`.
-- Update `doGet` routing to fetch transaction by ID from request.
-- Ensure view-only implementation adhering to architectural constraints.
+feat(ui): implement transaction creation workflow

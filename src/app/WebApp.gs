@@ -5,7 +5,7 @@ const PAGES = [
   { id: 'dashboard', label: 'Dashboard', template: 'Dashboard' },
   { id: 'transactions', label: 'Transactions', template: 'Transactions' },
   { id: 'transactionDetail', label: 'Transaction Details', template: 'TransactionDetail' },
-  { id: 'transactionEntry', label: 'New Transaction', template: 'TransactionEntry' },
+  { id: 'transactionForm', label: 'New Transaction', template: 'TransactionForm' },
   { id: 'categories', label: 'Categories', template: 'Categories' },
   { id: 'accounts', label: 'Accounts', template: 'Accounts' },
   { id: 'reports', label: 'Reports', template: 'Reports' },
@@ -18,6 +18,38 @@ const PAGES = [
 function getService() {
   const repository = new GoogleSheetsTransactionRepository();
   return new TransactionService(repository);
+}
+
+/**
+ * Handles transaction form submission.
+ */
+function processTransactionForm(form) {
+  const service = getService();
+  const account = new Account('ACC-DEFAULT', 'Default Account');
+  const category = new Category('CAT-' + form.category.toUpperCase(), form.category);
+  
+  if (form.transactionId) {
+    // Update
+    const transaction = new Transaction(
+      form.transactionId,
+      new Date(form.date),
+      new Money(parseFloat(form.amount), 'IDR'),
+      form.type,
+      category,
+      account,
+      form.description
+    );
+    service.updateTransaction(transaction);
+  } else {
+    // Create
+    const request = new TransactionRequest(
+      'manual-entry',
+      parseFloat(form.amount),
+      form.description,
+      form.type
+    );
+    service.addTransaction(request, account, category);
+  }
 }
 
 /**
@@ -37,6 +69,12 @@ function doGet(e) {
     template.transactions = getService().getAllTransactions();
   } else if (pageId === 'transactionDetail') {
     template.transaction = getService().getTransactionById(e.parameter.id);
+  } else if (pageId === 'transactionForm') {
+    if (e.parameter.id) {
+      template.transaction = getService().getTransactionById(e.parameter.id);
+    } else {
+      template.transaction = null;
+    }
   }
   
   return template

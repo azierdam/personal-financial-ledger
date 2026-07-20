@@ -51,6 +51,22 @@ class TransactionService {
   }
 
   /**
+   * Updates an existing transaction.
+   * @param {Transaction} transaction
+   */
+  updateTransaction(transaction) {
+    if (!(transaction instanceof Transaction)) {
+      throw new Error('Invalid Transaction.');
+    }
+    
+    try {
+      this.transactionRepository.update(transaction);
+    } catch (e) {
+      throw new Error('Failed to update transaction: ' + e.message);
+    }
+  }
+
+  /**
    * Retrieves a transaction by its ID.
    * @param {string} transactionId
    * @returns {Transaction|null}
