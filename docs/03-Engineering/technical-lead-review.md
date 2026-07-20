@@ -2,7 +2,7 @@
 
 ## Sprint
 
-Engineering CLI – Working Tree Safety
+Engineering CLI – Workflow Separation
 
 ## Decision
 
@@ -10,44 +10,37 @@ Approved
 
 ## Summary
 
-The implementation successfully introduces Working Tree Safety.
+The workflow refactoring successfully separates repository preparation from working file generation.
 
-The Engineering CLI now validates the repository before branch automation and provides actionable diagnostics instead of exposing raw Git errors.
+The new architecture improves maintainability by assigning a single responsibility to each command.
 
-This improves workflow reliability without changing the existing engineering architecture.
+Repository state changes are now isolated from Engineering artifact generation, reducing workflow complexity and eliminating unnecessary Working Tree Safety conflicts.
 
 ## Strengths
 
-- Working tree validation implemented.
-- User modifications distinguished from generated artifacts.
-- Clear diagnostics provided.
-- Existing workflow preserved.
-- Documentation synchronized.
+- Repository preparation separated from artifact generation.
+- Commands have clearer responsibilities.
+- Documentation updated.
+- Validation completed.
+- Architecture simplified.
 
 ## Remaining Issue
 
-The Engineering CLI package workflow still requires artifacts that may not exist.
+The review package subsystem is still incomplete.
 
-Packaging currently fails before creating the review package even when the implementation itself is complete.
+Several review artifacts are emitted as placeholders instead of either:
 
-This indicates that artifact lifecycle management is incomplete.
+- meaningful generated content, or
+- an explicit "Not Applicable" document.
+
+This prevents the Engineering CLI from producing a complete, production-quality Engineering Review Package.
 
 ## Recommendation
 
-The package workflow should distinguish between:
+Complete the review package subsystem as the final Engineering CLI stabilization sprint.
 
-- Mandatory artifacts
-- Optional artifacts
-
-Optional artifacts should either:
-
-- be generated automatically, or
-- be emitted as "Not Applicable" with an explanation.
-
-Packaging should never fail because an optional artifact was not produced.
+After successful completion and validation, freeze Engineering CLI v1.0 and shift engineering effort back to product development.
 
 ## Decision
 
 Approved for merge.
-
-A final Engineering CLI infrastructure sprint is recommended.

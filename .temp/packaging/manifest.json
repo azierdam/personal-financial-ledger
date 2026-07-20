@@ -1,8 +1,8 @@
 {
-  "sprint": "D1.8",
-  "timestamp": "2026-07-20T15:17:23.408685",
-  "branch": "main",
-  "commit": "8b091ac451a8ac2b0286f8761527696e769e2566",
+  "sprint": "Engineering CLI \u2013 Review Package Completion",
+  "timestamp": "2026-07-20T15:40:25.037920",
+  "branch": "feature/d1.8-workflow-separation",
+  "commit": "60a4ff75099704a8d3331821929f79f611a47219",
   "artifacts": [
     "technical-lead-approval.md",
     "implementation-summary.md",
