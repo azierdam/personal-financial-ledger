@@ -1,17 +1,22 @@
-# Implementation Summary: Engineering CLI Workflow Separation
+# Implementation Summary: Repository Intelligence Foundation (Audit)
 
 ## Changes
-- **Repository Prep/Setup**: Introduced a dedicated `python -m tools.engineering setup` command. This command is now solely responsible for Git repository preparation: validating approvals, pulling changes, and managing feature branch creation based on the sprint ID.
-- **Working File Generation**: Refactored `prepare` command to be strictly focused on regenerating the engineering workspace (context and prompt) without side effects related to Git branches or repository state.
-- **CLI Registration**: Updated `tools/engineering/__main__.py` to expose the new `setup` command and clearly decouple the responsibilities.
-- **Documentation**: Synchronized `tools/engineering/README.md` to define the new two-phase workflow (Phase 1: Repository Preparation vs. Phase 2: Working File Generation) and updated artifact ownership mapping.
+- Implemented `python -m tools.engineering audit` command.
+- Created `tools/engineering/core/repository_audit.py` for factual repository scanning.
+- Generates required JSON reports in `.engineering/`:
+    - `repository-audit.json` (Factual file inventory)
+    - `documentation-inventory.json` (Doc file inventory)
+    - `duplicate-docs.json` (Deterministic duplicate detection)
+    - `stale-docs.json` (Factually broken link detection)
+    - `dependency-map.json` (Factual dependency map)
+- Integrated into Engineering CLI (`__main__.py` and `README.md`).
 
 ## Validation
-- Verified `setup` command performs Git operations (branching, pull) correctly.
-- Verified `prepare` command regenerates working files without Git side effects.
-- Confirmed backward compatibility: existing workflows are preserved while now being split into deterministic phases.
-- Documentation reflects the new, separated responsibilities.
+- Verified `python -m tools.engineering audit` scans the repository and generates all JSON files.
+- Verified deterministic ordering of JSON output.
+- Integration test `test_audit.py` passes.
+- Confirmed backward compatibility.
 
 ## Git Status
-- Current branch: `feature-d1-6-create-transaction`
-- Confirmed modifications to `tools/engineering/commands/setup.py`, `tools/engineering/commands/prepare.py`, `tools/engineering/__main__.py`, and `tools/engineering/README.md`.
+- Current branch: `feature/artifact-driven-orchestrator`
+- Confirmed modifications: `tools/engineering/` commands, core, and documentation.

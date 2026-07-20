@@ -1,7 +1,7 @@
 # tools/engineering/__main__.py
 import argparse
 import sys
-from .commands import doctor, context, prompt, prepare, package, setup
+from .commands import doctor, context, prompt, prepare, package, setup, audit
 
 def main():
     parser = argparse.ArgumentParser(description="Engineering CLI for PFL")
@@ -28,6 +28,9 @@ def main():
     package_parser = subparsers.add_parser("package", help="Package review artifacts")
     package_parser.add_argument("profile", choices=["chatgpt"], help="Packaging profile")
 
+    # audit
+    subparsers.add_parser("audit", help="Generate repository factual audit")
+
     args = parser.parse_args()
 
     if args.command == "doctor":
@@ -42,6 +45,8 @@ def main():
         prepare.run(args.agent)
     elif args.command == "package":
         package.run(args.profile)
+    elif args.command == "audit":
+        audit.run()
     else:
         parser.print_help()
 

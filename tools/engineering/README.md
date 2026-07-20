@@ -35,7 +35,7 @@ Each command has a single, distinct responsibility:
 | `prompt` | Generate implementation prompt from `approval.md`. |
 | `setup` | Orchestrate repository preparation (branching). |
 | `prepare` | Orchestrate workspace generation (doctor, context, prompt). |
-| `package` | Package review artifacts. |
+| `audit` | Generate repository factual audit. |
 
 ## Branch Naming Rules
 Branch names are generated deterministically based on the sprint ID to ensure Git compliance:

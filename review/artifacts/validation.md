@@ -1,14 +1,17 @@
 # Validation Results
 
-## Workflow Separation
-- **`setup` command**: Successfully validates `approval.md`, checks out `main`, performs `pull`, and creates/switches to the feature branch. It performs *no* working file generation.
-- **`prepare` command**: Successfully regenerates `.context.md` and `.prompt.md` *without* attempting any Git branch operations.
+## Repository Audit (`audit` command)
+- **Scanning**: Successfully traverses `docs/`, `src/`, `test/`, `review/`, `tools/`, `templates/`, `archive/` directories.
+- **Reports**:
+    - `repository-audit.json`: Factual file inventory generated (path, category, extension, size).
+    - `documentation-inventory.json`: Document inventory generated.
+    - `duplicate-docs.json`: Duplicate detection based on filename/size is functional.
+    - `stale-docs.json`: Broken relative link detection is functional.
+    - `dependency-map.json`: Factual dependency map (imports/links) is functional.
 
-## CLI Responsibilities
-- Documentation and command registration strictly enforce the separation of concerns:
-    - Repository/Branch preparation (Git) -> `setup`
-    - Workspace/Artifact regeneration (Files) -> `prepare`
+## Determinism
+- JSON output is generated with `sort_keys=True`, ensuring reproducibility.
 
-## Documentation Integrity
-- `tools/engineering/README.md` correctly distinguishes Phase 1 and Phase 2.
-- Artifact ownership is correctly mapped to the new command structure.
+## Testing
+- Integration test `tools/engineering/tests/test_audit.py` confirms audit flow and file generation success.
+- Existing CLI commands (`doctor`, `context`, `prompt`, `prepare`, `package`) remain functional.
