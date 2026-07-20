@@ -1,7 +1,7 @@
 # tools/engineering/__main__.py
 import argparse
 import sys
-from .commands import doctor, context, prompt, prepare
+from .commands import doctor, context, prompt, prepare, package
 
 def main():
     parser = argparse.ArgumentParser(description="Engineering CLI for PFL")
@@ -20,6 +20,10 @@ def main():
     # prepare
     prepare_parser = subparsers.add_parser("prepare", help="Orchestrate doctor, context, and prompt commands")
     prepare_parser.add_argument("agent", choices=["gemini"], help="Target AI agent")
+    
+    # package
+    package_parser = subparsers.add_parser("package", help="Package review artifacts")
+    package_parser.add_argument("profile", choices=["chatgpt"], help="Packaging profile")
 
     args = parser.parse_args()
 
@@ -31,6 +35,8 @@ def main():
         prompt.run(args.agent)
     elif args.command == "prepare":
         prepare.run(args.agent)
+    elif args.command == "package":
+        package.run(args.profile)
     else:
         parser.print_help()
 

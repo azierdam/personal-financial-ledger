@@ -29,7 +29,7 @@ def run(agent):
 
     prompt += markdown.section("Repository Structure", markdown.list_to_md(filesystem.scan_files(root)[:50]))
 
-    with open(".prompt.md", "w") as f:
+    with open(".prompt.md", "w", encoding='utf-8') as f:
         f.write(prompt)
     print(f"Generated .prompt.md for {agent}")
 

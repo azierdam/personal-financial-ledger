@@ -24,6 +24,7 @@ Each command has a single, distinct responsibility:
 | `context` | Generate repository context. |
 | `prompt` | Generate implementation prompt from `approval.md`. |
 | `prepare` | Orchestrate environment setup (branching, context, prompt). |
+| `package` | Package review artifacts. |
 
 ## Machine Contract (`technical-lead-approval.md`)
 The parser *strictly requires* these sections to be present and non-empty:
