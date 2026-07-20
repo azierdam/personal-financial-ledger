@@ -43,50 +43,39 @@ class GoogleSheetsTransactionRepository extends TransactionRepository {
   }
 
   /**
-   * Updates a transaction in the Ledger sheet.
-   * @param {Transaction} transaction
+   * Deletes a transaction from the Ledger sheet.
+   * @param {string} transactionId
    */
-  update(transaction) {
-    if (!(transaction instanceof Transaction)) {
-      throw new Error('Invalid transaction.');
-    }
-
+  delete(transactionId) {
     const spreadsheetId = Config.getSpreadsheetId();
     const sheetName = Config.getLedgerSheetName();
     const ss = SpreadsheetApp.openById(spreadsheetId);
     const sheet = ss.getSheetByName(sheetName);
     const data = sheet.getDataRange().getValues();
-    
+
     // Find row index (header is row 1)
     let rowIndex = -1;
     for (let i = 1; i < data.length; i++) {
-      if (data[i][0] === transaction.transactionId) {
+      if (data[i][0] === transactionId) {
         rowIndex = i + 1; // Spreadsheet rows are 1-indexed
         break;
       }
     }
-    
+
     if (rowIndex === -1) {
-      throw new Error('Transaction not found: ' + transaction.transactionId);
+      throw new Error('Transaction not found: ' + transactionId);
     }
-    
+
     try {
-      sheet.getRange(rowIndex, 1, 1, 7).setValues([[
-        transaction.transactionId,
-        transaction.date,
-        transaction.type,
-        transaction.category.name,
-        transaction.amount.amount,
-        transaction.amount.currency,
-        transaction.description
-      ]]);
+      sheet.deleteRow(rowIndex);
     } catch (e) {
-      throw new Error('Failed to update transaction in Google Sheets: ' + e.message);
+      throw new Error('Failed to delete transaction from Google Sheets: ' + e.message);
     }
   }
 
   /**
-   * Retrieves all transactions.
+   * Updates a transaction in the Ledger sheet.
+
    * @return {Transaction[]}
    */
   findAll() {

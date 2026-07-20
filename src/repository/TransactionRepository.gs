@@ -4,6 +4,11 @@
  */
 class TransactionRepository {
   /**
+   * @param {string} transactionId
+   */
+  delete(transactionId) { throw new Error('Not implemented'); }
+  
+  /**
    * @param {Transaction} transaction
    */
   save(transaction) { throw new Error('Not implemented'); }

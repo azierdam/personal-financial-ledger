@@ -53,6 +53,13 @@ function processTransactionForm(form) {
 }
 
 /**
+ * Handles transaction deletion.
+ */
+function deleteTransaction(transactionId) {
+  getService().deleteTransaction(transactionId);
+}
+
+/**
  * WebApp handles the initial web request and renders the main UI template.
  */
 function doGet(e) {

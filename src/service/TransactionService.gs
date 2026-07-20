@@ -51,6 +51,22 @@ class TransactionService {
   }
 
   /**
+   * Deletes a transaction.
+   * @param {string} transactionId
+   */
+  deleteTransaction(transactionId) {
+    if (!transactionId || typeof transactionId !== 'string') {
+      throw new Error('Invalid Transaction ID.');
+    }
+    
+    try {
+      this.transactionRepository.delete(transactionId);
+    } catch (e) {
+      throw new Error('Failed to delete transaction: ' + e.message);
+    }
+  }
+
+  /**
    * Updates an existing transaction.
    * @param {Transaction} transaction
    */
