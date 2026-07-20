@@ -2,168 +2,161 @@
   {
     "files": [
       "README.md",
-      "archive/README.md"
+      "archive/planning/FEATURE-001-Domain-Model/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning/FEATURE-002-Ledger-Architecture/CHANGELOG.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/README.md"
+      "archive/planning/FEATURE-002-Ledger-Architecture/README.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
-      "archive/planning-artifacts/FEATURE-002-Ledger-Architecture/CHANGELOG.md"
+      "archive/planning/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning/FEATURE-002-Ledger-Architecture/trackers/Feature-Checklist.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "README.md",
-      "archive/planning-artifacts/FEATURE-002-Ledger-Architecture/README.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
-      "archive/planning-artifacts/FEATURE-002-Ledger-Architecture/trackers/Feature-Checklist.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
-      "archive/planning-artifacts/FEATURE-003-Google-Sheets-Foundation/CHANGELOG.md"
+      "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning/FEATURE-003-Google-Sheets-Foundation/CHANGELOG.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/FEATURE-003-Google-Sheets-Foundation/README.md"
+      "archive/planning/FEATURE-003-Google-Sheets-Foundation/README.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
-      "archive/planning-artifacts/FEATURE-003-Google-Sheets-Foundation/trackers/Feature-Checklist.md"
+      "archive/planning/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning/FEATURE-003-Google-Sheets-Foundation/trackers/Feature-Checklist.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
-      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md"
+      "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/README.md"
+      "archive/planning/FEATURE-004-Apps-Script-Foundation/README.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "appsscript.json",
-      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/src/appsscript.json"
+      "archive/planning/FEATURE-004-Apps-Script-Foundation/src/appsscript.json"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
-      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/trackers/Feature-Checklist.md"
+      "archive/planning/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning/FEATURE-004-Apps-Script-Foundation/trackers/Feature-Checklist.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
-      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/CHANGELOG.md"
+      "archive/planning/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
+      "archive/planning/FEATURE-005-Telegram-Foundation/CHANGELOG.md"
     ],
     "reason": "SHA256 identical"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
-      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/CHANGELOG.md"
+      "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning/FEATURE-005-Telegram-Foundation/CHANGELOG.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/README.md"
+      "archive/planning/FEATURE-005-Telegram-Foundation/README.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
-      "archive/planning-artifacts/FEATURE-005-Telegram-Foundation/trackers/Feature-Checklist.md"
+      "archive/planning/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning/FEATURE-005-Telegram-Foundation/trackers/Feature-Checklist.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
-      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/CHANGELOG.md"
+      "archive/planning/FEATURE-004-Apps-Script-Foundation/CHANGELOG.md",
+      "archive/planning/FEATURE-006-Transaction-Engine/CHANGELOG.md"
     ],
     "reason": "SHA256 identical"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
-      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/CHANGELOG.md"
+      "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning/FEATURE-006-Transaction-Engine/CHANGELOG.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/README.md"
+      "archive/planning/FEATURE-006-Transaction-Engine/README.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
-      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/trackers/Feature-Checklist.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "README.md",
-      "archive/planning-artifacts/PACK-02-Master-Data/README.md"
+      "archive/planning/FEATURE-001-Domain-Model/trackers/Feature-Checklist.md",
+      "archive/planning/FEATURE-006-Transaction-Engine/trackers/Feature-Checklist.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/PACK-03-Reporting/README.md"
+      "archive/planning/PACK-02-Master-Data/README.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/PACK-04-Configuration/README.md"
+      "archive/planning/PACK-03-Reporting/README.md"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
       "README.md",
-      "archive/planning-artifacts/PACK-05-Core/README.md"
+      "archive/planning/PACK-04-Configuration/README.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "README.md",
+      "archive/planning/PACK-05-Core/README.md"
     ],
     "reason": "Same filename"
   },
@@ -281,7 +274,7 @@
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-001-Domain-Model/CHANGELOG.md",
+      "archive/planning/FEATURE-001-Domain-Model/CHANGELOG.md",
       "docs/project/CHANGELOG.md"
     ],
     "reason": "Same filename"
@@ -463,14 +456,14 @@
   },
   {
     "files": [
-      "archive/planning-artifacts/PACK-04-Configuration/src/Config.gs",
+      "archive/planning/PACK-04-Configuration/src/Config.gs",
       "src/config/Config.gs"
     ],
     "reason": "Same filename"
   },
   {
     "files": [
-      "archive/planning-artifacts/FEATURE-006-Transaction-Engine/src/TransactionService.gs",
+      "archive/planning/FEATURE-006-Transaction-Engine/src/TransactionService.gs",
       "src/service/TransactionService.gs"
     ],
     "reason": "Same filename"

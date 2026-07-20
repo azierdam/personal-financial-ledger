@@ -1,0 +1,22 @@
+[
+  {
+    "affected_files": [
+      "E:\\Reiza\\Projects\\AI\\PersonalFinance\\archive\\README.md",
+      "E:\\Reiza\\Projects\\AI\\PersonalFinance\\archive\\obsolete\\README-archive.md"
+    ],
+    "approved_action": "Archive",
+    "finding_id": "FIND-DUP-001",
+    "reason": "",
+    "result": "Success"
+  },
+  {
+    "affected_files": [
+      "E:\\Reiza\\Projects\\AI\\PersonalFinance\\archive\\planning-artifacts",
+      "E:\\Reiza\\Projects\\AI\\PersonalFinance\\archive\\planning"
+    ],
+    "approved_action": "Relocate",
+    "finding_id": "FIND-ORG-001",
+    "reason": "",
+    "result": "Success"
+  }
+]
