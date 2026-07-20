@@ -1,5 +1,6 @@
-feat(domain): establish storage-agnostic transaction domain model
+feat(cli): generate implementation prompts from technical lead approval
 
-- Remove 'delete' from TransactionRepository to enforce immutability
-- Ensure identifiers are stable and validated in constructors
-- Verify invariants in unit tests
+- Implement approval document parser in core.
+- Update `prompt` command to use parsed approval.
+- Add unit tests for parser.
+- Update Engineering CLI documentation.
