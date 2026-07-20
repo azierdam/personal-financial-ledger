@@ -8,12 +8,15 @@ def get_branch():
 def get_commit():
     return subprocess.check_output(["git", "rev-parse", "HEAD"]).decode().strip()
 
-def get_diff():
-    # Show diff against main
-    try:
-        return subprocess.check_output(["git", "diff", "main"]).decode().strip()
-    except subprocess.CalledProcessError:
-        return ""
+def get_status():
+    # Get modified/untracked files
+    output = subprocess.check_output(["git", "status", "--porcelain"]).decode().strip()
+    files = []
+    for line in output.splitlines():
+        if line.strip():
+            # porcelain output: 'XY path'
+            files.append(line[3:].strip())
+    return files
 
 def checkout(branch):
     subprocess.check_call(["git", "checkout", branch])

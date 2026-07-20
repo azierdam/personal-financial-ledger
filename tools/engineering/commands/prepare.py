@@ -3,8 +3,53 @@ import sys
 from . import doctor, context, prompt
 from ..core import output, repository, git, approval
 
+GENERATED_ARTIFACTS = {
+    '.context.md',
+    '.prompt.md',
+    'review/review-package-chatgpt.zip'
+}
+
+def validate_working_tree():
+    changed_files = git.get_status()
+    if not changed_files:
+        return True
+
+    generated = []
+    user_modified = []
+    
+    for f in changed_files:
+        if f in GENERATED_ARTIFACTS:
+            generated.append(f)
+        else:
+            user_modified.append(f)
+
+    print("\n--- Working Tree Safety Diagnostic ---")
+    if generated:
+        print("Generated Artifacts (safe to overwrite):")
+        for f in generated:
+            print(f"  - {f}")
+    if user_modified:
+        print("User Modifications (will be blocked):")
+        for f in user_modified:
+            print(f"  - {f}")
+
+    if user_modified:
+        output.error("\nBranch automation blocked: Uncommitted user modifications detected.")
+        print("Recommendation: Commit or stash changes before running 'prepare'.")
+        return False
+    
+    # If only generated artifacts, maybe we warn? 
+    # Requirement: "Stop execution before any destructive Git operation."
+    # I'll block everything to be absolutely safe as per constraints.
+    output.error("\nBranch automation blocked: Uncommitted changes detected.")
+    return False
+
 def run(agent):
     root = repository.get_root()
+
+    if not validate_working_tree():
+        sys.exit(1)
+
     approval_file = os.path.join(root, "review", "current", "technical-lead-approval.md")
     
     if not os.path.exists(approval_file):

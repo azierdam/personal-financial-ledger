@@ -34,7 +34,11 @@ Branch names are generated deterministically based on the sprint ID to ensure Gi
 - Leading and trailing hyphens removed.
 - Example: "Engineering CLI – Sprint 1.0" -> `engineering-cli-sprint-1-0`
 
-## Machine Contract (`technical-lead-approval.md`)
+## Working Tree Safety
+The Engineering CLI automatically validates the working tree before any branch automation (Git checkout/branch creation).
+- If uncommitted changes are detected, the process is blocked to prevent destructive Git operations.
+- The CLI provides a diagnostic report classifying changes into Generated Artifacts and User Modifications.
+- Users must commit or stash changes before running `prepare`.
 The parser *strictly requires* these sections to be present and non-empty:
 - `# Sprint`
 - `# Objective`

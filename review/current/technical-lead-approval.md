@@ -1,48 +1,40 @@
 # Sprint
-
-Engineering CLI – Git Branch Slugification
+D1.7
 
 # Objective
-
-Fix Engineering CLI branch generation so that feature branch names derived from the Sprint section always produce valid Git branch names.
+Improve the Engineering CLI so that it validates the working tree before branch automation and provides actionable diagnostics instead of raw Git failures.
 
 # Scope
-
-- Investigate current branch generation.
-- Implement deterministic branch slugification.
-- Replace spaces with hyphens.
-- Convert to lowercase.
-- Replace Unicode dashes with standard hyphens.
-- Remove unsupported Git branch characters.
-- Collapse repeated hyphens.
-- Trim leading and trailing separators.
-- Preserve deterministic output.
-- Update documentation.
-- Add automated tests for branch generation.
+- Detect working tree status before any Git checkout.
+- Classify modified files into:
+    - Generated artifacts
+    - User modifications
+- Display a clear diagnostic report.
+- Explain why branch automation is blocked.
+- Recommend appropriate user actions.
+- Stop execution before any destructive Git operation.
+- Update documentation describing the Working Tree Safety workflow.
+- Add automated tests covering representative scenarios.
 
 # Constraints
-
-- Preserve existing Engineering CLI workflow.
-- Do not modify the approval parser.
+- Preserve backward compatibility.
+- Do not modify approval parser.
 - Do not modify context generation.
 - Do not modify package generation.
-- Keep implementation simple.
-- Do not introduce new dependencies.
+- Do not automatically stash/discard/commit changes.
+- Keep implementation simple and maintainable.
 
 # Acceptance Criteria
-
-The sprint is complete when:
-
-- Sprint titles always produce valid Git branch names.
-- Unicode punctuation is normalized.
-- Spaces are converted to hyphens.
-- Invalid Git characters are removed.
+- Working tree validation occurs before branch automation.
+- Generated artifacts are identified separately from user modifications.
+- Git errors are replaced by Engineering CLI diagnostics.
+- Users receive clear recovery instructions.
+- No automatic modification of the working tree occurs.
 - Existing workflows remain backward compatible.
-- Automated tests cover representative sprint titles.
-- Documentation is updated.
+- Documentation is synchronized.
+- Automated tests cover representative working tree scenarios.
 
 # Deliverables
-
 - Implementation Summary
 - Validation Results
 - Updated Documentation
@@ -50,17 +42,7 @@ The sprint is complete when:
 - Recommended Commit Message
 
 # Conventional Commit
-
-fix(cli): sanitize generated git branch names
+feat(cli): add working tree safety validation
 
 # Stop Condition
-
 Stop after implementation.
-
-Generate the Engineering Review Package using:
-
-python -m tools.engineering package chatgpt
-
-Do not perform repository finalization.
-
-Wait for Technical Lead review.
