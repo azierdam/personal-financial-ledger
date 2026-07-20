@@ -1,38 +1,143 @@
+# Technical Lead Approval
+
 # Sprint
-D1.8
+
+**PFL – D1.5 Transaction Deletion**
+
+---
 
 # Objective
-Implement the Technical Lead approval layer and redesign the Engineering Review Package generation.
+
+Implement secure transaction deletion while preserving ledger integrity and maintaining the existing layered architecture.
+
+---
+
+# Business Objective
+
+Allow users to permanently delete a transaction from the ledger through a controlled workflow with confirmation, validation, and automatic UI refresh.
+
+---
 
 # Scope
-- Implement canonical current engineering context.
-- Consolidate milestone metadata to a single source of truth (`review/current/technical-lead-approval.md`).
-- Ensure all generators consume this source.
-- Redesign review package to be fully generated.
+
+## Functional
+
+- Add Delete action from Transaction Detail.
+- Display confirmation dialog before deletion.
+- Delete transaction through Service layer.
+- Repository removes the transaction from Google Sheets.
+- Refresh Transaction List.
+- Refresh dashboard/account balances.
+- Display success notification.
+
+---
+
+## Non-Functional
+
+- Reuse existing Repository and Service layers.
+- No duplicated business logic.
+- Keep implementation simple and maintainable.
+- Preserve existing coding conventions.
+- No regression to completed features.
+
+---
 
 # Constraints
-- Preserve backward compatibility.
-- Do not modify approval parser.
-- One source of truth for milestone info.
-- No cached milestone metadata.
-- Keep implementation simple and maintainable.
-- Do not introduce unnecessary dependencies.
+
+## Must
+
+- Delete by Transaction ID.
+- Repository is the only spreadsheet access layer.
+- Service owns business validation.
+- UI owns presentation only.
+- Maintain current navigation flow.
+
+## Must Not
+
+- Modify Engineering Workflow.
+- Redesign Repository architecture.
+- Introduce Soft Delete.
+- Change completed functionality.
+- Break Create/Edit workflows.
+
+---
+
+# Architecture
+
+```
+Transaction Detail
+        │
+        ▼
+TransactionService.deleteTransaction(id)
+        │
+        ▼
+TransactionRepository.delete(id)
+        │
+        ▼
+Google Sheets
+```
+
+---
 
 # Acceptance Criteria
-- Current sprint metadata is derived exclusively from `review/current/technical-lead-approval.md`.
-- No D1.4 references remain in generated review packages.
-- Review package is fully generated from repository state.
-- Documentation synchronized.
+
+## Repository
+
+- Delete existing transaction.
+- Gracefully handle invalid Transaction ID.
+- Return success/failure result.
+
+## Service
+
+- Validate deletion request.
+- Execute repository deletion.
+- Handle business errors.
+
+## UI
+
+- Confirmation dialog.
+- Delete button on Transaction Detail.
+- Return to Transaction List after successful deletion.
+- Refresh transaction list.
+- Refresh dashboard/account balances.
+- Display success notification.
+
+---
+
+# Validation
+
+Verify:
+
+- Existing transaction deleted successfully.
+- Invalid Transaction ID handled safely.
+- Transaction List refreshed.
+- Dashboard refreshed.
+- Account balances remain correct.
+- No regression in Create/Edit workflows.
+- Repository integrity maintained.
+
+---
 
 # Deliverables
-- Implementation Summary
-- Validation Results
-- Updated Documentation
-- Git Status
-- Recommended Commit Message
+
+Implementation must include:
+
+- Source code
+- Relevant documentation updates
+- Regenerated review artifacts
+- Validation report
+- Engineering Review Package
+
+---
 
 # Conventional Commit
-fix(cli): implement canonical engineering context
+
+```text
+feat(transaction): implement transaction deletion workflow
+```
+
+---
 
 # Stop Condition
-Stop after implementation.
+
+Stop implementation when all acceptance criteria are met, validation passes, the review package is successfully generated, and the implementation is ready for Technical Lead review.
