@@ -6,6 +6,13 @@ def get_branch():
 def get_commit():
     return subprocess.check_output(["git", "rev-parse", "HEAD"]).decode().strip()
 
+def get_diff():
+    # Show diff against main
+    try:
+        return subprocess.check_output(["git", "diff", "main"]).decode().strip()
+    except subprocess.CalledProcessError:
+        return ""
+
 def checkout(branch):
     subprocess.check_call(["git", "checkout", branch])
 

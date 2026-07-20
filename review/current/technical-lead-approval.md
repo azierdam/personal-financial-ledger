@@ -1,40 +1,35 @@
 # Sprint
-D1.5
+D1.6
 
 # Objective
-Complete the Engineering CLI by implementing the missing review packaging capability and validating the entire engineering workflow from Sprint Planning through Repository Finalization.
+Optimize Engineering CLI context generation strategy.
 
 # Scope
-- Implement `package chatgpt` command.
-- Validate required review artifacts.
-- Generate ZIP package and manifest.json.
-- Implement profile-based packaging architecture.
-- Document packaging workflow and artifact ownership.
-- Synchronize all workflow documentation.
+- Implement priority-based context generation (Artifacts > Delta > Full).
+- Update Engineering CLI `context` command logic.
+- Document context generation strategy.
+- Validate the three scenarios.
 
 # Constraints
-- Backward compatibility for existing CLI commands (`doctor`, `context`, `prompt`, `prepare`).
-- No hardcoded profile logic in the packaging engine.
-- Follow existing Engineering Workflow v2.1.
-- No engineering decisions automated.
+- Maintain backward compatibility.
+- Context generation must report the chosen strategy.
+- Repository analysis is the fallback.
 
 # Acceptance Criteria
-- End-to-end workflow is complete (Approval → Prepare → Implementation → Package → Review → Post-Approval Actions).
-- Review package generation is deterministic.
-- Manifest is machine-readable.
-- Documentation reflects new workflow and packaging capabilities.
-- Repository is synchronized after approval.
+- Context generation prefers existing artifacts.
+- Incremental context generation is supported.
+- Repository analysis is used only as a fallback.
+- Documentation is synchronized.
 
 # Deliverables
 - Implementation Summary
 - Validation Results
-- ZIP Package
-- Manifest.json
 - Updated Workflow Documentation
 - Git Status
+- Recommended Commit Message
 
 # Conventional Commit
-feat(cli): implement review packaging
+feat(cli): optimize engineering context generation
 
 # Stop Condition
 Stop only after the repository is synchronized with main and ready for the next sprint.

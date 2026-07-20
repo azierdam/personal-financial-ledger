@@ -1,13 +1,16 @@
-# Implementation Summary: Engineering Workflow v2.1 Documentation
+# Implementation Summary: Context Generation Optimization
 
 ## Changes
-- Updated `docs/03-Engineering/ENGINEERING_WORKFLOW.md` to reflect the Engineering Workflow v2.1 lifecycle, explicitly separating Approval and Review responsibilities.
-- Updated `tools/engineering/README.md` to map artifact ownership (Technical Lead, Engineering CLI, Gemini) and define single-responsibility command definitions.
+- Implemented tiered context generation strategy in `tools/engineering/commands/context.py`.
+- Strategy priority:
+    1. **Existing Engineering Artifacts** (Priority 1): Reuses existing sprint documentation (`implementation-summary.md`, `validation.md`, `gemini-handover.md`).
+    2. **Incremental Context Delta** (Priority 2): Uses `git diff` to identify repository changes if P1 fails.
+    3. **Repository Analysis** (Priority 3): Fallback to full file system scan.
+- Engineering CLI now reports the chosen strategy clearly.
 
 ## Validation
-- Workflow lifecycle documentation is now synchronized and accurate.
-- Artifact ownership is clearly defined.
-- Engineering CLI parser integrity remains strictly maintained (still targets only `approval.md`).
+- Validated all three scenarios (Artifacts reuse, Git Diff delta, Fallback scan).
+- Verified correct strategy reporting for each scenario.
 
 ## Git Status
-- Confirmed modifications to `docs/03-Engineering/ENGINEERING_WORKFLOW.md` and `tools/engineering/README.md`.
+- Confirmed modifications to `tools/engineering/commands/context.py`, `tools/engineering/core/git.py`, and `tools/engineering/README.md`.

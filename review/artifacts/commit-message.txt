@@ -1,5 +1,6 @@
-docs: implement Engineering Workflow v2.1 documentation
+feat(cli): optimize engineering context generation
 
-- Update workflow lifecycle.
-- Define artifact ownership.
-- Clarify CLI command responsibilities.
+- Implement tiered context generation strategy: Artifacts > Delta > Fallback.
+- Improve performance and token usage by minimizing redundant analysis.
+- Report chosen context strategy clearly in CLI output.
+- Update documentation to explain the new strategy.

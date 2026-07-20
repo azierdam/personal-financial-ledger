@@ -1,9 +1,14 @@
 # Validation Results
 
-## Documentation Synchronization
-- `ENGINEERING_WORKFLOW.md`: Lifecycle v2.1 documented correctly, separation of approval and review established.
-- `tools/engineering/README.md`: Command responsibilities, artifact mapping, and Machine Contract details are verified for clarity and accuracy.
+## Context Strategy Verification
+- **Priority 1 (Existing Artifacts)**: Verified. CLI detects artifacts in `review/artifacts/` and skips analysis.
+- **Priority 2 (Incremental Delta)**: Verified. CLI detects changes via `git diff` when artifacts are missing and reports delta usage.
+- **Priority 3 (Repository Analysis)**: Verified. CLI performs full filesystem scan when artifacts are missing and no diff exists.
 
-## Workflow Integrity
-- Confirmed that the Engineering CLI continues to restrict parsing to `technical-lead-approval.md` only.
-- Confirmed no engineering logic was introduced to the CLI.
+## Documentation
+- Updated `tools/engineering/README.md` with new strategy explanation and priority order.
+
+## Functionality
+- CLI clearly reports the used strategy: `Context Source: ✓ ...`.
+- No architectural changes or new dependencies introduced.
+- Backward compatibility maintained for all commands.
