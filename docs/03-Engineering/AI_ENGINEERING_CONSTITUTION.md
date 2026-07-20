@@ -37,3 +37,13 @@ This document defines the engineering philosophy and foundational rules for AI c
 - **Repository Rules:** No new top-level folders, no renaming existing folders, no moving documentation without explicit authorization.
 - **Shell Standard:** Windows PowerShell is the only authorized shell for engineering tasks.
 - **Configuration Standards:** Configuration must follow the defined `src/config/` structure.
+
+## Engineering CLI Compatibility
+
+The Technical Lead Approval template contains a Machine Contract used by the Engineering CLI.
+
+Only the required sections are parsed automatically.
+
+Modifying the Machine Contract requires a corresponding update to the Engineering CLI and its tests.
+
+Optional sections may be added, removed, or reorganized without affecting automation.
