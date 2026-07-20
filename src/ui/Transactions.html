@@ -1,4 +1,25 @@
 <section>
-  <h2>Transactions Placeholder</h2>
-  <p>Transaction management will be implemented in a future milestone.</p>
+  <h2>Transactions</h2>
+  <table class="transaction-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <? for (var i = 0; i < transactions.length; i++) { ?>
+        <tr>
+          <td><?= transactions[i].date.toLocaleDateString() ?></td>
+          <td><?= transactions[i].type ?></td>
+          <td><?= transactions[i].category.name ?></td>
+          <td><?= transactions[i].amount.amount ?> <?= transactions[i].amount.currency ?></td>
+          <td><?= transactions[i].description ?></td>
+        </tr>
+      <? } ?>
+    </tbody>
+  </table>
 </section>

@@ -12,6 +12,14 @@ const PAGES = [
 ];
 
 /**
+ * Gets a configured TransactionService.
+ */
+function getService() {
+  const repository = new GoogleSheetsTransactionRepository();
+  return new TransactionService(repository);
+}
+
+/**
  * WebApp handles the initial web request and renders the main UI template.
  */
 function doGet(e) {
@@ -23,6 +31,10 @@ function doGet(e) {
   const template = HtmlService.createTemplateFromFile('src/ui/Index');
   template.page = pageConfig;
   template.pages = PAGES;
+  
+  if (pageId === 'transactions') {
+    template.transactions = getService().getAllTransactions();
+  }
   
   return template
     .evaluate()

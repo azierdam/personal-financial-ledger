@@ -1,6 +1,6 @@
-fix(cli): correct approval document parser
+feat(ui): implement transaction listing page
 
-- Split by '# ' instead of '## ' to match template.
-- Validate presence of required sections.
-- Handle parsing errors with exit status 1.
-- Add comprehensive unit tests.
+- Create `Transactions.html` with basic transaction table.
+- Implement `getService()` in `WebApp.gs`.
+- Update `doGet` to fetch and pass transactions to template.
+- Ensure service layer usage.

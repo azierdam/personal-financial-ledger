@@ -1,15 +1,15 @@
-# Implementation Summary: Engineering CLI Parser Fix
+# Implementation Summary: D1.1 Transaction Listing UI
 
 ## Changes
-- Updated `tools/engineering/core/approval.py` to correctly parse the Technical Lead approval template (which uses '# ' for sections).
-- Implemented strict validation for required sections in the approval document.
-- Updated `tools/engineering/commands/prompt.py` to handle parsing errors gracefully with clear user feedback.
-- Enhanced unit tests in `tools/engineering/tests/test_parser.py` to cover successful parsing and error scenarios for missing sections.
+- Implemented `src/ui/Transactions.html` with a basic transaction table, iterating over transaction data.
+- Updated `src/app/WebApp.gs` to:
+    - Include `getService()` to properly instantiate `TransactionService` and its repository dependencies.
+    - Fetch and pass transaction data to the template in `doGet` when the `transactions` page is requested.
 
 ## Validation
-- Verified with current `review/current/technical-lead-approval.md`.
-- Verified parsing error handling when required sections are missing.
-- All unit tests passed.
+- Verified `TransactionService` integration using existing `test/integration/TransactionRetrievalTests.gs`.
+- Manually verified UI template logic for iterating and displaying transaction fields (date, type, category, amount, description).
+- Confirmed architectural constraint compliance (no repository access in UI, usage of service layer).
 
 ## Git Status
-- Confirmed modifications to `tools/engineering/core/approval.py`, `tools/engineering/commands/prompt.py`, and `tools/engineering/tests/test_parser.py`.
+- Confirmed modifications to `src/ui/Transactions.html` and `src/app/WebApp.gs`.
