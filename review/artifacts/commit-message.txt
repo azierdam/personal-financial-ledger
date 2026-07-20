@@ -1,1 +1,7 @@
-feat(ui): implement transaction creation workflow
+fix(cli): implement stable machine contract for approval parser
+
+- Refactor approval parser to only extract strictly required sections.
+- Safely ignore optional sections.
+- Enforce validation for required sections.
+- Add comprehensive unit tests.
+- Update Engineering CLI documentation.

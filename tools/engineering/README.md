@@ -2,6 +2,28 @@
 
 A lightweight internal developer tool for PFL engineering tasks.
 
+## Technical Lead Approval (Machine Contract)
+The Engineering CLI uses a machine-readable contract for `review/current/technical-lead-approval.md`.
+
+### Required Sections
+The parser *strictly requires* these sections to be present and non-empty:
+- `# Sprint`
+- `# Objective`
+- `# Scope`
+- `# Constraints`
+- `# Acceptance Criteria`
+- `# Deliverables`
+- `# Conventional Commit`
+- `# Stop Condition`
+
+### Optional Sections
+The parser *ignores* any section that is not in the required list above (e.g., `# Branch Strategy`, `# Architecture`, `# Technical Lead Recommendations`). Future templates can safely extend with optional sections without breaking the Engineering CLI.
+
+### Extending the Template
+When extending the template:
+1. Always keep the required sections above.
+2. New sections are optional; they will be safely ignored by the Engineering CLI.
+
 ## Workflow Alignment
 The Engineering CLI distinguishes between **Working Files** (regenerated every sprint) and **Sprint Artifacts** (immutable deliverables).
 
