@@ -1,8 +1,18 @@
+import os
 import sys
 from . import doctor, context, prompt
-from ..core import output
+from ..core import output, repository
 
 def run(agent):
+    root = repository.get_root()
+    current_dir = os.path.join(root, "review", "current")
+    
+    if not os.path.exists(current_dir):
+        os.makedirs(current_dir)
+        print(f"Created directory: {current_dir}")
+
+    print("\n--- Working File Generation ---")
+
     # 1. Doctor
     try:
         doctor.run()
@@ -15,6 +25,7 @@ def run(agent):
 
     # 2. Context
     try:
+        print("Regenerating working file: .context.md")
         context.run()
     except SystemExit as e:
         if e.code != 0:
@@ -25,6 +36,7 @@ def run(agent):
 
     # 3. Prompt
     try:
+        print("Regenerating working file: .prompt.md")
         prompt.run(agent)
     except SystemExit as e:
         if e.code != 0:
@@ -34,7 +46,6 @@ def run(agent):
         sys.exit(1)
 
     # Success summary
-    print("\n✓ Doctor passed")
-    print("✓ Context generated (.context.md)")
-    print("✓ Prompt generated (.prompt.md)\n")
-    print("Engineering preparation complete.")
+    print("\n--- Preparation Complete ---")
+    print("Working files (.context.md, .prompt.md) regenerated.")
+    print("Engineering workspace prepared.")

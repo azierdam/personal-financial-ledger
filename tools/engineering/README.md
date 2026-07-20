@@ -2,26 +2,24 @@
 
 A lightweight internal developer tool for PFL engineering tasks.
 
+## Workflow Alignment
+The Engineering CLI distinguishes between **Working Files** (regenerated every sprint) and **Sprint Artifacts** (immutable deliverables).
+
+### Working Files
+These files are part of the active engineering workspace.
+- **Files**: `.context.md`, `.prompt.md`, `review/current/technical-lead-approval.md`
+- **Characteristics**: Regenerated every sprint, temporary, not implementation deliverables.
+
+### Sprint Artifacts
+These files are generated after implementation and are final deliverables.
+- **Files**: `review/artifacts/implementation-summary.md`, `review/artifacts/validation.md`, `review/artifacts/commit-message.txt`, `review/artifacts/handover.md`
+- **Characteristics**: Final deliverables, reviewed by Technical Lead, immutable after approval.
+
 ## Commands
 - `python -m tools.engineering doctor`: Validate repository environment.
-- `python -m tools.engineering context`: Generate repository context in `.context.md`.
-- `python -m tools.engineering prompt gemini`: Generate implementation prompt from `review/current/technical-lead-approval.md` in `.prompt.md`.
-- `python -m tools.engineering prepare gemini`: Orchestrate environment validation, context generation, and prompt generation in a single command.
-
-## Prompt Workflow
-The `prompt` command automatically generates an implementation prompt based on the approved Technical Lead specification:
-1. Ensure the Technical Lead approval document exists at `review/current/technical-lead-approval.md`.
-2. Run `python -m tools.engineering prompt gemini`.
-3. The CLI will parse the approval document and generate a clean `.prompt.md` file for Gemini.
-
-## VS Code Tasks
-
-You can run these tasks from VS Code using `Terminal → Run Task...`:
-
-- **Engineering: Doctor**: Validate repository environment.
-- **Engineering: Context**: Generate repository context.
-- **Engineering: Prompt (Gemini)**: Generate engineering prompt.
-- **Engineering: Prepare Gemini**: Executes the `prepare gemini` workflow.
+- `python -m tools.engineering context`: Generate/regenerate `.context.md`.
+- `python -m tools.engineering prompt gemini`: Generate/regenerate implementation prompt from `review/current/technical-lead-approval.md` in `.prompt.md`.
+- `python -m tools.engineering prepare gemini`: Regenerate working files (`.context.md`, `.prompt.md`) and verify the workspace (`review/current/`).
 
 ## Architecture
 - `core/`: Generic, reusable modules (repository, filesystem, git, approval parsing, etc.).

@@ -1,6 +1,5 @@
-feat(cli): generate implementation prompts from technical lead approval
+refactor(cli): align engineering workflow with sprint lifecycle
 
-- Implement approval document parser in core.
-- Update `prompt` command to use parsed approval.
-- Add unit tests for parser.
-- Update Engineering CLI documentation.
+- Ensure `review/current/` directory exists in `prepare`.
+- Distinguish Working Files from Sprint Artifacts in `README.md`.
+- Enhance logging in `prepare` to clarify workflow.
