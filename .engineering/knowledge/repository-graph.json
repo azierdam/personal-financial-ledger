@@ -1034,6 +1034,12 @@
       "type": "documentation"
     },
     {
+      "file_name": "checklist.md",
+      "id": "review/artifacts/checklist.md",
+      "path": "review/artifacts/checklist.md",
+      "type": "documentation"
+    },
+    {
       "file_name": "commit-message.txt",
       "id": "review/artifacts/commit-message.txt",
       "path": "review/artifacts/commit-message.txt",

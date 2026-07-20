@@ -181,6 +181,7 @@
   "docs/project/SPRINT_TRACKER.md": [],
   "package.json": [],
   "pull-request-template.md": [],
+  "review/artifacts/checklist.md": [],
   "review/artifacts/commit-message.txt": [],
   "review/artifacts/implementation-summary.md": [],
   "review/artifacts/validation.md": [],
@@ -379,7 +380,7 @@
     "repository"
   ],
   "tools/engineering/core/review_generator.py": [
-    "datetime",
+    "approval,",
     "json",
     "os"
   ],

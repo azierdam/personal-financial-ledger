@@ -288,6 +288,13 @@
   },
   {
     "files": [
+      "archive/obsolete/checklist.md",
+      "review/artifacts/checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
       "archive/obsolete/commit-message.txt",
       "review/artifacts/commit-message.txt"
     ],
