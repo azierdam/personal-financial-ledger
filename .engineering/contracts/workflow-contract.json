@@ -1,0 +1,13 @@
+{
+  "version": "2.1",
+  "artifact_lifecycle": {
+    "repository_state": ["Audit", "Graph"],
+    "impact_analysis": ["Impact"],
+    "planning": ["Manifest"],
+    "review": ["Package"]
+  },
+  "required_contracts": [
+    "technical-lead-approval.md",
+    "engineering-package-contract.json"
+  ]
+}
