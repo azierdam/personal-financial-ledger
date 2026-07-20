@@ -1,7 +1,7 @@
 # tools/engineering/__main__.py
 import argparse
 import sys
-from .commands import doctor, context, prompt, prepare, package
+from .commands import doctor, context, prompt, prepare, package, setup
 
 def main():
     parser = argparse.ArgumentParser(description="Engineering CLI for PFL")
@@ -16,6 +16,9 @@ def main():
     # prompt
     prompt_parser = subparsers.add_parser("prompt", help="Generate engineering prompt")
     prompt_parser.add_argument("agent", choices=["gemini"], help="Target AI agent")
+
+    # setup
+    subparsers.add_parser("setup", help="Orchestrate repository preparation (branching)")
 
     # prepare
     prepare_parser = subparsers.add_parser("prepare", help="Orchestrate doctor, context, and prompt commands")
@@ -33,6 +36,8 @@ def main():
         context.run()
     elif args.command == "prompt":
         prompt.run(args.agent)
+    elif args.command == "setup":
+        setup.run()
     elif args.command == "prepare":
         prepare.run(args.agent)
     elif args.command == "package":

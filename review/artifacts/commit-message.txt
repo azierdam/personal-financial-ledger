@@ -1,6 +1,6 @@
-fix(cli): implement robust git branch slugification
+refactor(cli): separate repository preparation from working file generation
 
-- Add deterministic slugification to ensure Git compliance for branch names.
-- Sanitize branch names immediately before Git execution.
-- Add comprehensive unit tests.
-- Update documentation.
+- Introduce `setup` command for Git repository operations.
+- Refactor `prepare` command to focus on working file generation.
+- Decouple repository state management from artifact regeneration.
+- Synchronize CLI documentation with the new two-phase workflow.

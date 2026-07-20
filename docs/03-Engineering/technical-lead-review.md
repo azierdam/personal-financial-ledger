@@ -2,7 +2,7 @@
 
 ## Sprint
 
-Engineering CLI – Review Package Quality
+Engineering CLI – Working Tree Safety
 
 ## Decision
 
@@ -10,41 +10,44 @@ Approved
 
 ## Summary
 
-The sprint successfully improves the Engineering Review Package quality.
+The implementation successfully introduces Working Tree Safety.
 
-Placeholder artifacts are eliminated in favor of meaningful generated content or explicit "Not Applicable" explanations.
+The Engineering CLI now validates the repository before branch automation and provides actionable diagnostics instead of exposing raw Git errors.
 
-This significantly improves the reliability and trustworthiness of review packages.
+This improves workflow reliability without changing the existing engineering architecture.
 
 ## Strengths
 
-- Review packages are self-describing.
-- Placeholder artifacts removed.
-- Package structure preserved.
+- Working tree validation implemented.
+- User modifications distinguished from generated artifacts.
+- Clear diagnostics provided.
+- Existing workflow preserved.
 - Documentation synchronized.
-- Backward compatibility maintained.
 
-## Remaining Observation
+## Remaining Issue
 
-The Engineering CLI still assumes a clean working tree before branch automation.
+The Engineering CLI package workflow still requires artifacts that may not exist.
 
-When generated artifacts remain in the working tree, Git checkout fails before implementation begins.
+Packaging currently fails before creating the review package even when the implementation itself is complete.
 
-The CLI currently exposes a Git error instead of providing an engineering-friendly diagnostic.
+This indicates that artifact lifecycle management is incomplete.
 
 ## Recommendation
 
-Introduce Working Tree Safety validation before branch automation.
+The package workflow should distinguish between:
 
-The CLI should detect:
+- Mandatory artifacts
+- Optional artifacts
 
-- generated artifacts
-- user modifications
+Optional artifacts should either:
 
-and explain what action is required before attempting any Git operation.
+- be generated automatically, or
+- be emitted as "Not Applicable" with an explanation.
+
+Packaging should never fail because an optional artifact was not produced.
 
 ## Decision
 
 Approved for merge.
 
-A follow-up sprint is recommended.
+A final Engineering CLI infrastructure sprint is recommended.

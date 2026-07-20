@@ -1,38 +1,28 @@
 # Sprint
-D1.7
+D1.8
 
 # Objective
-Improve the Engineering CLI so that it validates the working tree before branch automation and provides actionable diagnostics instead of raw Git failures.
+Refactor the Engineering CLI workflow so that Git repository operations and working file generation are separated into distinct commands.
 
 # Scope
-- Detect working tree status before any Git checkout.
-- Classify modified files into:
-    - Generated artifacts
-    - User modifications
-- Display a clear diagnostic report.
-- Explain why branch automation is blocked.
-- Recommend appropriate user actions.
-- Stop execution before any destructive Git operation.
-- Update documentation describing the Working Tree Safety workflow.
-- Add automated tests covering representative scenarios.
+- Implement `setup` command (Repository Preparation: checkout, pull, branch).
+- Refactor `prepare` command (Working File Generation: context, prompt).
+- Update CLI documentation.
+- Update automated tests.
 
 # Constraints
 - Preserve backward compatibility.
 - Do not modify approval parser.
 - Do not modify context generation.
 - Do not modify package generation.
-- Do not automatically stash/discard/commit changes.
-- Keep implementation simple and maintainable.
+- One command, one responsibility.
 
 # Acceptance Criteria
-- Working tree validation occurs before branch automation.
-- Generated artifacts are identified separately from user modifications.
-- Git errors are replaced by Engineering CLI diagnostics.
-- Users receive clear recovery instructions.
-- No automatic modification of the working tree occurs.
-- Existing workflows remain backward compatible.
-- Documentation is synchronized.
-- Automated tests cover representative working tree scenarios.
+- Repository preparation is separated from working-file generation.
+- `prepare` no longer performs Git checkout or branch creation.
+- Repository operations occur in the new `setup` command.
+- Documentation synchronized.
+- Workflow functional.
 
 # Deliverables
 - Implementation Summary
@@ -42,7 +32,7 @@ Improve the Engineering CLI so that it validates the working tree before branch 
 - Recommended Commit Message
 
 # Conventional Commit
-feat(cli): add working tree safety validation
+refactor(cli): separate repository preparation from working file generation
 
 # Stop Condition
 Stop after implementation.

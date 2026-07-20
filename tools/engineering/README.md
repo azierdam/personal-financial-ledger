@@ -3,7 +3,17 @@
 A lightweight internal developer tool for PFL engineering tasks.
 
 ## Engineering Workflow v2.1
-The Engineering CLI automates the execution of the finalized Engineering Workflow v2.1.
+The Engineering CLI automates the execution of the finalized Engineering Workflow v2.1, now separated into two distinct phases:
+
+### Phase 1: Repository Preparation (`setup`)
+- **Responsibility**: Repository preparation.
+- **Actions**: Validates approvals, manages Git branching, and pulls the latest changes.
+- **Lifecycle**: Executed once per sprint before any implementation.
+
+### Phase 2: Working File Generation (`prepare`)
+- **Responsibility**: Working file generation.
+- **Actions**: Orchestrates validation (`doctor`), repository context (`context`), and implementation prompts (`prompt`).
+- **Lifecycle**: Executed as needed to refresh the engineering workspace.
 
 ### Artifact Ownership
 | Artifact | Owner | Purpose |
@@ -23,7 +33,8 @@ Each command has a single, distinct responsibility:
 | `doctor` | Environment validation. |
 | `context` | Generate repository context. |
 | `prompt` | Generate implementation prompt from `approval.md`. |
-| `prepare` | Orchestrate environment setup (branching, context, prompt). |
+| `setup` | Orchestrate repository preparation (branching). |
+| `prepare` | Orchestrate workspace generation (doctor, context, prompt). |
 | `package` | Package review artifacts. |
 
 ## Branch Naming Rules
