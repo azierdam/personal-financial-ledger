@@ -1,143 +1,225 @@
-# Technical Lead Approval
+# PFL – D1.6 Dashboard & Summary
 
-# Sprint
+## Technical Lead Approval
 
-**PFL – D1.5 Transaction Deletion**
+**Sprint:** D1.6 – Dashboard & Summary
+
+**Status:** APPROVED FOR IMPLEMENTATION
 
 ---
 
 # Objective
 
-Implement secure transaction deletion while preserving ledger integrity and maintaining the existing layered architecture.
+Implement the financial dashboard and summary layer to provide users with an immediate overview of their financial position.
 
----
+This sprint introduces read-only aggregation capabilities built on top of the existing transaction management features without modifying the underlying transaction data.
 
-# Business Objective
-
-Allow users to permanently delete a transaction from the ledger through a controlled workflow with confirmation, validation, and automatic UI refresh.
+The implementation must reuse the existing architecture and avoid duplicating business logic.
 
 ---
 
 # Scope
 
-## Functional
+## Included
 
-- Add Delete action from Transaction Detail.
-- Display confirmation dialog before deletion.
-- Delete transaction through Service layer.
-- Repository removes the transaction from Google Sheets.
-- Refresh Transaction List.
-- Refresh dashboard/account balances.
-- Display success notification.
+### Service Layer
 
----
+Implement summary capabilities within the existing service layer.
 
-## Non-Functional
+Examples include:
 
-- Reuse existing Repository and Service layers.
-- No duplicated business logic.
-- Keep implementation simple and maintainable.
-- Preserve existing coding conventions.
-- No regression to completed features.
+- Current Balance
+- Total Income
+- Total Expense
+- Transaction Count
+- Monthly Summary
+
+All calculations must use repository data.
 
 ---
 
-# Constraints
+### Repository
 
-## Must
+No structural repository changes are expected.
 
-- Delete by Transaction ID.
-- Repository is the only spreadsheet access layer.
-- Service owns business validation.
-- UI owns presentation only.
-- Maintain current navigation flow.
+Existing retrieval methods should be reused.
 
-## Must Not
+Only extend the repository if a clear performance or maintainability benefit exists.
 
-- Modify Engineering Workflow.
-- Redesign Repository architecture.
-- Introduce Soft Delete.
-- Change completed functionality.
-- Break Create/Edit workflows.
+---
+
+### UI
+
+Create a Dashboard view displaying:
+
+- Current Balance
+- Income Total
+- Expense Total
+- Number of Transactions
+- Monthly Summary
+
+The dashboard should refresh automatically after:
+
+- Transaction Creation
+- Transaction Editing
+- Transaction Deletion
+
+---
+
+### WebApp
+
+Expose dashboard endpoints required by the UI.
+
+Maintain the existing WebApp → Service → Repository architecture.
+
+---
+
+# Out of Scope
+
+The following are not part of this sprint:
+
+- Charts
+- Budget tracking
+- Savings goals
+- Forecasting
+- Categories analytics
+- AI-generated insights
+- Multi-period comparisons
+
+These belong to future milestones.
 
 ---
 
 # Architecture
 
-```
-Transaction Detail
+Maintain the existing layered architecture.
+
+```text
+Dashboard UI
         │
         ▼
-TransactionService.deleteTransaction(id)
+WebApp
         │
         ▼
-TransactionRepository.delete(id)
+TransactionService
+        │
+        ▼
+GoogleSheetsTransactionRepository
         │
         ▼
 Google Sheets
 ```
 
+The UI must never perform financial calculations directly.
+
+All aggregation logic belongs in the Service layer.
+
+The Repository remains responsible only for data retrieval.
+
+---
+
+# Constraints
+
+The implementation must:
+
+- Reuse existing repository methods whenever possible.
+- Avoid duplicate aggregation logic.
+- Keep services cohesive and maintainable.
+- Preserve backward compatibility.
+- Follow the current Engineering CLI workflow.
+- Avoid introducing unnecessary abstractions.
+
 ---
 
 # Acceptance Criteria
 
-## Repository
+## Dashboard
 
-- Delete existing transaction.
-- Gracefully handle invalid Transaction ID.
-- Return success/failure result.
-
-## Service
-
-- Validate deletion request.
-- Execute repository deletion.
-- Handle business errors.
-
-## UI
-
-- Confirmation dialog.
-- Delete button on Transaction Detail.
-- Return to Transaction List after successful deletion.
-- Refresh transaction list.
-- Refresh dashboard/account balances.
-- Display success notification.
+- Display current balance.
+- Display total income.
+- Display total expenses.
+- Display transaction count.
+- Display monthly summary.
 
 ---
 
-# Validation
+## Refresh
+
+Dashboard updates automatically after:
+
+- Create
+- Edit
+- Delete
+
+No manual refresh should be required.
+
+---
+
+## Service Layer
+
+Business calculations are implemented in the Service layer.
+
+No financial calculations exist in:
+
+- HTML
+- JavaScript UI
+- WebApp routing
+
+---
+
+## Repository
+
+Repository remains focused on persistence and retrieval.
+
+No business calculations should be added.
+
+---
+
+## Validation
 
 Verify:
 
-- Existing transaction deleted successfully.
-- Invalid Transaction ID handled safely.
-- Transaction List refreshed.
-- Dashboard refreshed.
-- Account balances remain correct.
-- No regression in Create/Edit workflows.
-- Repository integrity maintained.
+- Balance accuracy.
+- Income accuracy.
+- Expense accuracy.
+- Transaction count.
+- Monthly summary calculations.
+- Dashboard refresh after CRUD operations.
+- No regression in existing transaction workflows.
 
 ---
 
 # Deliverables
 
-Implementation must include:
+Implementation should include updates only where necessary, such as:
 
-- Source code
-- Relevant documentation updates
-- Regenerated review artifacts
-- Validation report
-- Engineering Review Package
+- `src/service/TransactionService.gs`
+- `src/app/WebApp.gs`
+- `src/ui/Dashboard.html`
+- Integration tests
+- Review artifacts
+- Validation results
+
+Follow the Engineering CLI workflow:
+
+```bash
+python -m tools.engineering prepare gemini
+```
+
+Generate the standard review package upon completion.
 
 ---
 
-# Conventional Commit
+# Git Commit
 
-```text
-feat(transaction): implement transaction deletion workflow
+```bash
+git commit -m "feat(dashboard): implement financial dashboard and summary"
 ```
 
 ---
 
-# Stop Condition
+# Technical Lead Decision
 
-Stop implementation when all acceptance criteria are met, validation passes, the review package is successfully generated, and the implementation is ready for Technical Lead review.
+**APPROVED**
+
+Proceed with implementation following the existing architecture and engineering standards without introducing architectural changes.
