@@ -1,33 +1,30 @@
-# PFL – D1.6 Dashboard & Summary
+# Sprint
 
-## Technical Lead Approval
+**Milestone:** D1 – Core Transaction Management
 
-# Sprint 
-D1.6 – Dashboard & Summary
+**Sprint:** D1.6 – Dashboard & Summary
 
-**Status:** APPROVED FOR IMPLEMENTATION
+**Feature Branch:**
+
+```text
+feature/pfl-d1-6-dashboard-summary
+```
 
 ---
 
 # Objective
 
-Implement the financial dashboard and summary layer to provide users with an immediate overview of their financial position.
+Implement the financial dashboard to provide users with a consolidated summary of their financial data.
 
-This sprint introduces read-only aggregation capabilities built on top of the existing transaction management features without modifying the underlying transaction data.
-
-The implementation must reuse the existing architecture and avoid duplicating business logic.
+The dashboard must reuse the existing application architecture and present aggregated information without duplicating business logic.
 
 ---
 
 # Scope
 
-## Included
+## Service Layer
 
-### Service Layer
-
-Implement summary capabilities within the existing service layer.
-
-Examples include:
+Implement dashboard summary functionality, including:
 
 - Current Balance
 - Total Income
@@ -35,31 +32,51 @@ Examples include:
 - Transaction Count
 - Monthly Summary
 
-All calculations must use repository data.
+All calculations must be performed within the Service layer.
 
 ---
 
-### Repository
+## Repository
 
-No structural repository changes are expected.
+Reuse the existing repository retrieval methods.
 
-Existing retrieval methods should be reused.
+Only extend the repository if required for maintainability or performance.
 
-Only extend the repository if a clear performance or maintainability benefit exists.
+No business calculations belong in the repository.
 
 ---
 
-### UI
+## WebApp
 
-Create a Dashboard view displaying:
+Expose the endpoints required by the dashboard.
+
+Maintain the existing:
+
+```text
+UI
+ ↓
+WebApp
+ ↓
+Service
+ ↓
+Repository
+```
+
+architecture.
+
+---
+
+## UI
+
+Implement a Dashboard view displaying:
 
 - Current Balance
-- Income Total
-- Expense Total
-- Number of Transactions
+- Total Income
+- Total Expense
+- Transaction Count
 - Monthly Summary
 
-The dashboard should refresh automatically after:
+The dashboard should automatically refresh after:
 
 - Transaction Creation
 - Transaction Editing
@@ -67,160 +84,99 @@ The dashboard should refresh automatically after:
 
 ---
 
-### WebApp
-
-Expose dashboard endpoints required by the UI.
-
-Maintain the existing WebApp → Service → Repository architecture.
-
----
-
-# Out of Scope
-
-The following are not part of this sprint:
-
-- Charts
-- Budget tracking
-- Savings goals
-- Forecasting
-- Categories analytics
-- AI-generated insights
-- Multi-period comparisons
-
-These belong to future milestones.
-
----
-
-# Architecture
-
-Maintain the existing layered architecture.
-
-```text
-Dashboard UI
-        │
-        ▼
-WebApp
-        │
-        ▼
-TransactionService
-        │
-        ▼
-GoogleSheetsTransactionRepository
-        │
-        ▼
-Google Sheets
-```
-
-The UI must never perform financial calculations directly.
-
-All aggregation logic belongs in the Service layer.
-
-The Repository remains responsible only for data retrieval.
-
----
-
 # Constraints
 
-The implementation must:
-
-- Reuse existing repository methods whenever possible.
-- Avoid duplicate aggregation logic.
-- Keep services cohesive and maintainable.
+- Follow the existing layered architecture.
+- Reuse existing services whenever possible.
+- Do not duplicate aggregation logic.
+- Do not modify unrelated functionality.
 - Preserve backward compatibility.
-- Follow the current Engineering CLI workflow.
-- Avoid introducing unnecessary abstractions.
+- Keep the implementation simple and maintainable.
+- Do not introduce architectural changes.
+- If implementation becomes ambiguous, stop and report the issue instead of making architectural decisions.
 
 ---
 
 # Acceptance Criteria
 
-## Dashboard
-
-- Display current balance.
-- Display total income.
-- Display total expenses.
-- Display transaction count.
-- Display monthly summary.
-
----
-
-## Refresh
-
-Dashboard updates automatically after:
-
-- Create
-- Edit
-- Delete
-
-No manual refresh should be required.
-
----
-
-## Service Layer
-
-Business calculations are implemented in the Service layer.
-
-No financial calculations exist in:
-
-- HTML
-- JavaScript UI
-- WebApp routing
-
----
-
-## Repository
-
-Repository remains focused on persistence and retrieval.
-
-No business calculations should be added.
-
----
-
-## Validation
-
-Verify:
-
-- Balance accuracy.
-- Income accuracy.
-- Expense accuracy.
-- Transaction count.
-- Monthly summary calculations.
-- Dashboard refresh after CRUD operations.
-- No regression in existing transaction workflows.
+- Dashboard displays the current balance correctly.
+- Dashboard displays total income correctly.
+- Dashboard displays total expenses correctly.
+- Dashboard displays transaction count correctly.
+- Dashboard displays monthly summary correctly.
+- Dashboard refreshes automatically after Create, Edit, and Delete operations.
+- No financial calculations exist in the UI.
+- Repository remains responsible only for data persistence and retrieval.
+- Existing transaction workflows continue to function without regression.
 
 ---
 
 # Deliverables
 
-Implementation should include updates only where necessary, such as:
+## Application
 
 - `src/service/TransactionService.gs`
 - `src/app/WebApp.gs`
 - `src/ui/Dashboard.html`
-- Integration tests
-- Review artifacts
-- Validation results
+- Integration tests (if applicable)
+
+## Engineering
+
+Generate a complete Engineering Review Package containing:
+
+- `technical-lead-approval.md`
+- `implementation-summary.md`
+- `architecture-notes.md`
+- `changed-files.md`
+- `validation.md`
+- `self-review.md`
+- `manifest.json`
 
 Follow the Engineering CLI workflow:
 
 ```bash
+git add review/current/technical-lead-approval.md
+git commit -m "docs(engineering): approve D1.6 dashboard & summary"
+
+python -m tools.engineering setup
 python -m tools.engineering prepare gemini
 ```
 
-Generate the standard review package upon completion.
-
 ---
 
-# Git Commit
+# Conventional Commit
+
+Approval Document:
 
 ```bash
-git commit -m "feat(dashboard): implement financial dashboard and summary"
+git commit -m "docs(engineering): approve D1.6 dashboard & summary"
+```
+
+Implementation:
+
+```bash
+git commit -m "feat(dashboard): implement dashboard and financial summary"
 ```
 
 ---
 
-# Technical Lead Decision
+# Stop Condition
 
-**APPROVED**
+Stop implementation immediately if:
 
-Proceed with implementation following the existing architecture and engineering standards without introducing architectural changes.
+- The approved scope cannot be completed without changing the existing architecture.
+- Additional repository interfaces are required beyond the approved scope.
+- Business rules are ambiguous or undocumented.
+- Acceptance Criteria cannot be satisfied with the current design.
+- A potential regression affecting existing transaction management is identified.
+
+Do not make architectural decisions independently.
+
+Instead, document:
+
+1. The blocking issue.
+2. The affected components.
+3. The proposed options.
+4. The implementation impact.
+
+Return control to the Technical Lead for a decision.
