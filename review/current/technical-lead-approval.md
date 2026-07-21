@@ -2,7 +2,7 @@
 
 ## Technical Lead Approval
 
-**Sprint:** D1.6 – Dashboard & Summary
+# Sprint: D1.6 – Dashboard & Summary
 
 **Status:** APPROVED FOR IMPLEMENTATION
 
