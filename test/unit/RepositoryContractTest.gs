@@ -7,8 +7,11 @@ function testRepositoryContracts() {
   // that TransactionRepository lacks 'update' and 'delete'
   
   const tr = TransactionRepository;
-  if (tr.update) {
-    throw new Error('TransactionRepository should not have update');
+  if (!tr.update) {
+    throw new Error('TransactionRepository should have update');
+  }
+  if (!tr.delete) {
+    throw new Error('TransactionRepository should have delete');
   }
   
   const ar = AccountRepository;
