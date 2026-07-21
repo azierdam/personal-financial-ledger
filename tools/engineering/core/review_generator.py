@@ -28,11 +28,18 @@ def generate_summary(root, sprint_id, audit_data, manifest_data):
     return summary
 
 def generate_validation(root, manifest_data):
+    approval_data = get_approval_data(root)
+    acceptance_criteria = approval_data.get("Acceptance Criteria", "N/A")
+    
     validation = f"# Package Validation Report (v2.1)\n\n"
-    validation += f"## Validation Performed\n"
+    validation += f"## Engineering Validation\n"
     validation += f"- Automated audit run (`audit` command) completes successfully.\n"
     validation += f"- Knowledge Graph generation (`graph` command) verified.\n"
     validation += f"- Dependency validation passes with zero broken references.\n\n"
+    
+    validation += f"## Feature Validation (Acceptance Criteria)\n"
+    validation += f"{acceptance_criteria}\n\n"
+    
     validation += f"## Known Limitations\n"
     validation += f"- No automated integration test suite is currently running on the live Google Sheets due to credentials limitations. Verification was performed manually and via mocked tests.\n"
     return validation
@@ -61,23 +68,25 @@ def generate_architecture(root):
 
 def generate_changed_files(root):
     changed = f"# Changed Files\n\n"
-    changed += f"## Modified Files\n"
+    changed += f"## Application Files\n"
     
     # Factual changed files list
     changed_list = git.get_status()
+    
+    # Application vs Engineering separation
+    app_files = []
+    eng_files = []
     for f in changed_list:
-        changed += f"- `{f}`: "
-        if "TransactionDetail.html" in f:
-            changed += "Added Delete button and confirmation logic to transaction detail view.\n"
-        elif "WebApp.gs" in f:
-            changed += "Added deleteTransaction entry point for client-side API calls.\n"
-        elif "TransactionService.gs" in f:
-            changed += "Added deleteTransaction business method.\n"
-        elif "GoogleSheetsTransactionRepository.gs" in f:
-            changed += "Implemented delete method to remove row by ID from Google Sheets.\n"
-        elif "TransactionRepository.gs" in f:
-            changed += "Updated interface contract with delete method.\n"
+        if f.startswith('src/'):
+            app_files.append(f)
         else:
-            changed += "Updated documentation / CLI orchestration file.\n"
+            eng_files.append(f)
+            
+    for f in app_files:
+        changed += f"- `{f}`\n"
+        
+    changed += f"\n## Engineering Artifacts\n"
+    for f in eng_files:
+        changed += f"- `{f}`\n"
             
     return changed

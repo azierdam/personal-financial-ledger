@@ -1,7 +1,8 @@
 import os
 import shutil
 import json
-from . import manifest, approval, review_generator
+import sys
+from . import manifest, approval, review_generator, output
 
 def package(profile, sprint_id, root):
     contract_path = os.path.join(root, ".engineering", "contracts", "engineering-package-contract.json")
@@ -67,7 +68,12 @@ def package(profile, sprint_id, root):
             raise FileNotFoundError(f"Validation failed: Packaged file {file_name} does not exist.")
 
     # Manifest (Only contains files actually written to package_dir)
-    manifest_data = manifest.generate(sprint_id, sorted(packaged_files))
+    try:
+        manifest_data = manifest.generate(sprint_id, sorted(packaged_files), root)
+    except ValueError as e:
+        output.error(f"Manifest generation failed: {e}")
+        sys.exit(1)
+        
     manifest.save(manifest_data, os.path.join(package_dir, "manifest.json"))
     
     # Zip

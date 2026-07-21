@@ -1,8 +1,8 @@
 {
-  "sprint": "**PFL \u2013 D1.5 Transaction Deletion**\n\n---",
-  "timestamp": "2026-07-21T00:35:14.125769",
-  "branch": "feature-pfl-d1-5-transaction-deletion-create-transaction",
-  "commit": "77b7a18c85f35bccc742a535b4f86c49689f9bf4",
+  "sprint": "**Milestone:** D1 \u2013 Core Transaction Management\n\n**Sprint:** D1.6 \u2013 Dashboard & Summary\n\n**Feature Branch:**\n\n```text\nfeature/pfl-d1-6-dashboard-summary\n```\n\n---",
+  "timestamp": "2026-07-21T23:23:07.544909",
+  "branch": "feature-milestone-d1-core-transaction-management-sprint-d1-6-dashboard-summary-feature-branch-text-feature-pfl-d1-6-dashboard-summary-create-transaction",
+  "commit": "8e177997bcd5a68d4ab89f767c164921a761b428",
   "artifacts": [
     "architecture-notes.md",
     "changed-files.md",

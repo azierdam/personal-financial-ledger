@@ -1,35 +1,85 @@
 # Engineering Review Summary (v2.1)
 
 ## Milestone
-**PFL – D1.5 Transaction Deletion**
+**Milestone:** D1 – Core Transaction Management
+
+**Sprint:** D1.6 – Dashboard & Summary
+
+**Feature Branch:**
+
+```text
+feature/pfl-d1-6-dashboard-summary
+```
 
 ---
 
 ## Objective
-Implement secure transaction deletion while preserving ledger integrity and maintaining the existing layered architecture.
+Implement the financial dashboard to provide users with a consolidated summary of their financial data.
+
+The dashboard must reuse the existing application architecture and present aggregated information without duplicating business logic.
 
 ---
 
 ## Scope
-## Functional
+## Service Layer
 
-- Add Delete action from Transaction Detail.
-- Display confirmation dialog before deletion.
-- Delete transaction through Service layer.
-- Repository removes the transaction from Google Sheets.
-- Refresh Transaction List.
-- Refresh dashboard/account balances.
-- Display success notification.
+Implement dashboard summary functionality, including:
+
+- Current Balance
+- Total Income
+- Total Expense
+- Transaction Count
+- Monthly Summary
+
+All calculations must be performed within the Service layer.
 
 ---
 
-## Non-Functional
+## Repository
 
-- Reuse existing Repository and Service layers.
-- No duplicated business logic.
-- Keep implementation simple and maintainable.
-- Preserve existing coding conventions.
-- No regression to completed features.
+Reuse the existing repository retrieval methods.
+
+Only extend the repository if required for maintainability or performance.
+
+No business calculations belong in the repository.
+
+---
+
+## WebApp
+
+Expose the endpoints required by the dashboard.
+
+Maintain the existing:
+
+```text
+UI
+↓
+WebApp
+↓
+Service
+↓
+Repository
+```
+
+architecture.
+
+---
+
+## UI
+
+Implement a Dashboard view displaying:
+
+- Current Balance
+- Total Income
+- Total Expense
+- Transaction Count
+- Monthly Summary
+
+The dashboard should automatically refresh after:
+
+- Transaction Creation
+- Transaction Editing
+- Transaction Deletion
 
 ---
 
