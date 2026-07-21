@@ -1,8 +1,12 @@
 {
-  "sprint": "**Milestone:** D1 \u2013 Core Transaction Management\n\n**Sprint:** D1.6 \u2013 Dashboard & Summary\n\n**Feature Branch:**\n\n```text\nfeature/pfl-d1-6-dashboard-summary\n```\n\n---",
-  "timestamp": "2026-07-21T23:23:07.544909",
+  "sprint_metadata": {
+    "engineering_sprint": "ENG-CLI Stabilization",
+    "product_sprint": "D1.6 \u2013 Dashboard & Summary",
+    "product_status": "Paused"
+  },
+  "timestamp": "2026-07-22T00:23:12.992442",
   "branch": "feature-milestone-d1-core-transaction-management-sprint-d1-6-dashboard-summary-feature-branch-text-feature-pfl-d1-6-dashboard-summary-create-transaction",
-  "commit": "8e177997bcd5a68d4ab89f767c164921a761b428",
+  "commit": "76a97391691bab699a2a621b0e8ec54659623718",
   "artifacts": [
     "architecture-notes.md",
     "changed-files.md",

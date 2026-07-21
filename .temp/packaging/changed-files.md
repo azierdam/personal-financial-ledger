@@ -1,9 +1,15 @@
 # Changed Files
 
 ## Application Files
+- None
 
 ## Engineering Artifacts
-- `temp/packaging/architecture-notes.md`
+- `context.md`
+- `.engineering/dependency-map.json`
+- `.engineering/duplicate-docs.json`
+- `.engineering/repository-audit.json`
+- `.prompt.md`
+- `.temp/packaging/architecture-notes.md`
 - `.temp/packaging/changed-files.md`
 - `.temp/packaging/checklist.md`
 - `.temp/packaging/gemini-handover.md`
@@ -12,10 +18,53 @@
 - `.temp/packaging/self-review.md`
 - `.temp/packaging/technical-lead-approval.md`
 - `.temp/packaging/validation.md`
-- `review/review-package-chatgpt.zip`
-- `tools/engineering/commands/package.py`
-- `tools/engineering/core/__pycache__/approval.cpython-314.pyc`
-- `tools/engineering/core/manifest.py`
-- `tools/engineering/core/packaging.py`
-- `tools/engineering/core/review_generator.py`
 - `debug_parse.py`
+- `review/package_test_final/architecture-notes.md`
+- `review/package_test_final/changed-files.md`
+- `review/package_test_final/checklist.md`
+- `review/package_test_final/gemini-handover.md`
+- `review/package_test_final/implementation-summary.md`
+- `review/package_test_final/manifest.json`
+- `review/package_test_final/self-review.md`
+- `review/package_test_final/technical-lead-approval.md`
+- `review/package_test_final/validation.md`
+- `review/package_test_final2/gemini-handover.md`
+- `review/package_test_final2/implementation-summary.md`
+- `review/package_test_final2/manifest.json`
+- `review/package_test_final2/self-review.md`
+- `review/package_test_final2/technical-lead-approval.md`
+- `review/package_test_final2/validation.md`
+- `review/package_test_v3/architecture-notes.md`
+- `review/package_test_v3/changed-files.md`
+- `review/package_test_v3/checklist.md`
+- `review/package_test_v3/gemini-handover.md`
+- `review/package_test_v3/implementation-summary.md`
+- `review/package_test_v3/manifest.json`
+- `review/package_test_v3/self-review.md`
+- `review/package_test_v3/technical-lead-approval.md`
+- `review/package_test_v3/validation.md`
+- `review/package_test_v4/architecture-notes.md`
+- `review/package_test_v4/changed-files.md`
+- `review/package_test_v4/checklist.md`
+- `review/package_test_v4/gemini-handover.md`
+- `review/package_test_v4/implementation-summary.md`
+- `review/package_test_v4/manifest.json`
+- `review/package_test_v4/self-review.md`
+- `review/package_test_v4/technical-lead-approval.md`
+- `review/package_test_v4/validation.md`
+- `review/package_test_v5/architecture-notes.md`
+- `review/package_test_v5/changed-files.md`
+- `review/package_test_v5/checklist.md`
+- `review/package_test_v5/gemini-handover.md`
+- `review/package_test_v5/implementation-summary.md`
+- `review/package_test_v5/manifest.json`
+- `review/package_test_v5/self-review.md`
+- `review/package_test_v5/technical-lead-approval.md`
+- `review/package_test_v5/validation.md`
+- `review/review-B2.2.zip`
+- `review/review-C1.1.zip`
+- `review/review-package-chatgpt.zip`
+- `tools/engineering/commands/context.py`
+- `tools/engineering/core/manifest.py`
+- `tools/engineering/core/review_generator.py`
+- `archive/planning/stale_reviews/`

@@ -1,90 +1,48 @@
 # Engineering Review Summary (v2.1)
 
 ## Milestone
-**Milestone:** D1 – Core Transaction Management
+**Sprint:** ENG-CLI Stabilization
 
-**Sprint:** D1.6 – Dashboard & Summary
-
-**Feature Branch:**
-
-```text
-feature/pfl-d1-6-dashboard-summary
-```
+Supporting Product Sprint: **D1.6 – Dashboard & Summary (Paused)**
 
 ---
 
 ## Objective
-Implement the financial dashboard to provide users with a consolidated summary of their financial data.
+Stabilize the Engineering Workflow implementation so that it fully conforms to the Engineering Workflow Guide v2.2 before resuming PFL feature development.
 
-The dashboard must reuse the existing application architecture and present aggregated information without duplicating business logic.
+The objective is to ensure the engineering workflow executes deterministically from Technical Lead Approval through Merge without undocumented manual intervention.
+
+No application features are to be implemented during this sprint.
 
 ---
 
 ## Scope
-## Service Layer
+The scope is limited to the Engineering CLI and engineering workflow implementation.
 
-Implement dashboard summary functionality, including:
+This includes:
 
-- Current Balance
-- Total Income
-- Total Expense
-- Transaction Count
-- Monthly Summary
+- Technical Lead Approval parsing
+- setup
+- prepare
+- package
+- Review Package generation
+- Manifest generation
+- Validation generation
+- Changed Files generation
+- Engineering documentation directly affected by implementation
 
-All calculations must be performed within the Service layer.
+The following are explicitly **out of scope**:
 
----
-
-## Repository
-
-Reuse the existing repository retrieval methods.
-
-Only extend the repository if required for maintainability or performance.
-
-No business calculations belong in the repository.
-
----
-
-## WebApp
-
-Expose the endpoints required by the dashboard.
-
-Maintain the existing:
-
-```text
-UI
-↓
-WebApp
-↓
-Service
-↓
-Repository
-```
-
-architecture.
-
----
-
-## UI
-
-Implement a Dashboard view displaying:
-
-- Current Balance
-- Total Income
-- Total Expense
-- Transaction Count
-- Monthly Summary
-
-The dashboard should automatically refresh after:
-
-- Transaction Creation
-- Transaction Editing
-- Transaction Deletion
+- Dashboard implementation (D1.6)
+- Application business logic
+- Repository enhancements
+- UI features
+- Service layer enhancements
 
 ---
 
 ## Changed Files
-- Count: 292
+- Count: 319
 - Details in `changed-files.md`
 
 ## Validation Evidence

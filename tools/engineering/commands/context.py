@@ -4,7 +4,17 @@ from ..core import repository, filesystem, git, markdown
 def run():
     root = repository.get_root()
     
-    # Priority 1: Artifacts
+    # Priority 1: Current Sprint Context (Derived from Approval)
+    approval_file = os.path.join(root, "review", "current", "technical-lead-approval.md")
+    print(f"DEBUG: Checking for approval file at {approval_file}, exists: {os.path.exists(approval_file)}")
+    if os.path.exists(approval_file):
+        print("Context Source: ✓ Current Sprint Context")
+        with open(approval_file, 'r', encoding='utf-8') as f:
+            content = f"Context derived from current sprint approval:\n\n{f.read()}\n\n"
+        _save_context(content)
+        return
+
+    # Priority 2: Artifacts
     artifacts_dir = os.path.join(root, "review", "artifacts")
     required_artifacts = ["implementation-summary.md", "validation.md", "gemini-handover.md"]
     found_artifacts = [a for a in required_artifacts if os.path.exists(os.path.join(artifacts_dir, a))]

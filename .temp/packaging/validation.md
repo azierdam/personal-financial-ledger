@@ -1,20 +1,62 @@
 # Package Validation Report (v2.1)
 
+## Sprint
+**Sprint:** ENG-CLI Stabilization
+
+Supporting Product Sprint: **D1.6 – Dashboard & Summary (Paused)**
+
+---
+
 ## Engineering Validation
 - Automated audit run (`audit` command) completes successfully.
 - Knowledge Graph generation (`graph` command) verified.
 - Dependency validation passes with zero broken references.
 
 ## Feature Validation (Acceptance Criteria)
-- Dashboard displays the current balance correctly.
-- Dashboard displays total income correctly.
-- Dashboard displays total expenses correctly.
-- Dashboard displays transaction count correctly.
-- Dashboard displays monthly summary correctly.
-- Dashboard refreshes automatically after Create, Edit, and Delete operations.
-- No financial calculations exist in the UI.
-- Repository remains responsible only for data persistence and retrieval.
-- Existing transaction workflows continue to function without regression.
+The following workflow executes successfully exactly as documented:
+
+Technical Lead Approval
+
+↓
+
+Commit Approval
+
+↓
+
+setup
+
+↓
+
+prepare gemini
+
+↓
+
+Gemini implementation
+
+↓
+
+package chatgpt
+
+↓
+
+Technical Lead Review
+
+↓
+
+Review Loop (if required)
+
+↓
+
+Merge
+
+Additionally:
+
+- Technical Lead Approval is the single authoritative sprint document.
+- All generated artifacts reference the current Technical Lead Approval.
+- Package generation validates artifact consistency.
+- changed-files.md reflects actual implementation changes.
+- validation.md contains Engineering Validation and Feature Validation where applicable.
+- No undocumented manual intervention is required.
 
 ---
 

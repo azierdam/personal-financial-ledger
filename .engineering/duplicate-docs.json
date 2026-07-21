@@ -162,6 +162,426 @@
   },
   {
     "files": [
+      "archive/obsolete/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_final/architecture-notes.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_final/changed-files.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/changed-files.md",
+      "archive/planning/stale_reviews/package_test_final/changed-files.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_final/checklist.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/checklist.md",
+      "archive/planning/stale_reviews/package_test_final/checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_final/gemini-handover.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/gemini-handover.md",
+      "archive/planning/stale_reviews/package_test_final/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/implementation-summary.md",
+      "archive/planning/stale_reviews/package_test_final/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_final/self-review.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/self-review.md",
+      "archive/planning/stale_reviews/package_test_final/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/validation.md",
+      "archive/planning/stale_reviews/package_test_final/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/gemini-handover.md",
+      "archive/planning/stale_reviews/package_test_final2/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/implementation-summary.md",
+      "archive/planning/stale_reviews/package_test_final2/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/manifest.json",
+      "archive/planning/stale_reviews/package_test_final2/manifest.json"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/self-review.md",
+      "archive/planning/stale_reviews/package_test_final2/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/technical-lead-approval.md",
+      "archive/planning/stale_reviews/package_test_final2/technical-lead-approval.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/validation.md",
+      "archive/planning/stale_reviews/package_test_final2/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_v3/architecture-notes.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/changed-files.md",
+      "archive/planning/stale_reviews/package_test_v3/changed-files.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/checklist.md",
+      "archive/planning/stale_reviews/package_test_v3/checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/gemini-handover.md",
+      "archive/planning/stale_reviews/package_test_v3/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/implementation-summary.md",
+      "archive/planning/stale_reviews/package_test_v3/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/manifest.json",
+      "archive/planning/stale_reviews/package_test_v3/manifest.json"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/self-review.md",
+      "archive/planning/stale_reviews/package_test_v3/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/technical-lead-approval.md",
+      "archive/planning/stale_reviews/package_test_v3/technical-lead-approval.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/validation.md",
+      "archive/planning/stale_reviews/package_test_v3/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_v4/architecture-notes.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_v4/architecture-notes.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/obsolete/changed-files.md",
+      "archive/planning/stale_reviews/package_test_v4/changed-files.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/checklist.md",
+      "archive/planning/stale_reviews/package_test_v4/checklist.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/checklist.md",
+      "archive/planning/stale_reviews/package_test_v4/checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/gemini-handover.md",
+      "archive/planning/stale_reviews/package_test_v4/gemini-handover.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/gemini-handover.md",
+      "archive/planning/stale_reviews/package_test_v4/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/implementation-summary.md",
+      "archive/planning/stale_reviews/package_test_v4/implementation-summary.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/implementation-summary.md",
+      "archive/planning/stale_reviews/package_test_v4/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/manifest.json",
+      "archive/planning/stale_reviews/package_test_v4/manifest.json"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/self-review.md",
+      "archive/planning/stale_reviews/package_test_v4/self-review.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/self-review.md",
+      "archive/planning/stale_reviews/package_test_v4/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/technical-lead-approval.md",
+      "archive/planning/stale_reviews/package_test_v4/technical-lead-approval.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/technical-lead-approval.md",
+      "archive/planning/stale_reviews/package_test_v4/technical-lead-approval.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/validation.md",
+      "archive/planning/stale_reviews/package_test_v4/validation.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/validation.md",
+      "archive/planning/stale_reviews/package_test_v4/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_v5/architecture-notes.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/architecture-notes.md",
+      "archive/planning/stale_reviews/package_test_v5/architecture-notes.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v4/changed-files.md",
+      "archive/planning/stale_reviews/package_test_v5/changed-files.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/changed-files.md",
+      "archive/planning/stale_reviews/package_test_v5/changed-files.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/checklist.md",
+      "archive/planning/stale_reviews/package_test_v5/checklist.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/checklist.md",
+      "archive/planning/stale_reviews/package_test_v5/checklist.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/gemini-handover.md",
+      "archive/planning/stale_reviews/package_test_v5/gemini-handover.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/gemini-handover.md",
+      "archive/planning/stale_reviews/package_test_v5/gemini-handover.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/implementation-summary.md",
+      "archive/planning/stale_reviews/package_test_v5/implementation-summary.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/implementation-summary.md",
+      "archive/planning/stale_reviews/package_test_v5/implementation-summary.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v4/manifest.json",
+      "archive/planning/stale_reviews/package_test_v5/manifest.json"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/manifest.json",
+      "archive/planning/stale_reviews/package_test_v5/manifest.json"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/self-review.md",
+      "archive/planning/stale_reviews/package_test_v5/self-review.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/self-review.md",
+      "archive/planning/stale_reviews/package_test_v5/self-review.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/technical-lead-approval.md",
+      "archive/planning/stale_reviews/package_test_v5/technical-lead-approval.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_final/technical-lead-approval.md",
+      "archive/planning/stale_reviews/package_test_v5/technical-lead-approval.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
+      "archive/planning/stale_reviews/package_test_v3/validation.md",
+      "archive/planning/stale_reviews/package_test_v5/validation.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
+      "archive/obsolete/validation.md",
+      "archive/planning/stale_reviews/package_test_v5/validation.md"
+    ],
+    "reason": "Same filename"
+  },
+  {
+    "files": [
       "assets/.gitkeep",
       "docs/.gitkeep"
     ],
@@ -288,6 +708,13 @@
   },
   {
     "files": [
+      "archive/planning/stale_reviews/package_test_v3/checklist.md",
+      "review/artifacts/checklist.md"
+    ],
+    "reason": "SHA256 identical"
+  },
+  {
+    "files": [
       "archive/obsolete/checklist.md",
       "review/artifacts/checklist.md"
     ],
@@ -386,127 +813,8 @@
   },
   {
     "files": [
-      "archive/obsolete/architecture-notes.md",
-      "review/package_test_final/architecture-notes.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "review/package_test_final/architecture-notes.md",
-      "review/package_test_final/changed-files.md"
-    ],
-    "reason": "SHA256 identical"
-  },
-  {
-    "files": [
-      "archive/obsolete/changed-files.md",
-      "review/package_test_final/changed-files.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "review/package_test_final/architecture-notes.md",
-      "review/package_test_final/checklist.md"
-    ],
-    "reason": "SHA256 identical"
-  },
-  {
-    "files": [
-      "archive/obsolete/checklist.md",
-      "review/package_test_final/checklist.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "review/package_test_final/architecture-notes.md",
-      "review/package_test_final/gemini-handover.md"
-    ],
-    "reason": "SHA256 identical"
-  },
-  {
-    "files": [
-      "archive/obsolete/gemini-handover.md",
-      "review/package_test_final/gemini-handover.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/obsolete/implementation-summary.md",
-      "review/package_test_final/implementation-summary.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "review/package_test_final/architecture-notes.md",
-      "review/package_test_final/self-review.md"
-    ],
-    "reason": "SHA256 identical"
-  },
-  {
-    "files": [
-      "archive/obsolete/self-review.md",
-      "review/package_test_final/self-review.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "review/current/technical-lead-approval.md",
-      "review/package_test_final/technical-lead-approval.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/obsolete/validation.md",
-      "review/package_test_final/validation.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/obsolete/gemini-handover.md",
-      "review/package_test_final2/gemini-handover.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/obsolete/implementation-summary.md",
-      "review/package_test_final2/implementation-summary.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "review/package_test_final/manifest.json",
-      "review/package_test_final2/manifest.json"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/obsolete/self-review.md",
-      "review/package_test_final2/self-review.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "review/current/technical-lead-approval.md",
-      "review/package_test_final2/technical-lead-approval.md"
-    ],
-    "reason": "Same filename"
-  },
-  {
-    "files": [
-      "archive/obsolete/validation.md",
-      "review/package_test_final2/validation.md"
+      "archive/planning/stale_reviews/package_test_final/technical-lead-approval.md",
+      "review/current/technical-lead-approval.md"
     ],
     "reason": "Same filename"
   },

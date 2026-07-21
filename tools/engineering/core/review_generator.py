@@ -29,9 +29,11 @@ def generate_summary(root, sprint_id, audit_data, manifest_data):
 
 def generate_validation(root, manifest_data):
     approval_data = get_approval_data(root)
+    sprint = approval_data.get("Sprint", "N/A")
     acceptance_criteria = approval_data.get("Acceptance Criteria", "N/A")
     
     validation = f"# Package Validation Report (v2.1)\n\n"
+    validation += f"## Sprint\n{sprint}\n\n"
     validation += f"## Engineering Validation\n"
     validation += f"- Automated audit run (`audit` command) completes successfully.\n"
     validation += f"- Knowledge Graph generation (`graph` command) verified.\n"
@@ -51,42 +53,44 @@ def generate_handover(root, manifest_data):
     return f"# Gemini Handover (v2.1)\n\nReview the Execution Manifest and `architecture-notes.md` for technical implementation details of the Transaction Deletion workflow.\n"
 
 def generate_architecture(root):
+    approval_data = get_approval_data(root)
+    objective = approval_data.get("Objective", "N/A")
+    
     arch = f"# Architecture Notes\n\n"
-    arch += f"## Affected Layers\n"
-    arch += f"1. **UI Layer (`src/ui/TransactionDetail.html`)**: Triggers `confirmDelete` and calls `google.script.run`.\n"
-    arch += f"2. **Controller Layer (`src/app/WebApp.gs`)**: Dispatches the request via `deleteTransaction(id)`.\n"
-    arch += f"3. **Service Layer (`src/service/TransactionService.gs`)**: Coordinates business validation and repository delegation.\n"
-    arch += f"4. **Repository Layer (`src/repository/GoogleSheetsTransactionRepository.gs`)**: Locates the row matching the ID and deletes the row from Google Sheets.\n\n"
-    arch += f"## Sequence of Calls\n"
-    arch += f"```\n"
-    arch += f"TransactionDetail.html --(confirmDelete)--> WebApp.gs --(deleteTransaction)--> TransactionService.gs --(delete)--> GoogleSheetsTransactionRepository.gs\n"
-    arch += f"```\n\n"
-    arch += f"## Architectural Decisions\n"
-    arch += f"- Reused the existing base repository interface by adding the `delete` method.\n"
-    arch += f"- Avoided Soft Delete as strictly required by the constraints.\n"
+    arch += f"## Sprint Objective\n{objective}\n\n"
+    arch += f"## Architectural Scope\n"
+    arch += f"- See Technical Lead Approval for specific implementation constraints and architectural directives.\n"
+    arch += f"- Implementation adheres to the established layered architecture (UI -> WebApp -> Service -> Repository).\n"
     return arch
 
 def generate_changed_files(root):
     changed = f"# Changed Files\n\n"
     changed += f"## Application Files\n"
     
-    # Factual changed files list
+    # Factual changed files list using git
+    # Exclude engineering/packaging artifacts from "Application Files"
     changed_list = git.get_status()
     
-    # Application vs Engineering separation
     app_files = []
     eng_files = []
+    
     for f in changed_list:
         if f.startswith('src/'):
             app_files.append(f)
+        elif f.startswith('tools/') or f.startswith('.temp/') or f.startswith('review/'):
+            eng_files.append(f)
         else:
             eng_files.append(f)
             
     for f in app_files:
         changed += f"- `{f}`\n"
+    if not app_files:
+        changed += f"- None\n"
         
     changed += f"\n## Engineering Artifacts\n"
     for f in eng_files:
         changed += f"- `{f}`\n"
+    if not eng_files:
+        changed += f"- None\n"
             
     return changed
