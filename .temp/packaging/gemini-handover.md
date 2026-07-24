@@ -14,9 +14,9 @@ feature/pfl-d1-7-search-filter
 ---
 
 ## Objective
-Implement transaction search and filtering capabilities to help users quickly locate financial records.
+Implement transaction search and filtering capabilities to allow users to quickly locate financial records while preserving the existing layered architecture and maintaining a responsive user experience.
 
-The implementation must reuse the existing transaction retrieval flow and preserve the current layered architecture.
+This sprint extends the transaction retrieval capability without introducing architectural changes.
 
 ---
 

@@ -1,9 +1,12 @@
-# Architecture Notes: D1.7 Search & Filter
+# Architecture Notes
 
-## Architectural Integrity
-The existing layered architecture is preserved:
-- Service layer (`TransactionService`) handles all business filtering logic.
-- Repository layer (`GoogleSheetsTransactionRepository`) remains responsible solely for data persistence and retrieval.
-- UI layer (`Transactions.html`, `WebApp.gs`) handles presentation and orchestration via AJAX for a responsive experience.
+## Sprint Objective
+Implement transaction search and filtering capabilities to allow users to quickly locate financial records while preserving the existing layered architecture and maintaining a responsive user experience.
 
-No business calculations were introduced into the UI or repository layers.
+This sprint extends the transaction retrieval capability without introducing architectural changes.
+
+---
+
+## Architectural Scope
+- See Technical Lead Approval for specific implementation constraints and architectural directives.
+- Implementation adheres to the established layered architecture (UI -> WebApp -> Service -> Repository).

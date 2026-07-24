@@ -14,9 +14,9 @@ feature/pfl-d1-7-search-filter
 
 # Objective
 
-Implement transaction search and filtering capabilities to help users quickly locate financial records.
+Implement transaction search and filtering capabilities to allow users to quickly locate financial records while preserving the existing layered architecture and maintaining a responsive user experience.
 
-The implementation must reuse the existing transaction retrieval flow and preserve the current layered architecture.
+This sprint extends the transaction retrieval capability without introducing architectural changes.
 
 ---
 
@@ -24,89 +24,136 @@ The implementation must reuse the existing transaction retrieval flow and preser
 
 ## Service Layer
 
-Extend `TransactionService` with search functionality.
+Implement search functionality within `TransactionService`.
 
-Supported capabilities:
+Create:
 
-- Search by description
-- Filter by transaction type (Income / Expense)
-- Filter by category
-- Filter by date range
-- Combined filters
+```text
+searchTransactions(searchCriteria)
+```
 
-All filtering logic belongs in the Service layer.
+Responsibilities:
+
+- Retrieve all transactions from the repository.
+- Apply business filtering.
+- Support filtering by:
+  - Description
+  - Transaction Type
+  - Category
+  - Date Range
+- Support combined filters.
+- Return filtered domain objects.
+
+Filtering logic belongs exclusively in the Service layer.
+
+---
+
+## Search Criteria Model (Recommended)
+
+Introduce a dedicated Search Criteria model instead of passing a generic object.
+
+Example:
+
+```javascript
+{
+  description: "",
+  transactionType: "",
+  category: "",
+  startDate: null,
+  endDate: null
+}
+```
+
+Purpose:
+
+- Strong API contract
+- Easier validation
+- Better extensibility
+- Consistent with existing domain-oriented architecture
+
+This model should remain lightweight and immutable where practical.
 
 ---
 
 ## Repository
 
-Reuse existing retrieval methods.
+Reuse the existing retrieval methods.
 
-Filtering should operate on retrieved domain objects unless a repository optimization is clearly justified.
+Repository responsibilities remain:
 
-Do not introduce repository-side business logic.
+- Persistence
+- Retrieval
+
+Repository must **not** implement business filtering.
+
+Do not introduce repository-side optimization during this sprint.
 
 ---
 
 ## WebApp
 
-Expose endpoints supporting transaction search and filtering.
-
-Maintain the existing architecture:
+Expose:
 
 ```text
-Search UI
-        │
-        ▼
-WebApp
-        │
-        ▼
-TransactionService
-        │
-        ▼
-GoogleSheetsTransactionRepository
+getFilteredTransactions(searchCriteria)
 ```
+
+Responsibilities:
+
+- Receive Search Criteria
+- Delegate to TransactionService
+- Return filtered transactions
+
+Business logic must not be duplicated inside WebApp.
 
 ---
 
 ## UI
 
-Enhance the transaction list with:
+Enhance the transaction page with:
 
-- Search box
+- Search textbox
 - Transaction Type filter
 - Category filter
-- Date range filter
-- Clear Filters action
+- Date range selector
+- Clear Filters button
 
-Filtering should refresh the transaction list without requiring manual page reloads.
+Filtering should update the transaction list dynamically using:
+
+```text
+google.script.run
+```
+
+without requiring a page refresh.
 
 ---
 
 # Constraints
 
-- Preserve the existing layered architecture.
+- Preserve the current layered architecture.
+- Keep all business filtering inside TransactionService.
+- Repository remains persistence-only.
 - Reuse existing repository methods.
-- Keep business logic within the Service layer.
-- Repository remains responsible only for persistence and retrieval.
-- Do not introduce architectural changes.
-- Preserve backward compatibility.
-- Keep the implementation simple and maintainable.
-- If blocked or ambiguous, stop and report to the Technical Lead.
+- No architectural refactoring.
+- No regression to CRUD functionality.
+- No regression to Dashboard functionality.
+- Keep the implementation simple, maintainable, and deterministic.
+- Stop and report if architectural changes become necessary.
 
 ---
 
 # Acceptance Criteria
 
-- Users can search by description.
-- Users can filter by transaction type.
-- Users can filter by category.
-- Users can filter by date range.
+- Search by description works.
+- Filter by transaction type works.
+- Filter by category works.
+- Filter by date range works.
 - Multiple filters can be combined.
 - Clear Filters restores the complete transaction list.
-- Search results are accurate.
-- Existing CRUD functionality continues to work without regression.
-- Review artifacts accurately reflect the D1.7 implementation.
+- Results are accurate.
+- CRUD functionality remains unaffected.
+- Dashboard functionality remains unaffected.
+- Review artifacts correctly describe the D1.7 implementation.
 
 ---
 
@@ -115,14 +162,15 @@ Filtering should refresh the transaction list without requiring manual page relo
 ## Application
 
 - `src/service/TransactionService.gs`
+- Search Criteria model (if introduced)
 - `src/app/WebApp.gs`
-- `src/ui/TransactionList.html`
-- Supporting UI updates
+- `src/ui/Transactions.html`
+- Supporting JavaScript updates
 - Integration tests (where applicable)
 
 ## Engineering
 
-Generate the Engineering Review Package:
+Regenerate the complete Engineering Review Package:
 
 - technical-lead-approval.md
 - implementation-summary.md
@@ -156,19 +204,65 @@ git commit -m "feat(search): implement transaction search and filtering"
 
 Stop implementation immediately if:
 
-- The approved scope requires architectural changes.
 - Repository responsibilities must expand beyond persistence and retrieval.
-- Search requirements become ambiguous.
-- Acceptance Criteria cannot be satisfied within the current architecture.
-- A regression affecting existing transaction management is detected.
+- Search requires architectural redesign.
+- Business filtering cannot remain inside TransactionService.
+- Existing CRUD functionality regresses.
+- Dashboard functionality regresses.
+- Acceptance Criteria cannot be achieved within the approved architecture.
 
 Do not make architectural decisions independently.
 
 Instead:
 
-1. Document the blocking issue.
-2. Identify the affected components.
-3. Describe the available implementation options.
-4. Explain the expected impact.
+1. Document the issue.
+2. Explain the root cause.
+3. Describe available implementation options.
+4. Assess the impact of each option.
+5. Return control to the Technical Lead.
 
-Return control to the Technical Lead.
+---
+
+# Technical Lead Review
+
+## Status
+
+✅ **Approved for Implementation**
+
+The proposed implementation plan aligns with the approved architecture and satisfies the objectives of Sprint D1.7.
+
+The current design preserves clear separation of responsibilities:
+
+```text
+Transactions UI
+        │
+        ▼
+WebApp
+        │
+        ▼
+TransactionService
+        │
+        ▼
+GoogleSheetsTransactionRepository
+```
+
+### Technical Lead Recommendations
+
+The following recommendation is **approved for implementation** as part of this sprint:
+
+- Introduce a lightweight `SearchCriteria` model instead of passing a generic object between the UI, WebApp, and Service layers.
+- Keep the model simple and focused on representing filter parameters.
+- Centralize validation and filtering logic within `TransactionService`.
+- Continue treating the repository as a persistence and retrieval layer only.
+
+This recommendation improves maintainability and extensibility without increasing unnecessary complexity.
+
+### Parking Lot (Post-MVP)
+
+The following is **not** part of Sprint D1.7:
+
+- Repository-side query optimization.
+- Indexed searching.
+- Server-side filtering against Google Sheets.
+
+The current in-memory filtering approach is appropriate for the expected MVP data volume and best aligns with the project's principles of simplicity, maintainability, and low operating cost.

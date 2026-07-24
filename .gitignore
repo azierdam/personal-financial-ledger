@@ -15,3 +15,7 @@ env/
 Thumbs.db
 .gemini/
 gha-creds-*.json
+
+# temp
+*.tmp
+.temp/
