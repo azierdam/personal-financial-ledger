@@ -14,3 +14,5 @@ env/
 
 # Windows
 Thumbs.db
+.gemini/
+gha-creds-*.json
