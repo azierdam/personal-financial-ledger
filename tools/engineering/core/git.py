@@ -10,13 +10,26 @@ def get_commit():
 
 def get_status():
     # Get modified/untracked files
-    output = subprocess.check_output(["git", "status", "--porcelain"]).decode().strip()
-    files = []
-    for line in output.splitlines():
-        if line.strip():
-            # porcelain output: 'XY path'
-            files.append(line[3:].strip())
-    return files
+    try:
+        files = []
+        
+        # Get unstaged/staged files
+        output = subprocess.check_output(["git", "status", "--porcelain"]).decode().strip()
+        for line in output.splitlines():
+            if line.strip():
+                # porcelain output: 'XY path'
+                files.append(line[3:].strip())
+        
+        # Look at committed changes in this branch vs main
+        output = subprocess.check_output(["git", "diff", "--name-only", "main...HEAD"]).decode().strip()
+        for line in output.splitlines():
+            if line.strip():
+                files.append(line.strip())
+        
+        # Return unique list
+        return list(set(files))
+    except subprocess.CalledProcessError:
+        return []
 
 def checkout(branch):
     subprocess.check_call(["git", "checkout", branch])

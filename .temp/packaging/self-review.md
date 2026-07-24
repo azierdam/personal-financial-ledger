@@ -1,5 +1,5 @@
-# Self-Review (v2.1)
+# Self-Review
 
 - Adhered to layered architecture constraints: Yes
-- Avoided soft-delete implementation: Yes
-- No direct spreadsheet access in UI: Yes
+- Repository responsible for persistence only: Yes
+- No business calculations in UI: Yes

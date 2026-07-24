@@ -14,17 +14,58 @@ feature/pfl-d1-6-dashboard-summary
 
 # Objective
 
-Implement a financial dashboard that provides users with a consolidated summary of their financial data.
+Implement the Dashboard & Summary feature to provide users with a consolidated financial overview.
 
-This sprint introduces read-only aggregation capabilities built on top of the completed transaction management features. The implementation must reuse the existing architecture, centralize all business calculations within the Service layer, and avoid duplicating logic across the application.
+This sprint delivers read-only aggregation capabilities built on top of the completed transaction management features while preserving the existing layered architecture.
 
 ---
 
 # Scope
 
-## Dashboard
+## Service Layer
 
-Implement a dashboard displaying:
+Implement dashboard aggregation within `TransactionService`.
+
+Add a public method:
+
+- `getDashboardSummary()`
+
+The method shall:
+
+- Retrieve all transactions from the repository.
+- Calculate:
+  - Current Balance
+  - Total Income
+  - Total Expense
+  - Net Balance
+  - Transaction Count
+  - Monthly Summary
+
+Aggregation logic must reside entirely within the Service layer.
+
+---
+
+## Repository
+
+Reuse existing retrieval methods.
+
+No business calculations shall be implemented in the repository.
+
+Repository responsibilities remain limited to persistence and retrieval.
+
+---
+
+## WebApp
+
+Expose dashboard endpoints through `WebApp.gs`.
+
+Support loading the Dashboard page by retrieving the dashboard summary from the Service layer.
+
+---
+
+## UI
+
+Implement `Dashboard.html` displaying:
 
 - Current Balance
 - Total Income
@@ -33,71 +74,32 @@ Implement a dashboard displaying:
 - Transaction Count
 - Monthly Summary
 
----
+Update navigation so the Dashboard refreshes automatically after:
 
-## Service Layer
-
-Extend `TransactionService` with summary and aggregation methods.
-
-Business calculations must remain exclusively within the Service layer.
+- Transaction Creation
+- Transaction Editing
+- Transaction Deletion
 
 ---
 
-## Repository
+## Engineering
 
-Reuse existing repository retrieval methods.
+Regenerate all review artifacts for the D1.6 sprint.
 
-Only extend the repository when required for performance or maintainability.
-
-Do not place business calculations inside the repository.
-
----
-
-## WebApp
-
-Expose dashboard endpoints required by the UI.
-
-Maintain the existing architecture:
-
-```text
-Dashboard UI
-        │
-        ▼
-WebApp
-        │
-        ▼
-TransactionService
-        │
-        ▼
-GoogleSheetsTransactionRepository
-```
-
----
-
-## UI
-
-Implement the Dashboard page.
-
-The dashboard must automatically refresh after:
-
-- Create Transaction
-- Edit Transaction
-- Delete Transaction
-
-No manual refresh should be required.
+Ensure every generated document reflects the current sprint and implementation.
 
 ---
 
 # Constraints
 
 - Preserve the existing layered architecture.
+- Service layer owns all business calculations.
+- Repository remains responsible only for persistence.
+- UI remains responsible only for presentation.
 - Reuse existing repository methods whenever possible.
-- Do not duplicate business logic.
 - Do not introduce architectural changes.
-- Preserve backward compatibility.
-- Keep the implementation simple and maintainable.
 - Do not modify unrelated functionality.
-- If blocked or ambiguous, stop implementation and report the issue to the Technical Lead.
+- Keep the implementation simple, maintainable, and production-ready.
 
 ---
 
@@ -109,10 +111,11 @@ No manual refresh should be required.
 - Dashboard displays Net Balance correctly.
 - Dashboard displays Transaction Count correctly.
 - Dashboard displays Monthly Summary correctly.
-- Dashboard refreshes automatically after Create, Edit, and Delete operations.
+- Dashboard automatically refreshes after Create, Edit, and Delete operations.
 - No business calculations exist in the UI.
-- Repository remains responsible only for persistence.
-- Existing transaction features continue to work without regression.
+- Repository contains no financial aggregation logic.
+- Existing transaction workflows continue to function without regression.
+- Review artifacts accurately reflect the D1.6 implementation.
 
 ---
 
@@ -120,25 +123,27 @@ No manual refresh should be required.
 
 ## Application
 
-- Dashboard UI
-- TransactionService summary methods
-- WebApp dashboard endpoints
-- Integration with existing repository
-- Dashboard refresh workflow
+- `src/service/TransactionService.gs`
+- `src/app/WebApp.gs`
+- `src/ui/Dashboard.html`
+- Supporting UI navigation updates
+- Integration with the existing repository
 
-## Engineering
+## Engineering Review Package
 
-Generate the Engineering Review Package containing:
+Generate:
 
-- technical-lead-approval.md
-- implementation-summary.md
-- architecture-notes.md
-- changed-files.md
-- validation.md
-- self-review.md
-- manifest.json
+- `technical-lead-approval.md`
+- `implementation-summary.md`
+- `architecture-notes.md`
+- `changed-files.md`
+- `validation.md`
+- `self-review.md`
+- `checklist.md`
+- `gemini-handover.md`
+- `manifest.json`
 
-Implementation must follow the Engineering CLI workflow.
+Validation must be based on the implemented functionality.
 
 ---
 
@@ -153,7 +158,7 @@ git commit -m "docs(engineering): approve D1.6 dashboard & summary"
 Implementation
 
 ```bash
-git commit -m "feat(dashboard): implement financial dashboard and summary"
+git commit -m "feat(dashboard): implement dashboard and financial summary"
 ```
 
 ---
@@ -163,18 +168,18 @@ git commit -m "feat(dashboard): implement financial dashboard and summary"
 Stop implementation immediately if:
 
 - The approved scope requires architectural changes.
-- New repository interfaces are required beyond the approved scope.
-- Business rules are ambiguous.
-- Acceptance Criteria cannot be satisfied with the current architecture.
-- A regression affecting transaction management is detected.
+- Repository responsibilities must be expanded beyond persistence and retrieval.
+- Business rules required for dashboard calculations are ambiguous.
+- Acceptance Criteria cannot be satisfied within the current architecture.
+- A regression affecting existing transaction management is detected.
 
 Do not make architectural decisions independently.
 
-Document:
+Instead:
 
-1. Blocking issue.
-2. Affected components.
-3. Possible implementation options.
-4. Expected impact.
+1. Document the blocking issue.
+2. Identify the affected components.
+3. Describe the available implementation options.
+4. Explain the expected impact.
 
-Return control to the Technical Lead.
+Return control to the Technical Lead for further direction.

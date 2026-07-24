@@ -1,15 +1,99 @@
-# Implementation Summary: D1.6 Dashboard & Summary
+# Engineering Review Summary
+
+## Milestone
+**Milestone:** D1 – Core Transaction Management
+
+**Sprint:** D1.6 – Dashboard & Summary
+
+**Feature Branch:**
+
+```text
+feature/pfl-d1-6-dashboard-summary
+```
+
+---
 
 ## Objective
-Implement a financial dashboard displaying a summary of transactions (Current Balance, Total Income, Total Expense, Net Balance, Transaction Count, Monthly Summary) and ensure it automatically refreshes after transaction CRUD operations.
+Implement the Dashboard & Summary feature to provide users with a consolidated financial overview.
 
-## Completed Work
-- Added `getDashboardSummary()` to `TransactionService.gs`.
-- Updated `WebApp.gs` to expose dashboard data.
-- Implemented `Dashboard.html` view.
-- Updated UI workflow in `TransactionForm.html` and `TransactionDetail.html` for auto-refresh.
+This sprint delivers read-only aggregation capabilities built on top of the completed transaction management features while preserving the existing layered architecture.
 
-## Artifacts Updated
-- `.temp/packaging/checklist.md`
-- `.temp/packaging/gemini-handover.md`
-- `.temp/packaging/validation.md`
+---
+
+## Scope
+## Service Layer
+
+Implement dashboard aggregation within `TransactionService`.
+
+Add a public method:
+
+- `getDashboardSummary()`
+
+The method shall:
+
+- Retrieve all transactions from the repository.
+- Calculate:
+- Current Balance
+- Total Income
+- Total Expense
+- Net Balance
+- Transaction Count
+- Monthly Summary
+
+Aggregation logic must reside entirely within the Service layer.
+
+---
+
+## Repository
+
+Reuse existing retrieval methods.
+
+No business calculations shall be implemented in the repository.
+
+Repository responsibilities remain limited to persistence and retrieval.
+
+---
+
+## WebApp
+
+Expose dashboard endpoints through `WebApp.gs`.
+
+Support loading the Dashboard page by retrieving the dashboard summary from the Service layer.
+
+---
+
+## UI
+
+Implement `Dashboard.html` displaying:
+
+- Current Balance
+- Total Income
+- Total Expense
+- Net Balance
+- Transaction Count
+- Monthly Summary
+
+Update navigation so the Dashboard refreshes automatically after:
+
+- Transaction Creation
+- Transaction Editing
+- Transaction Deletion
+
+---
+
+## Engineering
+
+Regenerate all review artifacts for the D1.6 sprint.
+
+Ensure every generated document reflects the current sprint and implementation.
+
+---
+
+## Changed Files
+- Count: 319
+- Details in `changed-files.md`
+
+## Validation Evidence
+- Implemented features verified according to Acceptance Criteria.
+- See `validation.md` for details.
+

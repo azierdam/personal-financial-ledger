@@ -35,7 +35,8 @@ def package(profile, sprint_id, root):
         "self-review.md": review_generator.generate_self_review(root, manifest_data),
         "gemini-handover.md": review_generator.generate_handover(root, manifest_data),
         "architecture-notes.md": review_generator.generate_architecture(root),
-        "changed-files.md": review_generator.generate_changed_files(root)
+        "changed-files.md": review_generator.generate_changed_files(root),
+        "checklist.md": review_generator.generate_checklist(root)
     }
 
     for art, content in generated_content.items():
