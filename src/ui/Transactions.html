@@ -1,6 +1,20 @@
 <section>
   <h2>Transactions</h2>
-  <table class="transaction-table">
+  
+  <div id="filter-controls">
+    <input type="text" id="search-description" placeholder="Search description...">
+    <select id="filter-type">
+      <option value="">All Types</option>
+      <option value="INCOME">Income</option>
+      <option value="EXPENSE">Expense</option>
+    </select>
+    <input type="date" id="filter-start-date">
+    <input type="date" id="filter-end-date">
+    <button onclick="applyFilters()">Search</button>
+    <button onclick="clearFilters()">Clear</button>
+  </div>
+
+  <table class="transaction-table" id="transaction-table">
     <thead>
       <tr>
         <th>Date</th>
@@ -10,7 +24,7 @@
         <th>Description</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="transaction-body">
       <? for (var i = 0; i < transactions.length; i++) { ?>
         <tr>
           <td><?= transactions[i].date.toLocaleDateString() ?></td>
@@ -22,4 +36,44 @@
       <? } ?>
     </tbody>
   </table>
+
+  <script>
+    function applyFilters() {
+      const criteria = {
+        description: document.getElementById('search-description').value,
+        transactionType: document.getElementById('filter-type').value,
+        startDate: document.getElementById('filter-start-date').value,
+        endDate: document.getElementById('filter-end-date').value
+      };
+      
+      google.script.run
+        .withSuccessHandler(updateTable)
+        .withFailureHandler((err) => alert('Error: ' + err))
+        .getFilteredTransactions(criteria);
+    }
+    
+    function clearFilters() {
+      document.getElementById('search-description').value = '';
+      document.getElementById('filter-type').value = '';
+      document.getElementById('filter-start-date').value = '';
+      document.getElementById('filter-end-date').value = '';
+      applyFilters();
+    }
+    
+    function updateTable(transactions) {
+      const tbody = document.getElementById('transaction-body');
+      tbody.innerHTML = '';
+      transactions.forEach(t => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${new Date(t.date).toLocaleDateString()}</td>
+          <td>${t.type}</td>
+          <td>${t.category.name}</td>
+          <td>${t.amount.amount} ${t.amount.currency}</td>
+          <td>${t.description}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+  </script>
 </section>

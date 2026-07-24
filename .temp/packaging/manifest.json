@@ -1,12 +1,12 @@
 {
   "sprint_metadata": {
-    "engineering_sprint": "D1.6 \u2013 Dashboard & Summary",
+    "engineering_sprint": "D1.7 \u2013 Search & Filter",
     "product_sprint": "Unknown",
     "product_status": "Unknown"
   },
-  "timestamp": "2026-07-24T21:43:21.326830",
-  "branch": "feature/pfl-d1-6-dashboard-summary",
-  "commit": "166d52e73f00e126f638bb474738cd409f257dd9",
+  "timestamp": "2026-07-24T21:56:33.434998",
+  "branch": "feature/pfl-d1-7-search-filter",
+  "commit": "823e541ad10d109212d360c09353e8bd1e7695b3",
   "artifacts": [
     "architecture-notes.md",
     "changed-files.md",

@@ -2,21 +2,21 @@
 
 **Milestone:** D1 – Core Transaction Management
 
-**Sprint:** D1.6 – Dashboard & Summary
+**Sprint:** D1.7 – Search & Filter
 
 **Feature Branch:**
 
 ```text
-feature/pfl-d1-6-dashboard-summary
+feature/pfl-d1-7-search-filter
 ```
 
 ---
 
 # Objective
 
-Implement the Dashboard & Summary feature to provide users with a consolidated financial overview.
+Implement transaction search and filtering capabilities to help users quickly locate financial records.
 
-This sprint delivers read-only aggregation capabilities built on top of the completed transaction management features while preserving the existing layered architecture.
+The implementation must reuse the existing transaction retrieval flow and preserve the current layered architecture.
 
 ---
 
@@ -24,24 +24,17 @@ This sprint delivers read-only aggregation capabilities built on top of the comp
 
 ## Service Layer
 
-Implement dashboard aggregation within `TransactionService`.
+Extend `TransactionService` with search functionality.
 
-Add a public method:
+Supported capabilities:
 
-- `getDashboardSummary()`
+- Search by description
+- Filter by transaction type (Income / Expense)
+- Filter by category
+- Filter by date range
+- Combined filters
 
-The method shall:
-
-- Retrieve all transactions from the repository.
-- Calculate:
-  - Current Balance
-  - Total Income
-  - Total Expense
-  - Net Balance
-  - Transaction Count
-  - Monthly Summary
-
-Aggregation logic must reside entirely within the Service layer.
+All filtering logic belongs in the Service layer.
 
 ---
 
@@ -49,73 +42,71 @@ Aggregation logic must reside entirely within the Service layer.
 
 Reuse existing retrieval methods.
 
-No business calculations shall be implemented in the repository.
+Filtering should operate on retrieved domain objects unless a repository optimization is clearly justified.
 
-Repository responsibilities remain limited to persistence and retrieval.
+Do not introduce repository-side business logic.
 
 ---
 
 ## WebApp
 
-Expose dashboard endpoints through `WebApp.gs`.
+Expose endpoints supporting transaction search and filtering.
 
-Support loading the Dashboard page by retrieving the dashboard summary from the Service layer.
+Maintain the existing architecture:
+
+```text
+Search UI
+        │
+        ▼
+WebApp
+        │
+        ▼
+TransactionService
+        │
+        ▼
+GoogleSheetsTransactionRepository
+```
 
 ---
 
 ## UI
 
-Implement `Dashboard.html` displaying:
+Enhance the transaction list with:
 
-- Current Balance
-- Total Income
-- Total Expense
-- Net Balance
-- Transaction Count
-- Monthly Summary
+- Search box
+- Transaction Type filter
+- Category filter
+- Date range filter
+- Clear Filters action
 
-Update navigation so the Dashboard refreshes automatically after:
-
-- Transaction Creation
-- Transaction Editing
-- Transaction Deletion
-
----
-
-## Engineering
-
-Regenerate all review artifacts for the D1.6 sprint.
-
-Ensure every generated document reflects the current sprint and implementation.
+Filtering should refresh the transaction list without requiring manual page reloads.
 
 ---
 
 # Constraints
 
 - Preserve the existing layered architecture.
-- Service layer owns all business calculations.
-- Repository remains responsible only for persistence.
-- UI remains responsible only for presentation.
-- Reuse existing repository methods whenever possible.
+- Reuse existing repository methods.
+- Keep business logic within the Service layer.
+- Repository remains responsible only for persistence and retrieval.
 - Do not introduce architectural changes.
-- Do not modify unrelated functionality.
-- Keep the implementation simple, maintainable, and production-ready.
+- Preserve backward compatibility.
+- Keep the implementation simple and maintainable.
+- If blocked or ambiguous, stop and report to the Technical Lead.
 
 ---
 
 # Acceptance Criteria
 
-- Dashboard displays Current Balance correctly.
-- Dashboard displays Total Income correctly.
-- Dashboard displays Total Expense correctly.
-- Dashboard displays Net Balance correctly.
-- Dashboard displays Transaction Count correctly.
-- Dashboard displays Monthly Summary correctly.
-- Dashboard automatically refreshes after Create, Edit, and Delete operations.
-- No business calculations exist in the UI.
-- Repository contains no financial aggregation logic.
-- Existing transaction workflows continue to function without regression.
-- Review artifacts accurately reflect the D1.6 implementation.
+- Users can search by description.
+- Users can filter by transaction type.
+- Users can filter by category.
+- Users can filter by date range.
+- Multiple filters can be combined.
+- Clear Filters restores the complete transaction list.
+- Search results are accurate.
+- Existing CRUD functionality continues to work without regression.
+- Review artifacts accurately reflect the D1.7 implementation.
 
 ---
 
@@ -125,25 +116,23 @@ Ensure every generated document reflects the current sprint and implementation.
 
 - `src/service/TransactionService.gs`
 - `src/app/WebApp.gs`
-- `src/ui/Dashboard.html`
-- Supporting UI navigation updates
-- Integration with the existing repository
+- `src/ui/TransactionList.html`
+- Supporting UI updates
+- Integration tests (where applicable)
 
-## Engineering Review Package
+## Engineering
 
-Generate:
+Generate the Engineering Review Package:
 
-- `technical-lead-approval.md`
-- `implementation-summary.md`
-- `architecture-notes.md`
-- `changed-files.md`
-- `validation.md`
-- `self-review.md`
-- `checklist.md`
-- `gemini-handover.md`
-- `manifest.json`
-
-Validation must be based on the implemented functionality.
+- technical-lead-approval.md
+- implementation-summary.md
+- architecture-notes.md
+- changed-files.md
+- validation.md
+- self-review.md
+- checklist.md
+- gemini-handover.md
+- manifest.json
 
 ---
 
@@ -151,14 +140,14 @@ Validation must be based on the implemented functionality.
 
 Approval Document
 
-```bash
-git commit -m "docs(engineering): approve D1.6 dashboard & summary"
+```powershell
+git commit -m "docs(engineering): approve D1.7 search & filter"
 ```
 
 Implementation
 
-```bash
-git commit -m "feat(dashboard): implement dashboard and financial summary"
+```powershell
+git commit -m "feat(search): implement transaction search and filtering"
 ```
 
 ---
@@ -168,8 +157,8 @@ git commit -m "feat(dashboard): implement dashboard and financial summary"
 Stop implementation immediately if:
 
 - The approved scope requires architectural changes.
-- Repository responsibilities must be expanded beyond persistence and retrieval.
-- Business rules required for dashboard calculations are ambiguous.
+- Repository responsibilities must expand beyond persistence and retrieval.
+- Search requirements become ambiguous.
 - Acceptance Criteria cannot be satisfied within the current architecture.
 - A regression affecting existing transaction management is detected.
 
@@ -182,4 +171,4 @@ Instead:
 3. Describe the available implementation options.
 4. Explain the expected impact.
 
-Return control to the Technical Lead for further direction.
+Return control to the Technical Lead.

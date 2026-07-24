@@ -137,4 +137,31 @@ class TransactionService {
       monthlySummary
     };
   }
+
+  /**
+   * Searches and filters transactions based on criteria.
+   * @param {SearchCriteria} criteria
+   * @returns {Transaction[]}
+   */
+  searchTransactions(criteria) {
+    let transactions = this.getAllTransactions();
+
+    if (criteria.description) {
+      transactions = transactions.filter(t => t.description.toLowerCase().includes(criteria.description.toLowerCase()));
+    }
+    if (criteria.transactionType) {
+      transactions = transactions.filter(t => t.type === criteria.transactionType);
+    }
+    if (criteria.category) {
+      transactions = transactions.filter(t => t.category.name === criteria.category);
+    }
+    if (criteria.startDate) {
+      transactions = transactions.filter(t => t.date >= criteria.startDate);
+    }
+    if (criteria.endDate) {
+      transactions = transactions.filter(t => t.date <= criteria.endDate);
+    }
+
+    return transactions;
+  }
 }

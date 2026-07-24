@@ -60,6 +60,21 @@ function deleteTransaction(transactionId) {
 }
 
 /**
+ * Handles transaction search/filter requests.
+ * @param {Object} criteria
+ */
+function getFilteredTransactions(criteria) {
+  const searchCriteria = new SearchCriteria(
+    criteria.description,
+    criteria.transactionType,
+    criteria.category,
+    criteria.startDate,
+    criteria.endDate
+  );
+  return getService().searchTransactions(searchCriteria);
+}
+
+/**
  * WebApp handles the initial web request and renders the main UI template.
  */
 function doGet(e) {

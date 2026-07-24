@@ -1,12 +1,9 @@
-# Architecture Notes
+# Architecture Notes: D1.7 Search & Filter
 
-## Sprint Objective
-Implement the Dashboard & Summary feature to provide users with a consolidated financial overview.
+## Architectural Integrity
+The existing layered architecture is preserved:
+- Service layer (`TransactionService`) handles all business filtering logic.
+- Repository layer (`GoogleSheetsTransactionRepository`) remains responsible solely for data persistence and retrieval.
+- UI layer (`Transactions.html`, `WebApp.gs`) handles presentation and orchestration via AJAX for a responsive experience.
 
-This sprint delivers read-only aggregation capabilities built on top of the completed transaction management features while preserving the existing layered architecture.
-
----
-
-## Architectural Scope
-- See Technical Lead Approval for specific implementation constraints and architectural directives.
-- Implementation adheres to the established layered architecture (UI -> WebApp -> Service -> Repository).
+No business calculations were introduced into the UI or repository layers.

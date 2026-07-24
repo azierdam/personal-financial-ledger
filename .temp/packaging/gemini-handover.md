@@ -3,20 +3,20 @@
 ## Sprint
 **Milestone:** D1 – Core Transaction Management
 
-**Sprint:** D1.6 – Dashboard & Summary
+**Sprint:** D1.7 – Search & Filter
 
 **Feature Branch:**
 
 ```text
-feature/pfl-d1-6-dashboard-summary
+feature/pfl-d1-7-search-filter
 ```
 
 ---
 
 ## Objective
-Implement the Dashboard & Summary feature to provide users with a consolidated financial overview.
+Implement transaction search and filtering capabilities to help users quickly locate financial records.
 
-This sprint delivers read-only aggregation capabilities built on top of the completed transaction management features while preserving the existing layered architecture.
+The implementation must reuse the existing transaction retrieval flow and preserve the current layered architecture.
 
 ---
 
