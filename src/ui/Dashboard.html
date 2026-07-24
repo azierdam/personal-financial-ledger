@@ -1,4 +1,20 @@
 <section>
-  <h2>Dashboard Placeholder</h2>
-  <p>Dashboard content will be implemented in a future milestone.</p>
+  <h2>Dashboard</h2>
+  <? if (summary) { ?>
+    <div>
+      <p>Current Balance: <?= summary.currentBalance ?></p>
+      <p>Total Income: <?= summary.totalIncome ?></p>
+      <p>Total Expense: <?= summary.totalExpense ?></p>
+      <p>Net Balance: <?= summary.netBalance ?></p>
+      <p>Transaction Count: <?= summary.transactionCount ?></p>
+    </div>
+    <h3>Monthly Summary</h3>
+    <ul>
+      <? for (var month in summary.monthlySummary) { ?>
+        <li><?= month ?>: Income: <?= summary.monthlySummary[month].income ?>, Expense: <?= summary.monthlySummary[month].expense ?></li>
+      <? } ?>
+    </ul>
+  <? } else { ?>
+    <p>No data available.</p>
+  <? } ?>
 </section>

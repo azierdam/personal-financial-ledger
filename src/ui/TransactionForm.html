@@ -30,19 +30,19 @@
   <div id="form-feedback"></div>
 
   <script>
-    function submitForm(form) {
-      const feedback = document.getElementById('form-feedback');
-      feedback.textContent = 'Submitting...';
-      
-      google.script.run
-        .withSuccessHandler(function() {
-          feedback.textContent = 'Transaction saved successfully!';
-          if (!form.transactionId.value) form.reset();
-        })
-        .withFailureHandler(function(err) {
-          feedback.textContent = 'Error: ' + err;
-        })
-        .processTransactionForm(form);
-    }
+  function submitForm(form) {
+    const feedback = document.getElementById('form-feedback');
+    feedback.textContent = 'Submitting...';
+
+    google.script.run
+      .withSuccessHandler(function() {
+        window.location.href = '?page=dashboard';
+      })
+      .withFailureHandler(function(err) {
+        feedback.textContent = 'Error: ' + err;
+      })
+      .processTransactionForm(form);
+  }
   </script>
+
 </section>

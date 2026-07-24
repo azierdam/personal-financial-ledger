@@ -72,13 +72,17 @@ function doGet(e) {
   template.page = pageConfig;
   template.pages = PAGES;
   
-  if (pageId === 'transactions') {
-    template.transactions = getService().getAllTransactions();
+  const service = getService();
+  
+  if (pageId === 'dashboard') {
+    template.summary = service.getDashboardSummary();
+  } else if (pageId === 'transactions') {
+    template.transactions = service.getAllTransactions();
   } else if (pageId === 'transactionDetail') {
-    template.transaction = getService().getTransactionById(e.parameter.id);
+    template.transaction = service.getTransactionById(e.parameter.id);
   } else if (pageId === 'transactionForm') {
     if (e.parameter.id) {
-      template.transaction = getService().getTransactionById(e.parameter.id);
+      template.transaction = service.getTransactionById(e.parameter.id);
     } else {
       template.transaction = null;
     }

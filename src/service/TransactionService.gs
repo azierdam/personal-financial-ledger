@@ -98,4 +98,43 @@ class TransactionService {
   getAllTransactions() {
     return this.transactionRepository.findAll();
   }
+
+  /**
+   * Calculates dashboard summary data.
+   * @returns {Object}
+   */
+  getDashboardSummary() {
+    const transactions = this.getAllTransactions();
+    
+    let totalIncome = 0;
+    let totalExpense = 0;
+    const monthlySummary = {};
+
+    transactions.forEach(t => {
+      if (t.type === 'INCOME') {
+        totalIncome += t.amount.amount;
+      } else if (t.type === 'EXPENSE') {
+        totalExpense += t.amount.amount;
+      }
+
+      const monthYear = t.date.toLocaleString('default', { month: 'short', year: 'numeric' });
+      if (!monthlySummary[monthYear]) {
+        monthlySummary[monthYear] = { income: 0, expense: 0 };
+      }
+      if (t.type === 'INCOME') {
+        monthlySummary[monthYear].income += t.amount.amount;
+      } else {
+        monthlySummary[monthYear].expense += t.amount.amount;
+      }
+    });
+
+    return {
+      currentBalance: totalIncome - totalExpense,
+      totalIncome,
+      totalExpense,
+      netBalance: totalIncome - totalExpense,
+      transactionCount: transactions.length,
+      monthlySummary
+    };
+  }
 }

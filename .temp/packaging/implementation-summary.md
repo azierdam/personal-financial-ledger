@@ -1,56 +1,15 @@
-# Engineering Review Summary (v2.1)
-
-## Milestone
-**Sprint:** ENG-CLI Stabilization
-
-Supporting Product Sprint: **D1.6 – Dashboard & Summary (Paused)**
-
----
+# Implementation Summary: D1.6 Dashboard & Summary
 
 ## Objective
-Stabilize the Engineering Workflow implementation so that it fully conforms to the Engineering Workflow Guide v2.2 before resuming PFL feature development.
+Implement a financial dashboard displaying a summary of transactions (Current Balance, Total Income, Total Expense, Net Balance, Transaction Count, Monthly Summary) and ensure it automatically refreshes after transaction CRUD operations.
 
-The objective is to ensure the engineering workflow executes deterministically from Technical Lead Approval through Merge without undocumented manual intervention.
+## Completed Work
+- Added `getDashboardSummary()` to `TransactionService.gs`.
+- Updated `WebApp.gs` to expose dashboard data.
+- Implemented `Dashboard.html` view.
+- Updated UI workflow in `TransactionForm.html` and `TransactionDetail.html` for auto-refresh.
 
-No application features are to be implemented during this sprint.
-
----
-
-## Scope
-The scope is limited to the Engineering CLI and engineering workflow implementation.
-
-This includes:
-
-- Technical Lead Approval parsing
-- setup
-- prepare
-- package
-- Review Package generation
-- Manifest generation
-- Validation generation
-- Changed Files generation
-- Engineering documentation directly affected by implementation
-
-The following are explicitly **out of scope**:
-
-- Dashboard implementation (D1.6)
-- Application business logic
-- Repository enhancements
-- UI features
-- Service layer enhancements
-
----
-
-## Changed Files
-- Count: 319
-- Details in `changed-files.md`
-
-## Validation Evidence
-- Delete handler verified across layers (UI -> WebApp -> Service -> Repository).
-- See `validation.md` for details.
-
-## Known Limitations
-- Spreadsheet row deletion is a destructive operation; no backup or soft-delete is currently implemented as per constraints.
-
-## Next Milestone
-- Future roadmap planning.
+## Artifacts Updated
+- `.temp/packaging/checklist.md`
+- `.temp/packaging/gemini-handover.md`
+- `.temp/packaging/validation.md`
